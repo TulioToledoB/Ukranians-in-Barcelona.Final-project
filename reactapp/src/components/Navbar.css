@@ -1,0 +1,46 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.navbar li {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #333;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: orangered; 
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.dropdown.active {
+  display: block;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.dropdown a:hover {
+  color: #555; 
+}

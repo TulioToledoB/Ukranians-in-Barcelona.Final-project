@@ -1,0 +1,11 @@
+/* Image.css */
+.image {
+  width: 100%;
+  margin-top: 1px; 
+  position: relative;
+}
+
+.image img {
+  width: 100%; 
+  height: 300px; 
+}
