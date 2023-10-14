@@ -1,0 +1,71 @@
+/* Estilos para el encabezado */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orangered; 
+  color: #fff;
+  padding: 20px 5px; 
+  height: 40px; 
+ 
+}
+
+/* Estilos para el navbar */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly; 
+  margin: 0;
+}
+
+nav li {
+  margin: 0 5px; 
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para el logo y el nombre del proyecto */
+.log {
+  display: flex;
+  align-items: center;
+  margin-left: 5px; 
+}
+
+.log img {
+  width: 40px; 
+  height: 40px; 
+  margin-right: 20px; 
+}
+/* Estilos para el campo de búsqueda */
+.search {
+  display: flex;
+  align-items: center; 
+  border: 2px solid #000; 
+  border-radius: 50px; 
+  padding: 5px;
+}
+
+.search input {
+  border: none; 
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 5px; 
+}
+
+.search button {
+  background-color: #007bff;
+  color: #fff;
+  border: none; 
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}

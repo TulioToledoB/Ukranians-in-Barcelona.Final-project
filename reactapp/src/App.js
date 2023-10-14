@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Image from "./components/Image";
@@ -48,10 +49,12 @@ function App() {
       <Header />
       <Image />
       <TextComponent text="¡Welcome to Barcelona!" /> {}
+//buttons of backend add-backend
       <button onClick={fetchSocials}>socials_services</button>
       <button onClick={fetchHospitals}>hospitals</button>
       <button onClick={fetchAreas}>areas</button>
-      <button onClick={fetchLawyers}>areas</button>
+      <button onClick={fetchLawyers}>lawyers</button>
+
     </div>
   );
 }
