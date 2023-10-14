@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import Header from "./components/Header";
-import Image from "./components/Image";
-import TextComponent from "./components/Textcomponent"; // Importa el nuevo componente
-//import Footer from "./components/Footer";
-//import 'bootstrap/dist/css/bootstrap.min.css';
+
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Image from './components/Image';
+import TextComponent from './components/Textcomponent'; // Importa el nuevo componente
+import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Image />
       <TextComponent text="¡Welcome to Barcelona!" /> {}
+      <Footer/>
     </div>
   );
 }
