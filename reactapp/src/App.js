@@ -1,11 +1,9 @@
-
-import React from 'react';
-import Header from './components/Header';
-import Image from './components/Image';
-import TextComponent from './components/Textcomponent'; // Importa el nuevo componente
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Image from "./components/Image";
+import TextComponent from "./components/Textcomponent"; // Importa el nuevo componente
 import Footer from "./components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [hospitals, setHospitals] = useState([]);
@@ -50,7 +48,7 @@ function App() {
       <Header />
       <Image />
       <TextComponent text="¡Welcome to Barcelona!" /> {}
-      <Footer/>
+      <Footer />
       <button onClick={fetchSocials}>socials_services</button>
       <button onClick={fetchHospitals}>hospitals</button>
       <button onClick={fetchAreas}>areas</button>
