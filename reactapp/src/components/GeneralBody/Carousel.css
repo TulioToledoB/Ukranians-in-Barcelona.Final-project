@@ -1,0 +1,66 @@
+
+
+.carousel{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+
+.slide{
+    border-radius: 0.5rem;
+    background-color: #3c4247;
+    color: white;
+}
+
+.slide-hidden {
+    display: none;
+}
+
+.textContain{
+    margin-left: 10px;
+}
+
+.arrow{
+    position:absolute;
+    width: 2rem;
+    height: 2rem;
+    color: white ;
+    filter: drop-shadow(0px 0px 5px #555);
+
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow-left{
+    left: 0.5rem;
+}
+
+.arrow-right{
+    right: 0.5rem;
+}
+
+.indicators{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.indicator{
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+.indicator-inactive {
+    background-color: grey;
+}
