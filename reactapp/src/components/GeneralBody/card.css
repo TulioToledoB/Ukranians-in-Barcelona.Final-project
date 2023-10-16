@@ -1,0 +1,48 @@
+
+.card{
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    padding: 5px;
+    width: 100%;
+    background-color:white;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px;
+    padding: 0px;
+}
+
+.card-image{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    padding-top: 0.5rem;
+}
+
+.card-btn{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card:hover .card-btn{
+    background-color: rgb(30, 204, 152);
+    color: red;
+}
