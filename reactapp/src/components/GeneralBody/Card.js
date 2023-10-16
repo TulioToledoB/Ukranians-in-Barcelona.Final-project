@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactDOM } from "react";
-import "/home/l0013/Desktop/MigraCode/CopyProject/Ukranians-in-Barcelona.Final-project/reactapp/src/components/GeneralBody/card.css"
+import "reactapp/src/components/GeneralBody/card.css"
 
 function Card(data){
     return (
