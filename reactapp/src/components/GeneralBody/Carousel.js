@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import  "/home/l0013/Desktop/MigraCode/CopyProject/Ukranians-in-Barcelona.Final-project/reactapp/src/components/GeneralBody/Carousel.css";
+import  "reactapp/src/components/GeneralBody/Carousel.css";
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
 
 function Carousel({data}) {

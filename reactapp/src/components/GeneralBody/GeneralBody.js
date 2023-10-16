@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
-import "/home/l0013/Desktop/MigraCode/CopyProject/Ukranians-in-Barcelona.Final-project/reactapp/src/components/GeneralBody/GeneralBody.css"
-import slides from "/home/l0013/Desktop/MigraCode/CopyProject/Ukranians-in-Barcelona.Final-project/reactapp/src/components/data/carouselData.json"
+import "reactapp/src/components/GeneralBody/GeneralBody.css"
+import slides from "reactapp/src/components/data/carouselData.json"
 import Card from "./Card";
 
 
