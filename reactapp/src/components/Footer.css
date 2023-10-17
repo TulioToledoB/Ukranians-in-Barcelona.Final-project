@@ -1,29 +1,26 @@
 footer {
   padding-top: 5px;
   padding-bottom: 5px;
-
 }
-
-a {
+a .text-white{
   color: white;
   text-decoration: none;
 }
-a:hover {
+a .text-white:hover {
   color: #0783FF; /* Yellow color on hover */
 }
+
 i {
   margin-right: 8px;
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.fab {
-  font-size: 25px;
-}
+
 .col {
   text-align: center;
   padding: 15px;
 }
 .col + .col {
-  margin-top: 20px;
+  margin-top: 50px;
 }
