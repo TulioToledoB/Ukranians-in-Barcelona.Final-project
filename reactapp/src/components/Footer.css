@@ -1,11 +1,9 @@
 footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
-h5 {
-  color: #FFC107;
-  font-weight: bold;
-}
+
 a {
   color: white;
   text-decoration: none;
@@ -16,6 +14,8 @@ a:hover {
 i {
   margin-right: 8px;
   font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .fab {
   font-size: 25px;
