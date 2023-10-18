@@ -5,14 +5,16 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    margin: 0px;
+    margin: 20px;
 }
 
 
 .slide{
     border-radius: 0.5rem;
-    background-color: #3c4247;
-    color: white;
+    background-color: white;
+    color: black;
+    padding: 5px;
 }
 
 .slide-hidden {
@@ -21,6 +23,12 @@
 
 .textContain{
     margin-left: 10px;
+}
+
+.carousel img{
+    border-radius: 0.5rem;
+    width: 1020px;
+    height: 700px;
 }
 
 .arrow{
