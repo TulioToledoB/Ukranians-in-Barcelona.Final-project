@@ -78,7 +78,10 @@ function Navbar() {
         <li onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
           <a href="#">Others</a>
           {showDropdown && (
-            <ul className="dropdown active">
+            <ul
+              className="dropdown active"
+              style={{ display: 'block', position: 'absolute' }}
+            >
               <li>
                 <a href="#">Question famouse</a>
               </li>

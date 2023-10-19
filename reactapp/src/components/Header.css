@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: orangered; 
+  background-color:#1d5a87; 
   color: #fff;
   padding: 20px 5px; 
   height: 70px; 
@@ -17,6 +17,7 @@ nav ul {
   display: flex;
   justify-content: space-evenly; 
   margin: 0;
+  font-size: 20px;
 }
 
 nav li {
@@ -40,6 +41,7 @@ nav a {
   height: 40px; 
   margin-right: 20px; 
 }
+
 /* Estilos para el campo de búsqueda */
 .search {
   display: flex;
@@ -68,3 +70,6 @@ nav a {
 .search button:hover {
   background-color: #0056b3;
 }
+
+
+
