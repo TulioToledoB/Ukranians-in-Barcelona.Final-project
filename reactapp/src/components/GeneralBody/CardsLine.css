@@ -1,23 +1,21 @@
 
-.card{
+.cardLine{
     position: relative;
+    overflow: hidden;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
     transition: transform 200ms ease-in;
-    padding: 5px;
+    padding: 5px; 
     background-color:white;
     color: black;
-    width: 500px;
-    height: 380px;
-    background-color:white;
-    color: black;
-    margin: 20px;
+    width: 29%;
+    margin: 20px 20px;
 }
 
-.card-body{
+.cardLine-body{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,28 +23,28 @@
     padding: 0px;
 }
 
-.card-image{
+.cardLine-image{
     width: 100%;
-    height: 15.5rem;
+    height: 17rem;
     object-fit: cover;
     border-radius: 0.5rem;
 }
 
-.card-title {
+.cardLine-title {
     padding-top: 0.5rem;
 }
 
-.card-btn{
+.cardLine-btn{
     padding: 0.5rem;
     width: 100%;
     border-radius: 0.4rem;
 }
 
-.card:hover{
+.cardLine:hover{
     transform: scale(1.02);
     border: solid 1px;
 }
 
-.card:hover .card-btn{
+.cardLine:hover .card-btn{
     background-color: rgb(30, 204, 152);
 }

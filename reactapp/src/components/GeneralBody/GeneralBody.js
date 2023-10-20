@@ -3,6 +3,7 @@ import Carousel from "./Carousel";
 import "./GeneralBody.css";
 import slides from "../data/carouselData.json";
 import Card from "./Card";
+import CardsLine from "./CardsLine";
 
 function GeneralBody() {
   return (
@@ -15,9 +16,9 @@ function GeneralBody() {
         </div>
       </div >
       <div className = "listOfCards">
-        <Card className=" card generalCard"/>
-        <Card className=" card generalCard"/>
-        <Card className="card generalCard"/>
+        <CardsLine className="generalCard"/>
+        <CardsLine className="generalCard"/>
+        <CardsLine className="generalCard"/>
       </div>
     </div>
   );
