@@ -1,29 +1,38 @@
-footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px;
 }
-h5 {
-  color: #FFC107;
-  font-weight: bold;
+
+.custom-bg-color {
+  background-color: #132a3e;
 }
-a {
+
+a .text-white{
   color: white;
   text-decoration: none;
 }
-a:hover {
-  color: #0783FF; /* Yellow color on hover */
+a .text-white:hover {
+  color: #0783FF; /* Yellow color on hover  */
 }
+
 i {
   margin-right: 8px;
   font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.fab {
-  font-size: 25px;
-}
+
 .col {
   text-align: center;
   padding: 15px;
 }
 .col + .col {
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-color: #555;
+  }
 }

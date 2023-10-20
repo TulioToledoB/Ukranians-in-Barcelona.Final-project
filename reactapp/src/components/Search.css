@@ -1,19 +1,21 @@
 /* Estilos para el campo de búsqueda */
-.Search {
+.searchUk {
     display: flex;
     justify-content: flex-end; 
     align-items: center; 
   }
   
-  .search input {
+  .searchUk input {
     padding: 5px;
+    border-radius: 15px 0px 0px 15px;
   }
   
-  .search button {
-    background-color: #007bff; 
+  .searchUk button {
+    background-color: #007bff !important; 
     color: #fff; 
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
   }
   

@@ -13,6 +13,4 @@ function Card(data){
         </div>
     )
 
-}
-
 export default Card;
