@@ -4,12 +4,16 @@
   padding: 10px;
 }
 
+.custom-bg-color {
+  background-color: #132a3e;
+}
+
 a .text-white{
   color: white;
   text-decoration: none;
 }
 a .text-white:hover {
-  color: #0783FF; /* Yellow color on hover */
+  color: #0783FF; /* Yellow color on hover  */
 }
 
 i {
