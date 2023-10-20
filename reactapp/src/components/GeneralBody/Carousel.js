@@ -22,7 +22,7 @@ function Carousel({ data }) {
             className={slide === index ? "slide" : "slide slide-hidden"}
             key={index}
           >
-            <img src={item.image} height="500px" width="800px" />
+            <img src={item.image} />
             <h3 className="textContain">{item.title}</h3>
             <p className="textContain">{item.text}</p>
           </div>
@@ -32,7 +32,7 @@ function Carousel({ data }) {
         className="arrow arrow-right"
         onClick={nextSlide}
       />
-      <span className="indicators">
+      {/* <span className="indicators">
         {data.map((_, indx) => {
           return (
             <button
@@ -44,7 +44,7 @@ function Carousel({ data }) {
             ></button>
           );
         })}
-      </span>
+      </span> */}
     </div>
   );
 }

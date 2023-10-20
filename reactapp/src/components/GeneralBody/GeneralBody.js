@@ -7,14 +7,17 @@ import Card from "./Card";
 function GeneralBody() {
   return (
     <div className="generalBody">
-      <div className="card-column">
+      <div className="carouselCard" >
+        <Carousel data={slides} className="generalCarousel" />
+        <div className="generalCarouselCard">
         <Card />
         <Card />
-      </div>
-      <Carousel data={slides} />
-      <div className="card-column">
-        <Card />
-        <Card />
+        </div>
+      </div >
+      <div className = "listOfCards">
+        <Card className=" card generalCard"/>
+        <Card className=" card generalCard"/>
+        <Card className="card generalCard"/>
       </div>
     </div>
   );
