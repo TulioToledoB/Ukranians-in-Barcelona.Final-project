@@ -8,8 +8,8 @@ function Card(data){
             <div className="card-body">
                 <img src="https://wallpapers.com/images/featured/beautiful-amazing-pictures-ce8zns6vqeh8q3gh.jpg" className="card-image"/>
                 <h3 className="card-title" >Title</h3>
+                <button className="card-btn"> Read</button>
             </div>
-            <button className="card-btn"> Read</button>
         </div>
     )
 

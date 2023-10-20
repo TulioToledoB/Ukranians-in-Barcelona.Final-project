@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .carouselCard{
@@ -20,7 +21,7 @@
 .generalCarouselCard{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 26%;
 }
 
@@ -29,12 +30,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
+    margin-left: 15px;
+    margin-top: 20px;}
 
 
 @media all and (max-width:1100px) {
     .card{
-        height: 40%;
         margin:0px
     }
 
@@ -48,7 +49,7 @@
 
     .cardLine{
         height: 40%;
-        margin: 40px 0px;
+        margin: 60px 0px;
     }
 
     .cardLine img{
@@ -59,9 +60,16 @@
 }
 
 @media all and (max-width: 700px) {
+
+
     .carouselCard{
         flex-direction: column;
+        align-items: center;
     }
+    .carousel{
+        margin-bottom: 20px;
+    }
+
     .generalCarouselCard{
         display: flex;
         flex-direction: row;

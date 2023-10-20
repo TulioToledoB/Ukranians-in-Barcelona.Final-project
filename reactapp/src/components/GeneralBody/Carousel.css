@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     margin: 0px;
-    margin: 20px;
     width: 63%;
 }
 
@@ -29,7 +28,7 @@
    border-radius: 0.5rem;
    width: 100%;
    object-fit: cover;
-   height: 43.2rem; 
+   height: 45rem; 
 }
 
 .arrow{
