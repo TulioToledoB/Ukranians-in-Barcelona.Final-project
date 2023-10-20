@@ -1,6 +1,11 @@
 /* Estilos para el título del proyecto */
 .title {
-    text-align: center; 
     font-size: 48px;
+    color: white;
   }
   
+  @media (max-width:1200px){
+    .title{
+      font-size: 35px;
+    }
+  }

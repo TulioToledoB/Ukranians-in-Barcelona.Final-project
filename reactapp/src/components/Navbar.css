@@ -1,65 +1,24 @@
-/* Navbar.css */
+/* Estilos para el encabezado */
 .navbar {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding: 0;
-  margin-top: 0px;
-  position: relative; /* Añadido para posicionar el desplegable 'Others' */
-}
+    background-color:#1d5a87 !important; 
+  }
+  
+  .navbar a{
+  
+    color: #fff !important;
+    font-size: 1.3rem;
+  }
+  
+  .dropdown-menu{
+    background-color:#1d5a87 !important; 
+  }
+  
+  .dropdown-item:hover{
+    background-color: cadetblue !important;
+  }
 
-.navbar li {
-  margin: 0 10px; /* Ajuste del margen para espaciar los elementos */
-  display: flex;
-  align-items: center;
-  position: relative; /* Añadido para posicionar correctamente el desplegable */
-}
-
-.dropdown li::before {
-  content: none; /* Eliminar los separadores verticales en el desplegable 'Others' */
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #06e69b;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: #4e5fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  top: 30px; /* Ajuste de posición vertical para que aparezca debajo de 'Others' */
-  width: 120px; /* Ajuste de ancho para que coincida con el ancho de 'Others' */
-  z-index: 1; /* Asegura que el desplegable esté sobre otros elementos si se superponen */
-}
-
-.dropdown.active {
-  display: block;
-}
-
-.dropdown a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.dropdown a:hover {
-  color: #06e69b;
-}
-
-/* Modificación para el desplegable 'Others' */
-.navbar li:last-child {
-  position: relative;
-}
-
-/* Eliminar separador en el último elemento */
-.navbar li:last-child::before {
-  display: none;
-}
+  .nav-link:hover{
+    color: cadetblue !important;
+  }
+  
+  
