@@ -1,18 +1,20 @@
-
-
 .carousel{
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    margin: 0px;
+    margin: 20px;
+    width: 63%;
 }
 
 
 .slide{
     border-radius: 0.5rem;
-    background-color: #3c4247;
-    color: white;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
 }
 
 .slide-hidden {
@@ -21,6 +23,13 @@
 
 .textContain{
     margin-left: 10px;
+}
+
+.carousel img{
+   border-radius: 0.5rem;
+   width: 100%;
+   object-fit: cover;
+   height: 43.2rem; 
 }
 
 .arrow{
@@ -63,4 +72,10 @@
 }
 .indicator-inactive {
     background-color: grey;
+}
+
+@media all and (max-width: 700px) {
+   .carousel{
+    width: 90%;
+   }
 }

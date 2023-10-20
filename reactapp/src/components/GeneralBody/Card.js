@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactDOM } from "react";
-import "reactapp/src/components/GeneralBody/card.css"
+import "./card.css"
 
 function Card(data){
     return (
