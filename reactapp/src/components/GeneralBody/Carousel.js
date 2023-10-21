@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import "./Carousel.css";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import React, {useState} from "react";
+import  "./Carousel.css";
+import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
+
 
 function Carousel({ data }) {
   const [slide, setSlide] = useState(0);
@@ -23,8 +24,10 @@ function Carousel({ data }) {
             key={index}
           >
             <img src={item.image} />
+
             <h3 className="textContain">There is saving place!</h3>
             <p className="textContain">You can to find what you need!</p>
+
           </div>
         );
       })}
@@ -32,19 +35,6 @@ function Carousel({ data }) {
         className="arrow arrow-right"
         onClick={nextSlide}
       />
-      {/* <span className="indicators">
-        {data.map((_, indx) => {
-          return (
-            <button
-              key={indx}
-              onClick={() => setSlide(indx)}
-              className={
-                slide === indx ? "indicator" : "indicator indicator-inactive"
-              }
-            ></button>
-          );
-        })}
-      </span> */}
     </div>
   );
 }

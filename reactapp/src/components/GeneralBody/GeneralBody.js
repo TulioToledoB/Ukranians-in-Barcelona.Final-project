@@ -3,6 +3,7 @@ import Carousel from "./Carousel";
 import "./GeneralBody.css";
 import slides from "../data/carouselData.json";
 import Card from "./Card";
+import CardsLine from "./CardsLine";
 
 function GeneralBody(props) {
   const [events, setEvents] = useState([]);
@@ -66,6 +67,7 @@ function GeneralBody(props) {
         {events.slice(2).map((event) => (
           <Card element={event} />
         ))}
+
       </div>
     </div>
   );
