@@ -1,10 +1,10 @@
-import React from 'react';
-import NavBar from './Navbar';
+import React from "react";
+import NavBar from "./Navbar";
 
-function Header() {
+function Header(props) {
   return (
     <div>
-      <NavBar/>
+      <NavBar {...props} />
     </div>
   );
 }

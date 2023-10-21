@@ -14,11 +14,11 @@
   }
   
   .dropdown-item:hover{
-    background-color: cadetblue !important;
+    background-color: rgb(191, 199, 76) !important;
   }
 
   .nav-link:hover{
-    color: cadetblue !important;
+    color:#F8F617 !important;
   }
   
   

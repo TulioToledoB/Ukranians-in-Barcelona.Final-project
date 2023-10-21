@@ -1,5 +1,5 @@
-import React from 'react';
-import image from './parkguel.png'; 
+import React from "react";
+import image from "./parkguel.png";
 import "./Image.css";
 
 function Image() {

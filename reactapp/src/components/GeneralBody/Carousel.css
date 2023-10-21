@@ -10,6 +10,7 @@
 
 .slide{
     border-radius: 0.5rem;
+    border: solid 2px #1d5a87 ;
     background-color: white;
     color: black;
     padding: 5px;
@@ -22,7 +23,7 @@
 }
 
 .textContain{
-    margin-left: 10px;
+    margin-left: 350px;
 }
 
 .carousel img{

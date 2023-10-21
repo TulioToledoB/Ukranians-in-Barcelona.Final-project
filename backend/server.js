@@ -44,3 +44,9 @@ app.get("/lawyers", function (req, res) {
     res.json(result.rows);
   });
 });
+
+app.get("/events", function (req, res) {
+  pool.query("SELECT * FROM events", (error, result) => {
+    res.json(result.rows);
+  });
+});

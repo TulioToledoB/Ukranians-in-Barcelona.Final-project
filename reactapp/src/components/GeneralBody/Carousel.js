@@ -24,11 +24,10 @@ function Carousel({ data }) {
             key={index}
           >
             <img src={item.image} />
-            <h3 className="textContain">{item.title}</h3>
-        </div>
-    })}
-    <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide}/>
-    </div>)
+
+            <h3 className="textContain">There is saving place!</h3>
+            <p className="textContain">You can to find what you need!</p>
+
           </div>
         );
       })}
