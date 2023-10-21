@@ -50,3 +50,9 @@ app.get("/events", function (req, res) {
     res.json(result.rows);
   });
 });
+
+app.get("/legalization", function (req, res) {
+  pool.query("SELECT * FROM legalization", (error, result) => {
+    res.json(result.rows);
+  });
+});
