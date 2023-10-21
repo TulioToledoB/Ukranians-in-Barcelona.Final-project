@@ -2,6 +2,7 @@
 .card{
     overflow: hidden;
     border-radius: 0.5rem;
+    border: solid 2px #1d5a87 ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,6 +45,6 @@
 }
 
 .card:hover .card-btn{
-    background-color: rgb(30, 204, 152);
-    color: red;
+    background-color:#1d5a87 ;
+    color: rgb(255, 255, 255);
 }

@@ -4,12 +4,14 @@ import Image from "./components/Image";
 //import TextComponent from "./components/Textcomponent"; // Importa el nuevo componente
 import Footer from "./components/Footer";
 import GeneralBody from "./components/GeneralBody/GeneralBody";
+import TextComponent from "./components/Textcomponent";
 
 function App() {
   const [hospitals, setHospitals] = useState([]);
   const [areas, setAreas] = useState([]);
-  const [socials_services, setSocials_services] = useState([]);
+  const [socials, setSocials] = useState([]);
   const [lawyers, setLawyers] = useState([]);
+  const [legalization, setLegalization] = useState([]);
 
   function fetchHospitals() {
     fetch("http://localhost:5000/hospitals")
@@ -31,7 +33,7 @@ function App() {
     fetch("http://localhost:5000/socials_services")
       .then((response) => response.json())
       .then((data) => {
-        setSocials_services(data);
+        setSocials(data);
         console.log(data);
       });
   }
@@ -43,15 +45,32 @@ function App() {
         console.log(data);
       });
   }
+  function fetchLegalization() {
+    fetch("http://localhost:5000/legalization")
+      .then((response) => response.json())
+      .then((data) => {
+        setLegalization(data);
+        console.log(data);
+      });
+  }
   return (
     <div className="app">
       <Header
         onSocialClick={fetchSocials}
         onAreasClick={fetchAreas}
         onHospitalsClick={fetchHospitals}
+        onLawyersClick={fetchLawyers}
+        onLegalizationClick={fetchLegalization}
       />
       <Image />
-      <GeneralBody hospitals={hospitals} />
+      <TextComponent /> {/* Welcome to Barcelona */}
+      <GeneralBody
+        hospitals={hospitals}
+        areas={areas}
+        socials={socials}
+        lawyers={lawyers}
+        legalization={legalization}
+      />
       <Footer />
     </div>
   );

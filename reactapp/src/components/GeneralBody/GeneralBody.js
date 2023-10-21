@@ -23,9 +23,36 @@ function GeneralBody(props) {
     <div className="generalBody">
       <table>
         {props.hospitals.map((hospital) => (
-          <div>{hospital.name}</div>
+          <div>
+            <h2>{hospital.name}</h2>
+            {hospital.link}
+            {hospital.address}
+          </div>
         ))}
       </table>
+      <table>
+        {props.socials.map((social) => (
+          <div>
+            <h2>{social.name}</h2>
+            {social.link}
+            {social.address}
+          </div>
+        ))}
+      </table>
+      <table>
+        {props.lawyers.map((lawyer) => (
+          <div>
+            <h2>{lawyer.name}</h2>
+            {lawyer.contact_info}
+            {lawyer.specification}
+          </div>
+        ))}
+      </table>
+      <div>
+        {props.legalization.map((element) => (
+          <p>{element.description}</p>
+        ))}
+      </div>
 
       <div className="carouselCard">
         <Carousel data={slides} className="generalCarousel" />

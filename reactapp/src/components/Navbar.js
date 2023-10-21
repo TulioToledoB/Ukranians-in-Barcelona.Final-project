@@ -45,7 +45,11 @@ function NavBar(props) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={props.onAreasClick}>
+              <a
+                className="nav-link"
+                href="#"
+                onClick={props.onLegalizationClick}
+              >
                 Legalization in Spain
               </a>
             </li>
