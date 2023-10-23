@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import "./Logo.css";
-import logoapp from "./unnamed-removebg-preview.png"
+import logoapp from "./logo.png";
 
 function Logo() {
   return (
