@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.listen(5000, function () {
 const { Pool } = require("pg");
 
 const pool = new Pool({
-  user: "elena",
+  user: "",
   host: "localhost",
   database: "ukranians_in_barcelona",
   password: "elena1234",
@@ -52,7 +53,19 @@ app.get("/events", function (req, res) {
 });
 
 app.get("/legalization", function (req, res) {
-  pool.query("SELECT * FROM legalization", (error, result) => {
+  pool.query("SELECT * FROM legalize_in_spain", (error, result) => {
+    res.json(result.rows);
+  });
+});
+
+app.get("/legalization", function (req, res) {
+  pool.query("SELECT * FROM legalize_in_spain", (error, result) => {
+    res.json(result.rows);
+  });
+});
+
+app.get("/police_stations", function (req, res) {
+  pool.query("SELECT * FROM police_stations", (error, result) => {
     res.json(result.rows);
   });
 });

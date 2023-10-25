@@ -11,6 +11,7 @@ function App() {
   const [areas, setAreas] = useState([]);
   const [socials, setSocials] = useState([]);
   const [lawyers, setLawyers] = useState([]);
+  const [police, setPolice] = useState([]);
   const [legalization, setLegalization] = useState([]);
 
   function fetchHospitals() {
@@ -45,6 +46,14 @@ function App() {
         console.log(data);
       });
   }
+  function fetchPolice() {
+    fetch("http://localhost:5000/lawyers")
+      .then((response) => response.json())
+      .then((data) => {
+        setPolice(data);
+        console.log(data);
+      });
+  }
   function fetchLegalization() {
     fetch("http://localhost:5000/legalization")
       .then((response) => response.json())
@@ -61,6 +70,7 @@ function App() {
         onHospitalsClick={fetchHospitals}
         onLawyersClick={fetchLawyers}
         onLegalizationClick={fetchLegalization}
+        onPoliceClick={fetchPolice}
       />
       <Image />
       <TextComponent /> {/* Welcome to Barcelona */}
@@ -70,6 +80,7 @@ function App() {
         socials={socials}
         lawyers={lawyers}
         legalization={legalization}
+        police={police}
       />
       <Footer />
     </div>
