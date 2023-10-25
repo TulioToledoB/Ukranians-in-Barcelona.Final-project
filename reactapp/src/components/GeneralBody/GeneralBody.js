@@ -51,7 +51,10 @@ function GeneralBody(props) {
       </table>
       <div>
         {props.legalization.map((element) => (
-          <p>{element.description}</p>
+          <div>
+            <h3>{element.step}</h3>
+            <p>{element.todo}</p>
+          </div>
         ))}
       </div>
 
@@ -67,7 +70,6 @@ function GeneralBody(props) {
         {events.slice(2).map((event) => (
           <Card element={event} />
         ))}
-
       </div>
     </div>
   );

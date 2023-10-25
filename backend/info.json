@@ -1,0 +1,42 @@
+[
+    {
+    "id": 1,
+    "foto": "https://d2q8nf5aywi2aj.cloudfront.net/uploads/resize/shows/logo/420x594_1690795822.webp",
+    "name_event": "FESTIVAL FOR UKRAINE",
+    "data": "2024-01-23T23:00:00.000Z",
+    "place": "Palau Sant Jordi\nPasseig Olímpic, 5-7, Barcelona",
+    "area_id": 6
+    },
+    {
+    "id": 2,
+    "foto": "https://d2q8nf5aywi2aj.cloudfront.net/uploads/resize/shows/logo/420x594_show_mB0lU2PM_RNf3PylUSDRVPPI48JmbHCg.webp",
+    "name_event": "concert \"Help Ukraine\"",
+    "data": "2023-09-06T22:00:00.000Z",
+    "place": "Sala Parallel 62\nAv. del Paralllel, 62, Barcelona, Spain",
+    "area_id": 7
+    },
+    {
+    "id": 3,
+    "foto": "https://cdn-az.allevents.in/events4/banners/97adc6435b2ef4f5897bc6ec725e0c7675dcfb9f646248ff6ad792804e49401e-rimg-w960-h504-gmir.jpg?v=1697169554",
+    "name_event": "concert Antytila",
+    "data": "2023-11-04T23:00:00.000Z",
+    "place": "Bikini Barcelona",
+    "area_id": 9
+    },
+    {
+    "id": 4,
+    "foto": "https://avatars.mds.yandex.net/i?id=47291192f79061fc2f32d08d0937da4d-4120677-images-thumbs&n=13",
+    "name_event": "Ukranian fest",
+    "data": "2023-09-23T22:00:00.000Z",
+    "place": "Avinguda de lEstadi, 65",
+    "area_id": 6
+    },
+    {
+    "id": 5,
+    "foto": "https://picjumbo.com/wp-content/uploads/i-stand-with-ukraine-profile-picture-free-photo-2210x2210.jpg",
+    "name_event": "Stand with Ukraine",
+    "data": "2023-10-20T22:00:00.000Z",
+    "place": "calle Avenida Granada, 150",
+    "area_id": 9
+    }
+    ]
