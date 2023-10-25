@@ -1,0 +1,82 @@
+[
+{
+"id_station": 1,
+"name": "Comisaría de Policía de Barcelona Universidad",
+"place": "08008, Barcelona (Barcelona)",
+"address": "Calle Mallorca 213",
+"tel": "932903433",
+"area_id": 1
+},
+{
+"id_station": 2,
+"name": "Comisaría de Policía de Barcelona Gracia",
+"place": "08012, Barcelona (Barcelona)",
+"address": "Calle Nil Fabra 17",
+"tel": "932903481",
+"area_id": 3
+},
+{
+"id_station": 3,
+"name": "Comisaría de Policía de Barcelona Sant Martí",
+"place": "08020, Barcelona (Barcelona)",
+"address": "Rambla Guipúscoa 74",
+"tel": "932903590",
+"area_id": 8
+},
+{
+"id_station": 4,
+"name": "Comisaría de Policía de Barcelona Nou Barris",
+"place": "08042, Barcelona (Barcelona)",
+"address": "Calle Aiguablava 55",
+"tel": "932902840",
+"area_id": 9
+},
+{
+"id_station": 5,
+"name": "Dirección General de la Policía (plaza catalunya)",
+"place": "08002, Barcelona (Barcelona)",
+"address": "Plaza Catalunya 0",
+"tel": "934121899",
+"area_id": 2
+},
+{
+"id_station": 6,
+"name": "Policía Nacional - Oficina de Atención Al Turista",
+"place": "08003, Barcelona (Barcelona)",
+"address": "Vía Laietana 43",
+"tel": "932903327",
+"area_id": 2
+},
+{
+"id_station": 7,
+"name": "Comisaría de Policía de Eixemple",
+"place": "08006, Barcelona (Barcelona)",
+"address": "Calle Guadalajara 3",
+"tel": "932903021",
+"area_id": 7
+},
+{
+"id_station": 8,
+"name": "Comisaría de Policía de Sants - Montjuich",
+"place": "08014, Barcelona (Barcelona)",
+"address": "Calle Creu Coberta 104",
+"tel": "932903421",
+"area_id": 6
+},
+{
+"id_station": 9,
+"name": "Dirección General de la Policía Extranjeros",
+"place": "08006, Barcelona (Barcelona)",
+"address": "Calle Balmes 192",
+"tel": "932903123",
+"area_id": 7
+},
+{
+"id_station": 10,
+"name": "Comisaría de Policía de Horta - Guinardo",
+"place": "08025, Barcelona (Barcelona)",
+"address": "Calle Castillejos 385",
+"tel": "934464450",
+"area_id": 1
+}
+]
