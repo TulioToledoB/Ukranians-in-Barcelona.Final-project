@@ -1,0 +1,86 @@
+[
+    {
+    "id": 1,
+    "name": "Hospital Universitari General de la Vall d’Hebron",
+    "link": "http://www.vhebron.net/en/home",
+    "contacts": "Tel: 934 893 000",
+    "area_id": 1
+    },
+    {
+    "id": 2,
+    "name": "Hospital Clínic",
+    "link": "http://www.hospitalclinic.org/en",
+    "contacts": "Tel: 932 275 400",
+    "area_id": 2
+    },
+    {
+    "id": 4,
+    "name": "Hospital de la Santa Creu i Sant Pau",
+    "link": "http://www.santpau.cat/en",
+    "contacts": "Tel: 932 919 000",
+    "area_id": 1
+    },
+    {
+    "id": 3,
+    "name": "Cap Gracia",
+    "link": "https://maps.app.goo.gl/BnKP5g4FEMM7Tep16?g_st=ic",
+    "contacts": "Tel: 93 325 20 44",
+    "area_id": 3
+    },
+    {
+    "id": 5,
+    "name": "Hospital del Mar",
+    "link": "http://www.parcdesalutmar.cat/hospitals/hospital-del-mar/en_index.html",
+    "contacts": "Tel: 932 483 000",
+    "area_id": 4
+    },
+    {
+    "id": 6,
+    "name": "Cap Sants",
+    "link": "https://atencioprimariaicsbcn.wordpress.com/capsants/",
+    "contacts": "Tel: 934 915 257",
+    "area_id": 6
+    },
+    {
+    "id": 7,
+    "name": "Cap Roger de flor",
+    "link": "https://eapdretaeixample.cat/",
+    "contacts": "Tel: 935070390",
+    "area_id": 7
+    },
+    {
+    "id": 8,
+    "name": "Cap Adrià",
+    "link": "https://capadriaics.wordpress.com/",
+    "contacts": "Tel: 932413820",
+    "area_id": 8
+    },
+    {
+    "id": 9,
+    "name": "Cap Sant Martí de Provençals",
+    "link": "https://atencioprimariaicsbcn.wordpress.com/capsantmartideprovencals/",
+    "contacts": "Tel: 933070812",
+    "area_id": 9
+    },
+    {
+    "id": 10,
+    "name": "Cap Turó",
+    "link": "https://www.pedirhora.com/cap-turo-nou-barris/",
+    "contacts": "Tel: 934074055",
+    "area_id": 10
+    },
+    {
+    "id": 11,
+    "name": "Cap Sant Andreu",
+    "link": "https://atencioprimariaicsbcn.wordpress.com/capsantandreu/",
+    "contacts": "Tel: 932745490",
+    "area_id": 11
+    },
+    {
+    "id": 12,
+    "name": "Cap Les Corts",
+    "link": "http://www.capsbe.cat",
+    "contacts": "Tel: 932275590",
+    "area_id": 5
+    }
+    ]

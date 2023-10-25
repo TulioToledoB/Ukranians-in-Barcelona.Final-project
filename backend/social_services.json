@@ -1,0 +1,26 @@
+[
+    {
+    "id": 1,
+    "name": "CUESB Barcelona Social Emergency and Urgent Care Centre",
+    "link": "https://ajuntament.barcelona.cat/serveissocials/es/canal/urgencies-i-emergencies-socials",
+    "address": "Carrer Llacuna, 25 , 08005",
+    "contacts": "Tel: 900703030",
+    "area_id": 9
+    },
+    {
+    "id": 2,
+    "name": "Nova Ciutadania",
+    "link": "https://ajuntament.barcelona.cat/novaciutadania/ca/servei-datencio-immigrants-emigrants-i-refugiats-saier",
+    "address": "Carrer Tarragona, 141, 08014",
+    "contacts": "Tel: 931532800",
+    "area_id": 6
+    },
+    {
+    "id": 3,
+    "name": "Red Cross",
+    "link": "www2.cruzroja.es",
+    "address": "Avinguda Portal De L´angel, 24, 08002 Barcelona",
+    "contacts": "934816088",
+    "area_id": 7
+    }
+    ]
