@@ -2,6 +2,7 @@ import React from "react";
 import "./Logo.css";
 import logoapp from "./logo.png";
 
+
 function Logo() {
   return (
     <div className="logo">
