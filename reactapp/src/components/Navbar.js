@@ -59,7 +59,11 @@ function NavBar(props) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={props.onLawyersClick}>
+              <a
+                className="nav-link"
+                href="#"
+                onClick={props.onLawyersClick && props.onPoliceClick}
+              >
                 Lawyers & Police
               </a>
             </li>
