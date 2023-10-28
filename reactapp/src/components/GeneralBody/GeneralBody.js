@@ -3,10 +3,10 @@ import Carousel from "./Carousel";
 import "./GeneralBody.css";
 import slides from "../data/carouselData.json";
 import Card from "./Card";
-import CardsLine from "./CardsLine";
 
 function GeneralBody(props) {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState(null);
+  // const [error, setError] = useState(null);
   useEffect(() => {
     fetchEvents();
   }, []);
@@ -17,20 +17,14 @@ function GeneralBody(props) {
       .then((data) => {
         setEvents(data);
         console.log(data);
-      });
+      })
+      .catch((error) => console.log(error));
   }
-  console.log();
+
   return (
     <div className="generalBody">
-      <table>
-        {props.hospitals.map((hospital) => (
-          <div>
-            <h2>{hospital.name}</h2>
-            {hospital.link}
-            {hospital.address}
-          </div>
-        ))}
-      </table>
+      {/* {error && <h1>{JSON.stringify(error)}</h1>} */}
+
       <table>
         {props.socials.map((social) => (
           <div>
@@ -60,17 +54,21 @@ function GeneralBody(props) {
 
       <div className="carouselCard">
         <Carousel data={slides} className="generalCarousel" />
-        <div className="generalCarouselCard">
-          {events.slice(0, 2).map((event) => (
+        {events && (
+          <div className="generalCarouselCard">
+            {events.slice(0, 2).map((event) => (
+              <Card element={event} />
+            ))}
+          </div>
+        )}
+      </div>
+      {events && (
+        <div className="listOfCards">
+          {events.slice(2).map((event) => (
             <Card element={event} />
           ))}
         </div>
-      </div>
-      <div className="listOfCards">
-        {events.slice(2).map((event) => (
-          <Card element={event} />
-        ))}
-      </div>
+      )}
     </div>
   );
 }

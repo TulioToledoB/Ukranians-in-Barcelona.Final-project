@@ -3,6 +3,8 @@ import Logo from "./Logo";
 import Title from "./Title";
 import Search from "./Search";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 function NavBar(props) {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -16,9 +18,9 @@ function NavBar(props) {
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand" href="#">
           <Logo />
-        </a>
+        </Link>
         <Title />
         <button
           className="navbar-toggler"
@@ -35,49 +37,57 @@ function NavBar(props) {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
+              <Link
+                to="/social_services"
                 className="nav-link active"
                 aria-current="page"
                 href="#"
                 onClick={props.onSocialClick}
               >
                 Social Services
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/legalize"
                 className="nav-link"
                 href="#"
                 onClick={props.onLegalizationClick}
               >
                 Legalization in Spain
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={props.onHospitalsClick}>
+              <Link
+                to="/hospitals"
+                className="nav-link"
+                href="#"
+                ///onClick={props.onHospitalsClick}
+              >
                 Hospitals
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/lawyers_police"
                 className="nav-link"
                 href="#"
                 onClick={props.onLawyersClick && props.onPoliceClick}
               >
                 Lawyers & Police
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/job_offers" className="nav-link" href="#">
                 Job Offers
-              </a>
+              </Link>
             </li>
             <li
               className="nav-item dropdown"
               onMouseOver={handleMouseOver}
               onMouseLeave={handleMouseLeave}
             >
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdownMenuLink"
@@ -86,26 +96,30 @@ function NavBar(props) {
                 aria-expanded="false"
               >
                 Others
-              </a>
+              </Link>
               {showDropdown && (
                 <ul
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link
+                      to="/questions_famouses"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Question famouse
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/about_us" className="dropdown-item" href="#">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/events" className="dropdown-item" href="#">
                       Event & holidays
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               )}

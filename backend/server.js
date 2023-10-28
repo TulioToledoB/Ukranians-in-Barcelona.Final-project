@@ -15,10 +15,10 @@ app.listen(5000, function () {
 const { Pool } = require("pg");
 
 const pool = new Pool({
-  user: "",
+  user: process.env.DB_USERNAME,
   host: "localhost",
   database: "ukranians_in_barcelona",
-  password: "elena1234",
+  password: process.env.DB_PASSWORD,
   port: 5432,
 });
 
