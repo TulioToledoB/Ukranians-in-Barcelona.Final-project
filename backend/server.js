@@ -15,10 +15,10 @@ app.listen(5000, function () {
 const { Pool } = require("pg");
 
 const pool = new Pool({
-  user: "",
+  user: process.env.DB_USERNAME,
   host: "localhost",
   database: "ukranians_in_barcelona",
-  password: "elena1234",
+  password: process.env.DB_PASSWORD,
   port: 5432,
 });
 
@@ -58,14 +58,20 @@ app.get("/legalization", function (req, res) {
   });
 });
 
-app.get("/legalization", function (req, res) {
-  pool.query("SELECT * FROM legalize_in_spain", (error, result) => {
+app.get("/police_stations", function (req, res) {
+  pool.query("SELECT * FROM police_stations", (error, result) => {
     res.json(result.rows);
   });
 });
 
-app.get("/police_stations", function (req, res) {
-  pool.query("SELECT * FROM police_stations", (error, result) => {
+app.get("/jobs_offerrs", function (req, res) {
+  pool.query("SELECT * FROM job_links", (error, result) => {
+    res.json(result.rows);
+  });
+});
+
+app.get("/accommodation", function (req, res) {
+  pool.query("SELECT * FROM accommodation", (error, result) => {
     res.json(result.rows);
   });
 });

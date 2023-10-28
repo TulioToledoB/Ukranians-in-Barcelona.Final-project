@@ -1,7 +1,6 @@
-import React, {useState} from "react";
-import  "./Carousel.css";
-import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
-
+import React, { useState } from "react";
+import "./Carousel.css";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 function Carousel({ data }) {
   const [slide, setSlide] = useState(0);
@@ -23,11 +22,10 @@ function Carousel({ data }) {
             className={slide === index ? "slide" : "slide slide-hidden"}
             key={index}
           >
-            <img src={item.image} />
+            <img src={item.image} alt="" />
 
             <h3 className="textContain">There is saving place!</h3>
             <p className="textContain">You can to find what you need!</p>
-
           </div>
         );
       })}
