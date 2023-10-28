@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ListBody from "./ListBody";
 
 function Hospitals() {
   const [hospitals, setHospitals] = useState([]);
@@ -16,13 +17,7 @@ function Hospitals() {
   }, []);
   return (
     <div>
-      {hospitals.map((hospital) => (
-        <div>
-          <h2>{hospital.name}</h2>
-          {hospital.link}
-          {hospital.address}
-        </div>
-      ))}
+      <ListBody items={hospitals} />
     </div>
   );
 }

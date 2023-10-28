@@ -8,12 +8,12 @@ import TextComponent from "./components/Textcomponent";
 import { Routes, Route } from "react-router-dom";
 import Hospitals from "./components/SectorsBody/Hospitals";
 import SocialServices from "./components/SectorsBody/SocialServices";
+import Legalize from "./components/SectorsBody/Legalization_in_spain";
 
 function App() {
   const [areas, setAreas] = useState([]);
   const [lawyers, setLawyers] = useState([]);
   const [police, setPolice] = useState([]);
-  const [legalization, setLegalization] = useState([]);
 
   function fetchAreas() {
     fetch("http://localhost:5000/areas")
@@ -40,20 +40,12 @@ function App() {
         console.log(data);
       });
   }
-  function fetchLegalization() {
-    fetch("http://localhost:5000/legalization")
-      .then((response) => response.json())
-      .then((data) => {
-        setLegalization(data);
-        console.log(data);
-      });
-  }
+
   return (
     <div className="app">
       <Header
         onAreasClick={fetchAreas}
         onLawyersClick={fetchLawyers}
-        onLegalizationClick={fetchLegalization}
         onPoliceClick={fetchPolice}
       />
       <Routes>
@@ -64,17 +56,12 @@ function App() {
               <Image />
 
               <TextComponent text={"Welcome to Barcelona"} />
-              <GeneralBody
-                areas={areas}
-                lawyers={lawyers}
-                legalization={legalization}
-                police={police}
-              />
+              <GeneralBody areas={areas} lawyers={lawyers} police={police} />
             </>
           }
         />
         <Route path="/social_services" Component={SocialServices} />
-        <Route path="/legalize" Component={Image} />
+        <Route path="/legalize" Component={Legalize} />
         <Route path="/hospitals" Component={Hospitals} />
         <Route path="/lawyers_police" Component={Image} />
         <Route path="/job_offers" Component={Image} />

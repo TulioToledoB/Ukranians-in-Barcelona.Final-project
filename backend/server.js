@@ -58,14 +58,20 @@ app.get("/legalization", function (req, res) {
   });
 });
 
-app.get("/legalization", function (req, res) {
-  pool.query("SELECT * FROM legalize_in_spain", (error, result) => {
+app.get("/police_stations", function (req, res) {
+  pool.query("SELECT * FROM police_stations", (error, result) => {
     res.json(result.rows);
   });
 });
 
-app.get("/police_stations", function (req, res) {
-  pool.query("SELECT * FROM police_stations", (error, result) => {
+app.get("/jobs_offerrs", function (req, res) {
+  pool.query("SELECT * FROM job_links", (error, result) => {
+    res.json(result.rows);
+  });
+});
+
+app.get("/accommodation", function (req, res) {
+  pool.query("SELECT * FROM accommodation", (error, result) => {
     res.json(result.rows);
   });
 });

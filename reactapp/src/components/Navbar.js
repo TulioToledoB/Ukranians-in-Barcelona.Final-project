@@ -52,7 +52,7 @@ function NavBar(props) {
                 to="/legalize"
                 className="nav-link"
                 href="#"
-                onClick={props.onLegalizationClick}
+                ///onClick={props.onLegalizationClick}
               >
                 Legalization in Spain
               </Link>

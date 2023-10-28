@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ListBody from "./ListBody";
 
 function SocialServices() {
   const [socials, setSocials] = useState([]);
@@ -17,13 +18,7 @@ function SocialServices() {
 
   return (
     <div>
-      {socials.map((social) => (
-        <div>
-          <h2>{social.name}</h2>
-          {social.link}
-          {social.address}
-        </div>
-      ))}
+      <ListBody items={socials} />
     </div>
   );
 }

@@ -26,15 +26,6 @@ function GeneralBody(props) {
       {/* {error && <h1>{JSON.stringify(error)}</h1>} */}
 
       <table>
-        {props.socials.map((social) => (
-          <div>
-            <h2>{social.name}</h2>
-            {social.link}
-            {social.address}
-          </div>
-        ))}
-      </table>
-      <table>
         {props.lawyers.map((lawyer) => (
           <div>
             <h2>{lawyer.name}</h2>
@@ -43,14 +34,6 @@ function GeneralBody(props) {
           </div>
         ))}
       </table>
-      <div>
-        {props.legalization.map((element) => (
-          <div>
-            <h3>{element.step}</h3>
-            <p>{element.todo}</p>
-          </div>
-        ))}
-      </div>
 
       <div className="carouselCard">
         <Carousel data={slides} className="generalCarousel" />

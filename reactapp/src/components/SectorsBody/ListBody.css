@@ -1,0 +1,32 @@
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFE0;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    border-bottom: 3px solid gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+  }
+  .list-item:hover {
+    background-color: #B3E0FF; /* Color azul claro cuando pones el ratón sobre él */
+  }
+  .list-item:active {
+    background-color: #99C2FF; /* Un azul un poco más oscuro cuando haces clic */
+  }
+  .list-text {
+    flex: 1;
+    font-size: 16px;
+  }
