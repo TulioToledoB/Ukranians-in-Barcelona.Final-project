@@ -72,7 +72,7 @@ function NavBar(props) {
                 to="/lawyers_police"
                 className="nav-link"
                 href="#"
-                onClick={props.onLawyersClick && props.onPoliceClick}
+                ///onClick={props.onLawyersClick && props.onPoliceClick}
               >
                 Lawyers & Police
               </Link>

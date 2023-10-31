@@ -1,0 +1,8 @@
+.sectors_body{
+    display: flex;
+}
+
+.image_sectors{
+    z-index: 1;
+    width: 100%;
+}
