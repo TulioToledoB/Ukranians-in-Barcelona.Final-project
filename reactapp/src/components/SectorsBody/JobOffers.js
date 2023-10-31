@@ -2,27 +2,25 @@ import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchForm";
 import "./Sectors.css";
-import socialservices from "../imgs_interface/socialservices.jpg";
 
-function SocialServices() {
-  const [socials, setSocials] = useState([]);
+function Jobs() {
+  const [jobs, setJobs] = useState([]);
 
-  function fetchSocials() {
-    fetch("http://localhost:5000/socials_services")
+  function fetchJobs() {
+    fetch("http://localhost:5000/jobs_offerrs")
       .then((response) => response.json())
       .then((data) => {
-        setSocials(data);
+        setJobs(data);
         console.log(data);
       });
   }
   useEffect(() => {
-    fetchSocials();
+    fetchJobs();
   }, []);
-
   return (
     <div className="sectors_body">
       <div>
-        <ListBody items={socials} />
+        <ListBody items={jobs} />
       </div>
       <div>
         <SearchFile />
@@ -31,4 +29,4 @@ function SocialServices() {
   );
 }
 
-export default SocialServices;
+export default Jobs;

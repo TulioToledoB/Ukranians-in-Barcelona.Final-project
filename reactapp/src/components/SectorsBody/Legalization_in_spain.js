@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
+import SearchFile from "./SearchForm";
+import "./Sectors.css";
 
 function Legalize() {
   const [legalization, setLegalization] = useState([]);
@@ -17,8 +19,13 @@ function Legalize() {
   }, []);
 
   return (
-    <div>
-      <ListBody items={legalization} />
+    <div className="sectors_body">
+      <div>
+        <ListBody items={legalization} />
+      </div>
+      <div>
+        <SearchFile />
+      </div>
     </div>
   );
 }
