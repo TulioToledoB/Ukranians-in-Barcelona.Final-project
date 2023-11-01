@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
+import SearchFile from "./SearchForm";
+import "./Sectors.css";
 
 function Hospitals() {
   const [hospitals, setHospitals] = useState([]);
@@ -16,8 +18,13 @@ function Hospitals() {
     fetchHospitals();
   }, []);
   return (
-    <div>
-      <ListBody items={hospitals} />
+    <div className="sectors_body">
+      <div>
+        <ListBody items={hospitals} />
+      </div>
+      <div>
+        <SearchFile />
+      </div>
     </div>
   );
 }

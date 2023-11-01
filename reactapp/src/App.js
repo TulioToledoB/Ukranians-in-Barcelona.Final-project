@@ -10,6 +10,9 @@ import Hospitals from "./components/SectorsBody/Hospitals";
 import SocialServices from "./components/SectorsBody/SocialServices";
 import Legalize from "./components/SectorsBody/Legalization_in_spain";
 import AboutUs from "./components/SectorsBody/AboutUs";
+import Jobs from "./components/SectorsBody/JobOffers";
+import Events from "./components/SectorsBody/Events";
+import PoliceAndLawyers from "./components/SectorsBody/PoliceAndLawyers";
 
 function App() {
   const [areas, setAreas] = useState([]);
@@ -25,30 +28,9 @@ function App() {
       });
   }
 
-  function fetchLawyers() {
-    fetch("http://localhost:5000/lawyers")
-      .then((response) => response.json())
-      .then((data) => {
-        setLawyers(data);
-        console.log(data);
-      });
-  }
-  function fetchPolice() {
-    fetch("http://localhost:5000/lawyers")
-      .then((response) => response.json())
-      .then((data) => {
-        setPolice(data);
-        console.log(data);
-      });
-  }
-
   return (
     <div className="app">
-      <Header
-        onAreasClick={fetchAreas}
-        onLawyersClick={fetchLawyers}
-        onPoliceClick={fetchPolice}
-      />
+      <Header onAreasClick={fetchAreas} />
       <Routes>
         <Route
           path="/"
@@ -64,11 +46,14 @@ function App() {
         <Route path="/social_services" Component={SocialServices} />
         <Route path="/legalize" Component={Legalize} />
         <Route path="/hospitals" Component={Hospitals} />
-        <Route path="/lawyers_police" Component={Image} />
         <Route path="/job_offers" Component={Image} />
         <Route path="/question_famouse" Component={Image} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/events" Component={Image} />
+        <Route path="/lawyers_police" Component={PoliceAndLawyers} />
+        <Route path="/job_offers" Component={Jobs} />
+        <Route path="/questions_famouses" Component={Image} />
+        <Route path="/events" Component={Events} />
       </Routes>
       <Footer />
     </div>
