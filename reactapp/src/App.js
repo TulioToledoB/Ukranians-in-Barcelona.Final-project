@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Hospitals from "./components/SectorsBody/Hospitals";
 import SocialServices from "./components/SectorsBody/SocialServices";
 import Legalize from "./components/SectorsBody/Legalization_in_spain";
+import AboutUs from "./components/SectorsBody/AboutUs";
 
 function App() {
   const [areas, setAreas] = useState([]);
@@ -66,7 +67,7 @@ function App() {
         <Route path="/lawyers_police" Component={Image} />
         <Route path="/job_offers" Component={Image} />
         <Route path="/question_famouse" Component={Image} />
-        <Route path="/about_us" Component={Image} />
+        <Route path="/about_us" element={<AboutUs />} />
         <Route path="/events" Component={Image} />
       </Routes>
       <Footer />
