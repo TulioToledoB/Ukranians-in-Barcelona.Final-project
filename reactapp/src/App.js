@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Hospitals from "./components/SectorsBody/Hospitals";
 import SocialServices from "./components/SectorsBody/SocialServices";
 import Legalize from "./components/SectorsBody/Legalization_in_spain";
+import FamousQuestions from  "./components/SectorsBody/FamousQuestions";
 import AboutUs from "./components/SectorsBody/AboutUs";
 import Jobs from "./components/SectorsBody/JobOffers";
 import Events from "./components/SectorsBody/Events";
@@ -46,13 +47,10 @@ function App() {
         <Route path="/social_services" Component={SocialServices} />
         <Route path="/legalize" Component={Legalize} />
         <Route path="/hospitals" Component={Hospitals} />
-        <Route path="/job_offers" Component={Image} />
-        <Route path="/question_famouse" Component={Image} />
-        <Route path="/about_us" element={<AboutUs />} />
-        <Route path="/events" Component={Image} />
         <Route path="/lawyers_police" Component={PoliceAndLawyers} />
         <Route path="/job_offers" Component={Jobs} />
-        <Route path="/questions_famouses" Component={Image} />
+        <Route path="/questions_famouses" Component={FamousQuestions} />
+        <Route path="/about_us" element={<AboutUs />} />
         <Route path="/events" Component={Events} />
       </Routes>
       <Footer />
