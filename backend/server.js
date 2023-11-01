@@ -24,7 +24,13 @@ const pool = new Pool({
 
 app.get("/hospitals", function (req, res) {
   pool.query("SELECT * FROM hospitals", (error, result) => {
-    res.json(result.rows);
+    if (error) {
+      console.error("Error executing query:", error);
+      // Handle the error (e.g., send an error response to the client)
+    } else {
+      console.log("Rows:", result.rows);
+      res.json(result.rows); // Send the response to the client
+    }
   });
 });
 
