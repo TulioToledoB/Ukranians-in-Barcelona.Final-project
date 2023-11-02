@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactDOM } from "react";
 import "./card.css";
+import { Link } from "react-router-dom";
 
 function Card(props) {
   return (
@@ -9,7 +10,9 @@ function Card(props) {
         <img src={props.element.foto} width="50px" className="card-image" />
         <h3 className="card-title">{props.element.name_event}</h3>
       </div>
-      <button className="card-btn"> Read</button>
+      <Link to="/events">
+        <button className="card-btn"> Read</button>
+      </Link>
     </div>
   );
 }

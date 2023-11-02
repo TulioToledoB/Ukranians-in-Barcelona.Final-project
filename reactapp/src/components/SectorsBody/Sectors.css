@@ -1,8 +1,26 @@
 .sectors_body{
     display: flex;
+    width: 100%;
 }
-
 .image_sectors{
     z-index: 1;
     width: 100%;
+}
+.searchResult{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchResult .search_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input {
+    width: 40%;
+    margin-top: 0.5rem;
+}
+.input input{
+    width: 100%;
+    margin: 3.5rem 0;
 }
