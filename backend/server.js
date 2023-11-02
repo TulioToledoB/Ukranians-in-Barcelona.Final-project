@@ -81,3 +81,18 @@ app.get("/accommodation", function (req, res) {
     res.json(result.rows);
   });
 });
+
+app.get("/lawyers&police", function (req, res) {
+  // Use a SQL JOIN to combine data from both tables
+  const query = `
+    SELECT
+      l.* AS lawyer_info,
+      p.* AS police_station_info
+    FROM
+      lawyers l
+    JOIN
+      police_stations p
+    ON
+      l.area_id = p.area_id;
+  `;
+});
