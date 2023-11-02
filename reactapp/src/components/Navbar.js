@@ -1,20 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "./Logo";
 import Title from "./Title";
-import Search from "./Search";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function NavBar(props) {
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const handleMouseOver = () => {
-    setShowDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowDropdown(false);
-  };
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
@@ -52,7 +42,6 @@ function NavBar(props) {
                 to="/legalize"
                 className="nav-link"
                 href="#"
-                ///onClick={props.onLegalizationClick}
               >
                 Legalization in Spain
               </Link>
@@ -62,7 +51,6 @@ function NavBar(props) {
                 to="/hospitals"
                 className="nav-link"
                 href="#"
-                ///onClick={props.onHospitalsClick}
               >
                 Hospitals
               </Link>
@@ -72,7 +60,6 @@ function NavBar(props) {
                 to="/lawyers_police"
                 className="nav-link"
                 href="#"
-                ///onClick={props.onLawyersClick && props.onPoliceClick}
               >
                 Lawyers & Police
               </Link>
@@ -82,50 +69,22 @@ function NavBar(props) {
                 Job Offers
               </Link>
             </li>
-            <li
-              className="nav-item dropdown"
-              onMouseOver={handleMouseOver}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Link
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Others
+            <li className="nav-item">
+              <Link to="/questions_famouses" className="nav-link" href="#">
+                Question famouse
               </Link>
-              {showDropdown && (
-                <ul
-                  className="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <Link
-                      to="/questions_famouses"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Question famouse
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/about_us" className="dropdown-item" href="#">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/events" className="dropdown-item" href="#">
-                      Event & holidays
-                    </Link>
-                  </li>
-                </ul>
-              )}
+            </li>
+            <li className="nav-item">
+              <Link to="/about_us" className="nav-link" href="#">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/events" className="nav-link" href="#">
+                Event & holidays
+              </Link>
             </li>
           </ul>
-          <Search />
         </div>
       </div>
     </nav>

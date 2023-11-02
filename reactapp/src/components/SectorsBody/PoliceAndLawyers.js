@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchForm";
-import "./Sectors.css";
+import "./PoliceAndLawyers.css"; // Asegurándonos de importar el CSS correcto
 
 function PoliceAndLawyers() {
   const [lawyers, setLawyers] = useState([]);
@@ -29,8 +29,9 @@ function PoliceAndLawyers() {
   useEffect(() => {
     fetchPolice();
   }, []);
+
   return (
-    <div className="sectors_body">
+    <div className="police_lawyers_body"> {/* Modificando el nombre de la clase */}
       <h2>Lawyers</h2>
       <ListBody items={lawyers} />
       <h2>Police</h2>

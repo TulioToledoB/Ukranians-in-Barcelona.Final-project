@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchForm";
-import "./Sectors.css";
+import "./Legalization_in_spain.css";
 
 function Legalize() {
   const [legalization, setLegalization] = useState([]);
@@ -19,7 +19,7 @@ function Legalize() {
   }, []);
 
   return (
-    <div className="sectors_body">
+    <div className="legalization_body"> {/* Cambié la clase a "legalization_body" */}
       <div>
         <ListBody items={legalization} />
       </div>

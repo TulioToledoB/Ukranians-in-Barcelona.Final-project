@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchForm";
-import "./Sectors.css";
+import "./Events.css"; // Asegúrate de importar el CSS correcto
 
 function Events() {
   const [events, setEvents] = useState([]);
-  // const [error, setError] = useState(null);
 
   function fetchEvents() {
     fetch("http://localhost:5000/events")
@@ -14,14 +13,14 @@ function Events() {
         setEvents(data);
         console.log(data);
       });
-    //.catch((error) => console.log(error));
   }
 
   useEffect(() => {
     fetchEvents();
   }, []);
+
   return (
-    <div className="sectors_body">
+    <div className="events_body"> {/* Modificado el nombre de la clase */}
       <div>
         <ListBody items={events} />
       </div>

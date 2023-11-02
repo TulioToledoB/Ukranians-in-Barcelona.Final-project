@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchForm";
-import "./Sectors.css";
+import "./JobOffers.css";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -17,8 +17,9 @@ function Jobs() {
   useEffect(() => {
     fetchJobs();
   }, []);
+
   return (
-    <div className="sectors_body">
+    <div className="job_offers_body"> {/* Modificando el nombre de la clase */}
       <div>
         <ListBody items={jobs} />
       </div>

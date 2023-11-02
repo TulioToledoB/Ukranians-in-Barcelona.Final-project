@@ -1,0 +1,13 @@
+/* PoliceAndLawyers.css */
+
+.police_lawyers_body {
+    background-image: url('../imgs_interface/police.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}

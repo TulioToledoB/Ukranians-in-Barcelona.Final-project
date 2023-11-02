@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchForm";
-import "./Sectors.css";
+import "./Hospitals.css"; // Asegurándonos de importar el CSS correcto
 
 function Hospitals() {
   const [hospitals, setHospitals] = useState([]);
@@ -17,8 +17,9 @@ function Hospitals() {
   useEffect(() => {
     fetchHospitals();
   }, []);
+
   return (
-    <div className="sectors_body">
+    <div className="hospitals_body"> {/* Modificando el nombre de la clase */}
       <div>
         <ListBody items={hospitals} />
       </div>

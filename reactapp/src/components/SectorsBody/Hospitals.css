@@ -1,0 +1,15 @@
+/* Hospitals.css */
+
+.hospitals_body {
+    background-image: url('../imgs_interface/hospitals.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
