@@ -22,12 +22,16 @@ function Events() {
   }, []);
   return (
     <div className="events_body">
-      <h2 className="title_sectors">Events</h2>
-      <div>
-        <ListBody items={events} />
+      <div className="title_div">
+        <h2 className="title_sectors">Events</h2>
       </div>
-      <div>
-        <SearchFile />
+      <div className="allBody">
+        <div>
+          <ListBody items={events} />
+        </div>
+        <div className="searchResult">
+          <SearchFile />
+        </div>
       </div>
     </div>
   );

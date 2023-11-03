@@ -20,12 +20,16 @@ function SocialServices() {
 
   return (
     <div className="social_services_body">
-      <h2 className="title_sectors">Social services</h2>
-      <div>
-        <ListBody items={socials} />
+      <div className="title_div">
+        <h2 className="title_sectors">Social services</h2>
       </div>
-      <div>
-        <SearchFile />
+      <div className="allBody">
+        <div>
+          <ListBody items={socials} />
+        </div>
+        <div className="searchResult">
+          <SearchFile />
+        </div>
       </div>
     </div>
   );

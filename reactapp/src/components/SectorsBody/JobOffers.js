@@ -19,12 +19,16 @@ function Jobs() {
   }, []);
   return (
     <div className="job_offers_body">
-      <h2 className="title_sectors">Job offers</h2>
-      <div>
-        <ListBody items={jobs} />
+      <div className="title_div">
+        <h2 className="title_sectors">Job offers</h2>
       </div>
-      <div>
-        <SearchFile />
+      <div className="allBody">
+        <div>
+          <ListBody items={jobs} />
+        </div>
+        <div className="searchResult">
+          <SearchFile />
+        </div>
       </div>
     </div>
   );

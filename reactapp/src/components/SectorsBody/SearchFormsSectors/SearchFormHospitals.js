@@ -5,7 +5,7 @@ function SearchFile() {
   const [query, setQuery] = useState("");
   const [data, setData] = useState([]);
   const search = () => {
-    return data.filter((item) => item.name_hospitals.toLowerCase().includes(query));
+    return data.filter((item) => item.name.toLowerCase().includes(query));
   };
   useEffect(() => {
     const fetchHospitals = async () => {
@@ -17,11 +17,11 @@ function SearchFile() {
   return (
     <div className="search_body">
       <div className="inputDiv">
-      <input
-        type="text"
-        placeholder="Search..."
-        onChange={(e) => setQuery(e.target.value)}
-      />
+        <input
+          type="text"
+          placeholder="Search..."
+          onChange={(e) => setQuery(e.target.value)}
+        />
       </div>
       <CardSectorHospitals items={search(data)} />
     </div>

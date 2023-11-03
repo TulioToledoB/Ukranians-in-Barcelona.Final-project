@@ -20,12 +20,16 @@ function Legalize() {
 
   return (
     <div className="legalization_body">
-      <h2 className="title_sectors">Legalization in Spain</h2>
-      <div>
-        <ListBody items={legalization} />
+      <div className="title_div">
+        <h2 className="title_sectors">Legalization in Spain</h2>
       </div>
-      <div>
-        <SearchFile />
+      <div className="allBody">
+        <div>
+          <ListBody items={legalization} />
+        </div>
+        <div className="searchResult">
+          <SearchFile />
+        </div>
       </div>
     </div>
   );

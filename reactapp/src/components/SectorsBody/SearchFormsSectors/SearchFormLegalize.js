@@ -16,11 +16,13 @@ function SearchFile() {
   }, []);
   return (
     <div className="search_body">
-      <input
-        type="text"
-        placeholder="Search..."
-        onChange={(e) => setQuery(e.target.value)}
-      />
+      <div className="inputDiv">
+        <input
+          type="text"
+          placeholder="Search..."
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
       <CardSectorLegalize items={search(data)} />
     </div>
   );

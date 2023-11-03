@@ -31,12 +31,17 @@ function PoliceAndLawyers() {
   }, []);
   return (
     <div className="police_lawyers_body">
-      <h2 className="title_sectors">Lawyers</h2>
-      <ListBody items={lawyers} />
-      <h2 className="title_sectors">Police</h2>
-      <ListBody items={police} />
-      <div>
-        <SearchFile />
+      <div className="title_div">
+        <h2 className="title_sectors">Lawyers and Police</h2>
+      </div>
+      <div className="allBody">
+        <div>
+          <ListBody items={lawyers} />
+          <ListBody items={police} />
+        </div>
+        <div className="searchResult">
+          <SearchFile />
+        </div>
       </div>
     </div>
   );
