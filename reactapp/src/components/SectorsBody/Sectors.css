@@ -74,6 +74,15 @@
     align-items: center;
     padding: 20px;
 }
+
+.title_sectors {
+    font-family: 'Times New Roman', serif;
+    font-size: 70px;
+  font-weight: 600;
+  color: #27278a;
+  text-shadow: 0px 0px 5px #9a969e, 0px 0px 10px #ffffff, 0px 0px 10px #ffffff,
+    0px 0px 20px #e6da37;
+}
 .searchResult{
     width: 100%;
     display: flex;

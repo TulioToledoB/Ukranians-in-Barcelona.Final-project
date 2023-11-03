@@ -22,6 +22,7 @@ function Events() {
   }, []);
   return (
     <div className="events_body">
+      <h2 className="title_sectors">Events</h2>
       <div>
         <ListBody items={events} />
       </div>
