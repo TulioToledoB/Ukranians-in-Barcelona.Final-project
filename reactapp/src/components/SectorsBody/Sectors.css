@@ -1,5 +1,7 @@
+
+
 .events_body {
-    background-image: url('../imgs_interface/events&holidays.jpg');
+    background-image:  url('../imgs_interface/events&holidays.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,8 +23,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
+.allBody{
+    width: 100%;
+    display: flex;
+}
+
 .job_offers_body {
     background-image: url('../imgs_interface/joboffers.jpg');
     background-size: 100%;
@@ -75,29 +82,44 @@
     padding: 20px;
 }
 
+.title_div{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .title_sectors {
+    background-color: white;
     font-family: 'Times New Roman', serif;
     font-size: 70px;
   font-weight: 600;
-  color: #27278a;
-  text-shadow: 0px 0px 5px #9a969e, 0px 0px 10px #ffffff, 0px 0px 10px #ffffff,
-    0px 0px 20px #e6da37;
+  color: black;
 }
 .searchResult{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
+
 }
 .searchResult .search_body{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.input {
-    width: 40%;
-    margin-top: 0.5rem;
+
+.inputDiv{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  background-color: #1d5a87;
+  border-radius: 1.7rem;
 }
-.input input{
+
+input{
+    border-radius: 1rem;
     width: 100%;
-    margin: 3.5rem 0;
+    margin: 15px;
+    height: 2.5rem;
 }

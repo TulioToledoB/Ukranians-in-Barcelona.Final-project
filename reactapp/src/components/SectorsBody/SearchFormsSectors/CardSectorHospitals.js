@@ -1,5 +1,7 @@
 import React from "react";
 import "./CardSector.css";
+
+
 function CardSectorHospitals(props) {
   return (
     <div className="allCards">
@@ -12,9 +14,9 @@ function CardSectorHospitals(props) {
                 className="cardSector-image"
                 alt="#"
               />
-              <p>Name: {item.name}</p>
+              <p>Name: {item.name_hospitals}</p>
               <p>{item.contacts}</p>
-              <p>Area: {item.area_id}</p>
+              <p>Area: {item.area}</p>
               <a href={item.link}> Open the hospitals website</a>
               <button className="cardSector-btn"> Read</button>
             </div>

@@ -6,7 +6,7 @@ function ListBody(props) {
     <div className="list-container">
       {props.items.map((item, index) => (
         <div key={index} className="list-item">
-          <div className="list-text">{item.name}</div>
+          <div className="list-text">{item.name_hospitals}</div>
         </div>
       ))}
     </div>
