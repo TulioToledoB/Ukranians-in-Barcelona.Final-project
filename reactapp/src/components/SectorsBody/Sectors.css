@@ -2,6 +2,7 @@
     background-image: url('../imgs_interface/events&holidays.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top center;
     min-height: 80vh;
     display: flex;
@@ -14,6 +15,7 @@
     background-image: url('../imgs_interface/hospitals.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top center;
     min-height: 80vh;
     display: flex;
@@ -25,6 +27,7 @@
     background-image: url('../imgs_interface/joboffers.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top center;
     min-height: 80vh;
     display: flex;
@@ -37,6 +40,7 @@
     background-image: url('../imgs_interface/police.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top center;
     min-height: 100vh;
     display: flex;
@@ -49,6 +53,7 @@
     background-image: url('../imgs_interface/legalizationinspain.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top center;
     min-height: 80vh;
     display: flex;
@@ -61,6 +66,7 @@
     background-image: url('../imgs_interface/socialservices.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
     display: flex;
