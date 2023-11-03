@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
-import SearchFile from "./SearchForm";
+import SearchFile from "./SearchFormsSectors/SearchFormEvents";
 import "./Sectors.css";
 
 function Events() {
@@ -21,7 +21,8 @@ function Events() {
     fetchEvents();
   }, []);
   return (
-    <div className="sectors_body">
+    <div className="events_body">
+      <h2 className="title_sectors">Events</h2>
       <div>
         <ListBody items={events} />
       </div>

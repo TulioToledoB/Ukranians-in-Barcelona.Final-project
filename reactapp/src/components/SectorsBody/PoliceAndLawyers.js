@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
-import SearchFile from "./SearchForm";
+import SearchFile from "./SearchFormsSectors/SearchFormLawyersAndPolice";
 import "./Sectors.css";
 
 function PoliceAndLawyers() {
@@ -30,10 +30,10 @@ function PoliceAndLawyers() {
     fetchPolice();
   }, []);
   return (
-    <div className="sectors_body">
-      <h2>Lawyers</h2>
+    <div className="police_lawyers_body">
+      <h2 className="title_sectors">Lawyers</h2>
       <ListBody items={lawyers} />
-      <h2>Police</h2>
+      <h2 className="title_sectors">Police</h2>
       <ListBody items={police} />
       <div>
         <SearchFile />

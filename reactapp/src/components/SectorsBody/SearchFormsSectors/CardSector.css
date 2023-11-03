@@ -1,0 +1,49 @@
+.allCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardSector{
+    position: relative;
+    border-radius: 0.5rem;
+    border: solid 2px #1D5A87 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    padding: 5px;
+    background-color:white;
+    color: black;
+    width: 30%;
+    background-color:white;
+    color: black;
+    margin: 20px;
+}
+.cardSector-body{
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+    padding: 0px;
+}
+.cardSector-body p {
+    margin: 0;
+}
+.cardSector-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.cardSector-btn{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+.cardSector:hover{
+    transform: scale(1.02);
+    border: solid 1px;
+}
+.cardSector:hover .cardSector-btn{
+    background-color:#1d5a87 ;
+    color: rgb(255, 255, 255);
+}

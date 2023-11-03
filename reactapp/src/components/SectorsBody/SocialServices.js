@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
-import SearchFile from "./SearchForm";
+import SearchFile from "./SearchFormsSectors/SearchFormSocialSearvices";
 import "./Sectors.css";
-import socialservices from "../imgs_interface/socialservices.jpg";
 
 function SocialServices() {
   const [socials, setSocials] = useState([]);
@@ -20,7 +19,8 @@ function SocialServices() {
   }, []);
 
   return (
-    <div className="sectors_body">
+    <div className="social_services_body">
+      <h2 className="title_sectors">Social services</h2>
       <div>
         <ListBody items={socials} />
       </div>

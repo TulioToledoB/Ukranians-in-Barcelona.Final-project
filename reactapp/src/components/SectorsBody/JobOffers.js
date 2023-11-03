@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
-import SearchFile from "./SearchForm";
+import SearchFile from "./SearchFormsSectors/SearchFormJobOffers";
 import "./Sectors.css";
 
 function Jobs() {
@@ -18,7 +18,8 @@ function Jobs() {
     fetchJobs();
   }, []);
   return (
-    <div className="sectors_body">
+    <div className="job_offers_body">
+      <h2 className="title_sectors">Job offers</h2>
       <div>
         <ListBody items={jobs} />
       </div>

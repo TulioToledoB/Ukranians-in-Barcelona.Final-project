@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Table from "./TableInfo";
+import CardSectorLawyersAndPolice from "./CardSectorLawyersAndPolice";
 import axios from "axios";
 function SearchFile() {
   const [query, setQuery] = useState("");
@@ -9,7 +9,7 @@ function SearchFile() {
   };
   useEffect(() => {
     const fetchHospitals = async () => {
-      const res = await axios.get("http://localhost:5000/hospitals");
+      const res = await axios.get("http://localhost:5000/police_stations");
       setData(res.data);
     };
     fetchHospitals();
@@ -21,7 +21,7 @@ function SearchFile() {
         placeholder="Search..."
         onChange={(e) => setQuery(e.target.value)}
       />
-      <Table items={search(data)} />
+      <CardSectorLawyersAndPolice items={search(data)} />
     </div>
   );
 }

@@ -1,8 +1,103 @@
-.sectors_body{
+.events_body {
+    background-image: url('../imgs_interface/events&holidays.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-.image_sectors{
-    z-index: 1;
+.hospitals_body {
+    background-image: url('../imgs_interface/hospitals.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.job_offers_body {
+    background-image: url('../imgs_interface/joboffers.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.police_lawyers_body {
+    background-image: url('../imgs_interface/police.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.legalization_body {
+    background-image: url('../imgs_interface/legalizationinspain.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.social_services_body {
+    background-image: url('../imgs_interface/socialservices.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title_sectors {
+    font-family: 'Times New Roman', serif;
+    font-size: 70px;
+  font-weight: 600;
+  color: #27278a;
+  text-shadow: 0px 0px 5px #9a969e, 0px 0px 10px #ffffff, 0px 0px 10px #ffffff,
+    0px 0px 20px #e6da37;
+}
+.searchResult{
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchResult .search_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input {
+    width: 40%;
+    margin-top: 0.5rem;
+}
+.input input{
+    width: 100%;
+    margin: 3.5rem 0;
 }
