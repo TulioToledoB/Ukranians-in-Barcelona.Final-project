@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
 import Title from "./Title";
-import Search from "./Search";
+//import Search from "./Search";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+
 
 function NavBar(props) {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -121,11 +122,18 @@ function NavBar(props) {
                       Event & holidays
                     </Link>
                   </li>
+    
                 </ul>
               )}
             </li>
+            <Link to="/signInForm" className="nav-link">
+              <button className="signInBtn">Sign In</button>
+           </Link>
+            <Link to="/signUpForm" className="nav-link">
+            <button className="signUpBtn">Sign Up</button>
+            </Link>
           </ul>
-          <Search />
+           
         </div>
       </div>
     </nav>

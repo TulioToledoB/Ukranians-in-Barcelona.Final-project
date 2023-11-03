@@ -1,0 +1,77 @@
+.form {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.ccontainer {
+  padding: 50px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+label {
+  color: #555;
+}
+
+.container.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+.psw {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  .cancelbtn,
+  .signInbtn {
+    width: 100%;
+  }
+}

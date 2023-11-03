@@ -7,7 +7,7 @@ import "./SingleQuestion.css"
 function FamousQuestions() {
    const [questions] = useState(quest);
   return (
-    <main>
+    <main className="faqs">
       <div className="quest-container">
         <h3>FREQUENTLY ASKED QUESTIONS</h3>
         <section>

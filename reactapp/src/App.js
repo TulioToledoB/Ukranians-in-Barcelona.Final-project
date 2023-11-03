@@ -14,6 +14,8 @@ import AboutUs from "./components/SectorsBody/AboutUs";
 import Jobs from "./components/SectorsBody/JobOffers";
 import Events from "./components/SectorsBody/Events";
 import PoliceAndLawyers from "./components/SectorsBody/PoliceAndLawyers";
+import SignInForm from "./components/SignInForm";
+import SignUpForm from "./components/SignUpForm";
 
 function App() {
   const [areas, setAreas] = useState([]);
@@ -52,6 +54,8 @@ function App() {
         <Route path="/questions_famouses" Component={FamousQuestions} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/events" Component={Events} />
+        <Route path="/signInForm" Component={SignInForm} />
+        <Route path="/signUpForm" Component={SignUpForm} />
       </Routes>
       <Footer />
     </div>
