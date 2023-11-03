@@ -1,0 +1,9 @@
+    .bigCard-body{
+        background-color: white;
+        padding: 10px;
+        border-radius: 0.5rem;
+    }
+
+    img {
+        border-radius: 0.5rem;
+    }
