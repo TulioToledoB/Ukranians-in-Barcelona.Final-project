@@ -10,7 +10,7 @@ function CardSectorEvents(props) {
               <img
                 src={item.foto}
                 className="cardSector-image"
-                width="50px"
+                width="50%"
                 alt="#"
               />
               <p>{item.name}</p>

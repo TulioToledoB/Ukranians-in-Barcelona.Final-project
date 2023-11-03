@@ -18,7 +18,7 @@ function Hospitals() {
     fetchHospitals();
   }, []);
   return (
-    <div className="sectors_body">
+    <div className="hospitals_body">
       <div>
         <ListBody items={hospitals} />
       </div>

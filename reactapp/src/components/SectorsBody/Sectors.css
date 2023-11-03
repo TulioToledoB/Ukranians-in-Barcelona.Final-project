@@ -1,10 +1,72 @@
-.sectors_body{
+.events_body {
+    background-image: url('../imgs_interface/events&holidays.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 80vh;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
-.image_sectors{
-    z-index: 1;
-    width: 100%;
+
+.hospitals_body {
+    background-image: url('../imgs_interface/hospitals.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.job_offers_body {
+    background-image: url('../imgs_interface/joboffers.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.police_lawyers_body {
+    background-image: url('../imgs_interface/police.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.legalization_body {
+    background-image: url('../imgs_interface/legalizationinspain.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.social_services_body {
+    background-image: url('../imgs_interface/socialservices.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 .searchResult{
     width: 100%;
