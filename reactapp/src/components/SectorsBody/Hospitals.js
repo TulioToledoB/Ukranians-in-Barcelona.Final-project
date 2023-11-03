@@ -19,6 +19,7 @@ function Hospitals() {
   }, []);
   return (
     <div className="hospitals_body">
+      <h2 className="title_sectors">Hospitals</h2>
       <div>
         <ListBody items={hospitals} />
       </div>

@@ -20,6 +20,7 @@ function Legalize() {
 
   return (
     <div className="legalization_body">
+      <h2 className="title_sectors">Legalization in Spain</h2>
       <div>
         <ListBody items={legalization} />
       </div>
