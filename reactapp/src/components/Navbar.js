@@ -69,7 +69,14 @@ function NavBar(props) {
               <Link to="/events" className="nav-link" href="#">
                 Event & holidays
               </Link>
+
             </li>
+            <Link to="/signInForm" className="nav-link">
+              <button className="signInBtn">Sign In</button>
+           </Link>
+            <Link to="/signUpForm" className="nav-link">
+            <button className="signUpBtn">Sign Up</button>
+            </Link>
           </ul>
         </div>
       </div>

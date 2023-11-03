@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {AiOutlinePlus , AiOutlineMinus} from "react-icons/ai";
+import {AiOutlineMinus , AiOutlinePlus} from "react-icons/ai";
 
   
 const SingleQuestion = ({question,answer}) => {
@@ -9,7 +9,7 @@ const SingleQuestion = ({question,answer}) => {
       <header>
         <h4>{question}</h4>
         <button className="btn" onClick={() => setShowAnswer(!showAnswer)}>
-        {showAnswer ? <AiOutlinePlus/> : <AiOutlineMinus/>}
+        {showAnswer ? <AiOutlineMinus/> : <AiOutlinePlus/>}
         </button>
       </header>
       {showAnswer && <p className="answer">{answer}</p>}

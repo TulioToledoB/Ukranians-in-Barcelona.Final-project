@@ -1,0 +1,103 @@
+/* Add this CSS to your stylesheet or component styles */
+
+form {
+  border: 1px solid #ccc;
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.in-container {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 15px;
+}
+
+.create {
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cancelbtn {
+  width: 50%;
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  float: left;
+}
+
+.cancelbtn:hover {
+  background-color: #45a049;
+}
+
+.signupbtn {
+  width: 50%;
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.signupbtn:hover {
+  background-color: #45a049;
+}
+
+/* Styles for screens with a maximum width of 480px (small mobile devices) */
+@media screen and (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+

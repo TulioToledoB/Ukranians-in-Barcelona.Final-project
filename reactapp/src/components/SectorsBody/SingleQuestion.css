@@ -1,29 +1,32 @@
+
+
 h3{
   font-size: 2rem;
 }
 h4 {
   font-size: 1.50rem;
 }
-.answer {
-  margin-bottom: 1.25rem;
-  color: hsl(216, 11%, 9%);
-  justify-content: space-around;
-}
-main {
+
+.faqs {
+  background-image: url('./bgImage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display:flex;
   justify-content: center;
   align-items: center;
+
 }
 .quest-container {
   width: 90vw;
   margin: 3rem auto;
-  background: #fff;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   padding: 2.5rem 2rem;
-  max-width: 1400px;
+  max-width: 1200px;
   display: grid;
   gap: 2rem 4rem;
+
 }
 .quest-container h3 {
   line-height: 1.2;
@@ -34,19 +37,23 @@ main {
   margin: 0 auto;
   max-width: 1170px;
 }
+
 .questions {
+  background-color: #e9ecdd;
   padding: 1rem 2.5rem;
-  border: 1px solid #AF23AB;
+  border: 2px solid #2c089a;
   margin-bottom: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 1.50rem;
   gap: 2rem 2rem;
+  box-shadow: 0 5px 15px
 }
+
 .questions p {
-  color: hsl(209, 34%, 30%);
+  color: hsl(207, 83%, 5%);
   margin-bottom: 0;
   margin-top: 0.5rem;
-  box-shadow:  0 5px 10px rgba(0, 0, 0, 1);
 }
+
 .questions header {
   display: flex;
   justify-content: space-between;
