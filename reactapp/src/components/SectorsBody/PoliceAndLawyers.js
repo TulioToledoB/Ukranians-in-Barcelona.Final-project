@@ -30,7 +30,7 @@ function PoliceAndLawyers() {
     fetchPolice();
   }, []);
   return (
-    <div className="sectors_body">
+    <div className="police_lawyers_body">
       <ListBody items={lawyers} />
       <ListBody items={police} />
       <div>

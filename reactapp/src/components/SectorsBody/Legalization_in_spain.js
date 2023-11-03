@@ -19,7 +19,7 @@ function Legalize() {
   }, []);
 
   return (
-    <div className="sectors_body">
+    <div className="legalization_body">
       <div>
         <ListBody items={legalization} />
       </div>

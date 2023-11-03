@@ -18,7 +18,7 @@ function Jobs() {
     fetchJobs();
   }, []);
   return (
-    <div className="sectors_body">
+    <div className="job_offers_body">
       <div>
         <ListBody items={jobs} />
       </div>

@@ -21,7 +21,7 @@ function Events() {
     fetchEvents();
   }, []);
   return (
-    <div className="sectors_body">
+    <div className="events_body">
       <div>
         <ListBody items={events} />
       </div>

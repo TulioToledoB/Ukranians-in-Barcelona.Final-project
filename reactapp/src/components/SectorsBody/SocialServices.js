@@ -19,7 +19,7 @@ function SocialServices() {
   }, []);
 
   return (
-    <div className="sectors_body" id="social_services_body">
+    <div className="social_services_body">
       <div>
         <ListBody items={socials} />
       </div>
