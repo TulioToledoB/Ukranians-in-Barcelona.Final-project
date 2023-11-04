@@ -25,6 +25,7 @@
     flex-direction: column;
     margin:0px;
     padding: 0px;
+    
 }
 .cardSector-body p {
     margin: 0;
@@ -33,6 +34,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+    
 }
 .cardSector-btn{
     padding: 0.5rem;

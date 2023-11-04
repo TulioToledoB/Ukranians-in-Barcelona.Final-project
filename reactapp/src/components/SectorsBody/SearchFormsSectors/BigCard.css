@@ -2,8 +2,11 @@
         background-color: white;
         padding: 10px;
         border-radius: 0.5rem;
+        position: center;
+        
     }
 
     img {
         border-radius: 0.5rem;
     }
+

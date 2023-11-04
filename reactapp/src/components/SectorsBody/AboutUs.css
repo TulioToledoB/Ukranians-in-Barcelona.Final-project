@@ -14,7 +14,7 @@
 .text-section {
     display: inline-flex; 
     flex-direction: column;
-    background-color: #6e58fa;
+    background-color: #230cb4;
     border-radius: 25px;
     border: 5px solid rgba(0, 0, 0, 0.5);
     padding: 30px; 
