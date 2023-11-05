@@ -3,6 +3,7 @@ import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormLawyersAndPolice";
 import "./Sectors.css";
 import BigCard from "./SearchFormsSectors/BigCard";
+import "../imgs_interface/police.jpg";
 
 function PoliceAndLawyers() {
   const [lawyers, setLawyers] = useState([]);
@@ -47,7 +48,7 @@ function PoliceAndLawyers() {
         <div className="list-and-card">
           <div className="list">
             <ListBody items={lawyers} onItemClick={handleListItemClick} />
-            <ListBody items={lawyers} onItemClick={handleListItemClick} />
+            <ListBody items={police} onItemClick={handleListItemClick} />
           </div>
 
           {selectedHospital && (
@@ -55,6 +56,9 @@ function PoliceAndLawyers() {
               <BigCard
                 hospital={selectedHospital}
                 onClose={handleCloseBigCard}
+                sector={police}
+                sector1={lawyers}
+                foto={"../imgs_interface/police.jpg"}
               />
             </div>
           )}

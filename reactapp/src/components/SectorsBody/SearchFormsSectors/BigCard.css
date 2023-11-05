@@ -1,9 +1,16 @@
+    .bigCard{
+        margin: 1.5rem 14rem;
+    }
+    
     .bigCard-body{
         background-color: white;
         padding: 10px;
         border-radius: 0.5rem;
         position: center;
         
+    }
+    .bigCard-body p {
+        margin: 0;
     }
 
     img {
