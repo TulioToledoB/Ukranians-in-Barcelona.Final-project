@@ -4,6 +4,7 @@ import axios from "axios";
 function SearchFile() {
   const [query, setQuery] = useState("");
   const [data, setData] = useState([]);
+
   const search = () => {
     return data.filter((item) => item.name.toLowerCase().includes(query));
   };

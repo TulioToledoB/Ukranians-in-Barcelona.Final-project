@@ -32,7 +32,7 @@ function NavBar(props) {
                 href="#"
                 onClick={props.onSocialClick}
               >
-                Social Services
+                Socials
               </Link>
             </li>
             <li className="nav-item">
@@ -47,17 +47,17 @@ function NavBar(props) {
             </li>
             <li className="nav-item">
               <Link to="/lawyers_police" className="nav-link" href="#">
-                Lawyers & Police
+                Lawyers
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/job_offers" className="nav-link" href="#">
-                Job Offers
+                Jobs
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/questions_famouses" className="nav-link" href="#">
-                Question famouse
+                Questions
               </Link>
             </li>
             <li className="nav-item">
@@ -67,15 +67,14 @@ function NavBar(props) {
             </li>
             <li className="nav-item">
               <Link to="/events" className="nav-link" href="#">
-                Event & holidays
+                Event
               </Link>
-
             </li>
             <Link to="/signInForm" className="nav-link">
               <button className="signInBtn">Sign In</button>
-           </Link>
+            </Link>
             <Link to="/signUpForm" className="nav-link">
-            <button className="signUpBtn">Sign Up</button>
+              <button className="signUpBtn">Sign Up</button>
             </Link>
           </ul>
         </div>

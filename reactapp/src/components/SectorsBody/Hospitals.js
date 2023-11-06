@@ -6,6 +6,7 @@ import BigCard from "./SearchFormsSectors/BigCard";
 
 function Hospitals() {
   const [hospitals, setHospitals] = useState([]);
+  const [selectedHospital, setSelectedHospital] = useState(null);
 
   function fetchHospitals() {
     fetch("http://localhost:5000/hospitals")
@@ -17,18 +18,39 @@ function Hospitals() {
   useEffect(() => {
     fetchHospitals();
   }, []);
+
+  const handleListItemClick = (hospital) => {
+    setSelectedHospital(hospital);
+  };
+
+  const handleCloseBigCard = () => {
+    setSelectedHospital(null);
+  };
+
   return (
     <div className="hospitals_body">
       <div className="title_div">
-      <h2 className="title_sectors">Hospitals</h2>
+        <h2 className="title_sectors">Hospitals</h2>
       </div>
       <div className="allBody">
-      <div>
-        <ListBody items={hospitals} />
-      </div>
-      <div className="searchResult">
-        <SearchFile />
-      </div>
+        <div className="list-and-card">
+          <div className="list">
+            <ListBody items={hospitals} onItemClick={handleListItemClick} />
+          </div>
+          {selectedHospital && (
+            <div className="big-card">
+              <BigCard
+                hospital={selectedHospital}
+                onClose={handleCloseBigCard}
+              />
+            </div>
+          )}
+        </div>
+        {!selectedHospital && (
+          <div className="searchResult">
+            <SearchFile />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ function GeneralBody(props) {
       </div>
       {events && (
         <div className="listOfCards">
-          {events.slice(2).map((event) => (
+          {events.slice(2, 5).map((event) => (
             <Card element={event} />
           ))}
         </div>
