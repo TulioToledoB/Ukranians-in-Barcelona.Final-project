@@ -19,7 +19,7 @@ function PoliceAndLawyers() {
       });
   }
   function fetchPolice() {
-    fetch("http://localhost:5000/lawyers")
+    fetch("http://localhost:5000/police_stations")
       .then((response) => response.json())
       .then((data) => {
         setPolice(data);
@@ -36,6 +36,10 @@ function PoliceAndLawyers() {
     setSelectedHospital(hospital);
   };
 
+  const handleListItemClick1 = (lawyers) => {
+    setSelectedHospital(lawyers);
+  };
+
   const handleCloseBigCard = () => {
     setSelectedHospital(null);
   };
@@ -47,7 +51,7 @@ function PoliceAndLawyers() {
       <div className="allBody">
         <div className="list-and-card">
           <div className="list">
-            <ListBody items={lawyers} onItemClick={handleListItemClick} />
+            <ListBody items={lawyers} onItemClick={handleListItemClick1} />
             <ListBody items={police} onItemClick={handleListItemClick} />
           </div>
 
