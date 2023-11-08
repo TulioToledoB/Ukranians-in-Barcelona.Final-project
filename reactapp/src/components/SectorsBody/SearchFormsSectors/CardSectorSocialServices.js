@@ -15,7 +15,7 @@ function CardSectorSocialServices(props) {
               <p>Name: {item.name}</p>
               <p>{item.link}</p>
               <p>Area: {item.address}</p>
-              <a href={item.contacts}> Open the hospitals website</a>
+              <a href={item.contacts}> Open the Social Service website</a>
               <button className="cardSector-btn"> Read</button>
             </div>
           </div>

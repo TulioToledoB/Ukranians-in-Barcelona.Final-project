@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormLawyersAndPolice";
 import "./Sectors.css";
-import BigCard from "./SearchFormsSectors/BigCard";
 import "../imgs_interface/police.jpg";
+import BigCard_Lawyers from "./SearchFormsSectors/BigCard_Lawyers";
 
 function PoliceAndLawyers() {
   const [lawyers, setLawyers] = useState([]);
@@ -57,8 +57,8 @@ function PoliceAndLawyers() {
 
           {selectedHospital && (
             <div className="big-card">
-              <BigCard
-                hospital={selectedHospital}
+              <BigCard_Lawyers
+                lawyer={selectedHospital}
                 onClose={handleCloseBigCard}
                 sector={police}
                 sector1={lawyers}

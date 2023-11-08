@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormJobOffers";
 import "./Sectors.css";
-import BigCard from "./SearchFormsSectors/BigCard";
+import BigCard_Jobs from "./SearchFormsSectors/BigCard_Jobs";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -20,8 +20,8 @@ function Jobs() {
     fetchJobs();
   }, []);
 
-  const handleListItemClick = (hospital) => {
-    setSelectedHospital(hospital);
+  const handleListItemClick = (job) => {
+    setSelectedHospital(job);
   };
 
   const handleCloseBigCard = () => {
@@ -39,8 +39,8 @@ function Jobs() {
           </div>
           {selectedHospital && (
             <div className="big-card">
-              <BigCard
-                hospital={selectedHospital}
+              <BigCard_Jobs
+                Job={selectedHospital}
                 onClose={handleCloseBigCard}
               />
             </div>
