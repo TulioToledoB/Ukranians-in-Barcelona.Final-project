@@ -9,7 +9,6 @@ function BigCard_Lawyers(props) {
         <p>{props.lawyer.name}</p>
         <p>{props.lawyer.contact_info}</p>
         <p>{props.lawyer.specification}</p>
-        <a> Open in the browser</a>
         <button onClick={props.onClose}>Close</button>
       </div>
     </div>

@@ -8,10 +8,8 @@ function BigCard_Socials(props) {
         <img src={"../aboutus.jpg"} className="bigCard-image" alt="#" />
         <p>{props.social.name}</p>
         <p>{props.social.contact}</p>
-        <p>{props.social.link}</p>
         <p>{props.social.address}</p>
-        <p>{props.social.area_id}</p>
-        <a> Open in the browser</a>
+        <a href={props.social.link} >Open in the browser</a>
         <button onClick={props.onClose}>Close</button>
       </div>
     </div>

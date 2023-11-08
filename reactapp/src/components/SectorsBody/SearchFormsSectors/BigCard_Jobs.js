@@ -12,10 +12,9 @@ function BigCard_Jobs(props) {
   return (
     <div className="bigCard">
       <div className="bigCard-body">
-        <p>{props.Job.link}</p>
         <p>{props.Job.city}</p>
         <p>{props.Job.name}</p>
-        <a href="#" onClick={openInBrowser}>Open in the browser</a>
+        <a href={props.Job.link} onClick={openInBrowser}>Open in the browser</a>
         <button onClick={props.onClose}>Close</button>
       </div>
     </div>
