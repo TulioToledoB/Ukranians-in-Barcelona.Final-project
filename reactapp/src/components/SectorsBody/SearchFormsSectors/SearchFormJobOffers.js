@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Table from "./TableInfo";
+import CardSectorJobOffers from "./CardSectorJobOffers";
 import axios from "axios";
 function SearchFile() {
   const [query, setQuery] = useState("");
@@ -9,19 +9,21 @@ function SearchFile() {
   };
   useEffect(() => {
     const fetchHospitals = async () => {
-      const res = await axios.get("http://localhost:5000/hospitals");
+      const res = await axios.get("http://localhost:5000/jobs_offerrs");
       setData(res.data);
     };
     fetchHospitals();
   }, []);
   return (
     <div className="search_body">
-      <input
-        type="text"
-        placeholder="Search..."
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <Table items={search(data)} />
+      <div className="inputDiv">
+        <input
+          type="text"
+          placeholder="Search..."
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+      <CardSectorJobOffers items={search(data)} />
     </div>
   );
 }

@@ -1,8 +1,131 @@
-.sectors_body{
+
+
+.events_body {
+    background-image:  url('../imgs_interface/events&holidays.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     /* padding: 20px; */
+}
+
+.hospitals_body {
+    background-image: url('../imgs_interface/hospitals.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    
+}
+.allBody{
+    width: 100%;
     display: flex;
 }
 
-.image_sectors{
-    z-index: 1;
+.job_offers_body {
+    background-image: url('../imgs_interface/joboffers.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.police_lawyers_body {
+    background-image: url('../imgs_interface/police.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.legalization_body {
+    background-image: url('../imgs_interface/legalizationinspain.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.social_services_body {
+    background-image: url('../imgs_interface/socialservices.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.list-and-card{
+    display: flex;
+    
+}
+
+.title_div{
+    background-color: white;
+    display: flex;
     width: 100%;
+    justify-content: center;
+}
+
+.title_sectors {
+    background-color: white;
+    font-family: 'Times New Roman', serif;
+    font-size: 70px;
+  font-weight: 600;
+  color: black;
+}
+.searchResult{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+.searchResult .search_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputDiv{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  background-color: #1d5a87;
+  border-radius: 1.7rem;
+}
+
+input{
+    border-radius: 1rem;
+    width: 100%;
+    margin: 15px;
+    height: 2.5rem;
 }

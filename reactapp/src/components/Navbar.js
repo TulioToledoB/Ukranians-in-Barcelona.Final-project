@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import Title from "./Title";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
 function NavBar(props) {
   return (
     <nav className="navbar navbar-expand-lg ">
@@ -23,7 +22,6 @@ function NavBar(props) {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -34,44 +32,32 @@ function NavBar(props) {
                 href="#"
                 onClick={props.onSocialClick}
               >
-                Social Services
+                Socials
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/legalize"
-                className="nav-link"
-                href="#"
-              >
+              <Link to="/legalize" className="nav-link" href="#">
                 Legalization in Spain
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/hospitals"
-                className="nav-link"
-                href="#"
-              >
+              <Link to="/hospitals" className="nav-link" href="#">
                 Hospitals
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/lawyers_police"
-                className="nav-link"
-                href="#"
-              >
-                Lawyers & Police
+              <Link to="/lawyers_police" className="nav-link" href="#">
+                Lawyers
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/job_offers" className="nav-link" href="#">
-                Job Offers
+                Jobs
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/questions_famouses" className="nav-link" href="#">
-                Question famouse
+                Questions
               </Link>
             </li>
             <li className="nav-item">
@@ -81,14 +67,19 @@ function NavBar(props) {
             </li>
             <li className="nav-item">
               <Link to="/events" className="nav-link" href="#">
-                Event & holidays
+                Event
               </Link>
             </li>
+            <Link to="/signInForm" className="nav-link">
+              <button className="signInBtn">Sign In</button>
+            </Link>
+            <Link to="/signUpForm" className="nav-link">
+              <button className="signUpBtn">Sign Up</button>
+            </Link>
           </ul>
         </div>
       </div>
     </nav>
   );
 }
-
 export default NavBar;

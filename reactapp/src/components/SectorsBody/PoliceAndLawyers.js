@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
-import SearchFile from "./SearchForm";
-import "./PoliceAndLawyers.css"; // Asegurándonos de importar el CSS correcto
+import SearchFile from "./SearchFormsSectors/SearchFormLawyersAndPolice";
+import "./Sectors.css";
+import "../imgs_interface/police.jpg";
+import BigCard_Lawyers from "./SearchFormsSectors/BigCard_Lawyers";
 
 function PoliceAndLawyers() {
   const [lawyers, setLawyers] = useState([]);
   const [police, setPolice] = useState([]);
+  const [selectedHospital, setSelectedHospital] = useState(null);
 
   function fetchLawyers() {
     fetch("http://localhost:5000/lawyers")
@@ -16,7 +19,7 @@ function PoliceAndLawyers() {
       });
   }
   function fetchPolice() {
-    fetch("http://localhost:5000/lawyers")
+    fetch("http://localhost:5000/police_stations")
       .then((response) => response.json())
       .then((data) => {
         setPolice(data);
@@ -29,15 +32,46 @@ function PoliceAndLawyers() {
   useEffect(() => {
     fetchPolice();
   }, []);
+  const handleListItemClick = (hospital) => {
+    setSelectedHospital(hospital);
+  };
 
+  const handleListItemClick1 = (lawyers) => {
+    setSelectedHospital(lawyers);
+  };
+
+  const handleCloseBigCard = () => {
+    setSelectedHospital(null);
+  };
   return (
-    <div className="police_lawyers_body"> {/* Modificando el nombre de la clase */}
-      <h2>Lawyers</h2>
-      <ListBody items={lawyers} />
-      <h2>Police</h2>
-      <ListBody items={police} />
-      <div>
-        <SearchFile />
+    <div className="police_lawyers_body">
+      <div className="title_div">
+        <h2 className="title_sectors">Lawyers and Police</h2>
+      </div>
+      <div className="allBody">
+        <div className="list-and-card">
+          <div className="list">
+            <ListBody items={lawyers} onItemClick={handleListItemClick1} />
+            <ListBody items={police} onItemClick={handleListItemClick} />
+          </div>
+
+          {selectedHospital && (
+            <div className="big-card">
+              <BigCard_Lawyers
+                lawyer={selectedHospital}
+                onClose={handleCloseBigCard}
+                sector={police}
+                sector1={lawyers}
+                foto={"../imgs_interface/police.jpg"}
+              />
+            </div>
+          )}
+        </div>
+        {!selectedHospital && (
+          <div className="searchResult">
+            <SearchFile />
+          </div>
+        )}
       </div>
     </div>
   );
