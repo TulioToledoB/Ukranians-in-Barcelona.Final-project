@@ -3,6 +3,8 @@ import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormEvents";
 import "./Sectors.css";
 import BigCard from "./SearchFormsSectors/BigCard";
+import BigCard_Events from "./SearchFormsSectors/BigCard_Event";
+
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -23,8 +25,8 @@ function Events() {
     fetchEvents();
   }, []);
 
-  const handleListItemClick = (hospital) => {
-    setSelectedHospital(hospital);
+  const handleListItemClick = (event) => {
+    setSelectedHospital(event);
   };
 
   const handleCloseBigCard = () => {
@@ -42,8 +44,8 @@ function Events() {
           </div>
           {selectedHospital && (
             <div className="big-card">
-              <BigCard
-                hospital={selectedHospital}
+              <BigCard_Events
+                event={selectedHospital}
                 onClose={handleCloseBigCard}
               />
             </div>

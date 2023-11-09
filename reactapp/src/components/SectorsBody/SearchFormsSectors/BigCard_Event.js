@@ -1,13 +1,14 @@
 import React from "react";
 import "./BigCard.css";
 
-function BigCard(props) {
+function BigCard_Events(props) {
   return (
     <div className="bigCard">
       <div className="bigCard-body">
-        <img src={"../aboutus.jpg"} className="bigCard-image" alt="#" />
-        <p>{props.hospital.name}</p>
-        <p>Infooo</p>
+        <img src={props.event.foto} className="bigCard-image" alt="#" />
+        <p>{props.event.name}</p>
+        <p>{props.event.data}</p>
+        <p>{props.event.data}</p>
         <a> Open in the browser</a>
         <button onClick={props.onClose}>Close</button>
       </div>
@@ -15,4 +16,4 @@ function BigCard(props) {
   );
 }
 
-export default BigCard;
+export default BigCard_Events;

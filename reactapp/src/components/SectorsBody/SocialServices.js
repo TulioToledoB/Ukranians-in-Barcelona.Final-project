@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormSocialSearvices";
 import "./Sectors.css";
-import BigCard from "./SearchFormsSectors/BigCard";
+import BigCard_Socials from "./SearchFormsSectors/BigCard_Socials";
 
 function SocialServices() {
   const [socials, setSocials] = useState([]);
@@ -40,8 +40,8 @@ function SocialServices() {
           </div>
           {selectedHospital && (
             <div className="big-card">
-              <BigCard
-                hospital={selectedHospital}
+              <BigCard_Socials
+                social={selectedHospital}
                 onClose={handleCloseBigCard}
               />
             </div>
