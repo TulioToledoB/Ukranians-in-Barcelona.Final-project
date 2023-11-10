@@ -3,10 +3,24 @@
     background-color:#1d5a87 !important; 
   }
   
-  .navbar a{
-  
-    color: #fff !important;
-    font-size: 1.3rem;
+  .nav-item:hover{
+    border-bottom: 1px  #F8F617 solid;
+    transition-duration: 1s;
+  }
+
+  .navbar-collapse{
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+  }
+
+  .logoTitle{
+    display: flex;
+    align-items: center;
   }
   
   .dropdown-menu{
@@ -19,6 +33,10 @@
 
   .nav-link:hover{
     color:#F8F617 !important;
+  }
+
+  .signInUp{
+    display: flex;
   }
 
   .signInBtn{

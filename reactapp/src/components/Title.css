@@ -1,7 +1,12 @@
 /* Estilos para el título del proyecto */
 .title {
-    font-size: 48px;
-    color: white;
+  }
+
+  .titleWord{
+    font-size: 22px;
+    color:white;
+    margin: 0; 
+    font-family: 'Times New Roman', Times, serif;
   }
   
   @media (max-width:1200px){
