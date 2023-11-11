@@ -7,10 +7,12 @@ function NavBar(props) {
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
+        <div className="logoTitle">
         <Link to="/" className="navbar-brand" href="#">
           <Logo />
         </Link>
         <Title />
+        </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -70,14 +72,16 @@ function NavBar(props) {
                 Event
               </Link>
             </li>
+          </ul>
+        </div>
+            <div className="signInUp"> 
             <Link to="/signInForm" className="nav-link">
               <button className="signInBtn">Sign In</button>
             </Link>
             <Link to="/signUpForm" className="nav-link">
               <button className="signUpBtn">Sign Up</button>
             </Link>
-          </ul>
-        </div>
+            </div>
       </div>
     </nav>
   );

@@ -1,3 +1,6 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
 
 body {
   box-sizing: border-box;
@@ -15,5 +18,5 @@ code {
 }
 
 #root{
-  background-color:#005A8D ;
+  background-color:#def2ff;
 }
