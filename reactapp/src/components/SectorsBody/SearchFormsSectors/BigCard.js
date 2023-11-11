@@ -5,10 +5,15 @@ function BigCard(props) {
   return (
     <div className="bigCard">
       <div className="bigCard-body">
-        <img src={"../aboutus.jpg"} className="bigCard-image" alt="#" />
+        <img
+          src={props.hospital.foto}
+          width="100%"
+          className="bigCard-image"
+          alt="#"
+        />
         <p>{props.hospital.name}</p>
-        <p>Infooo</p>
-        <a> Open in the browser</a>
+        <p>{props.hospital.contacts}</p>
+        <a href={props.hospital.link}>Go to the web!</a>
         <button onClick={props.onClose}>Close</button>
       </div>
     </div>

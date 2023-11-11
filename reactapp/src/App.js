@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Header from "./components/Header";
 import Image from "./components/Image";
 //import TextComponent from "./components/Textcomponent"; // Importa el nuevo componente
@@ -9,15 +10,23 @@ import { Routes, Route } from "react-router-dom";
 import Hospitals from "./components/SectorsBody/Hospitals";
 import SocialServices from "./components/SectorsBody/SocialServices";
 import Legalize from "./components/SectorsBody/Legalization_in_spain";
-import FamousQuestions from  "./components/SectorsBody/FamousQuestions";
+import FamousQuestions from "./components/SectorsBody/FamousQuestions";
 import AboutUs from "./components/SectorsBody/AboutUs";
 import Jobs from "./components/SectorsBody/JobOffers";
 import Events from "./components/SectorsBody/Events";
 import PoliceAndLawyers from "./components/SectorsBody/PoliceAndLawyers";
 import SignInForm from "./components/SignInForm";
 import SignUpForm from "./components/SignUpForm";
+// import eng from "../public/locales/eng/eng.json";
+// import es from "../public/locales/es/es.json";
+// import ua from "../public/locales/ua/ua.json";
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   const [areas, setAreas] = useState([]);
   const [lawyers, setLawyers] = useState([]);
   const [police, setPolice] = useState([]);
@@ -33,7 +42,18 @@ function App() {
 
   return (
     <div className="app">
-      <Header onAreasClick={fetchAreas} />
+      <Header
+        onAreasClick={fetchAreas}
+        t={t}
+        i18n={i18n}
+        translations={
+          {
+            // eng: eng,
+            // es: es,
+            // ua: ua,
+          }
+        }
+      />
       <Routes>
         <Route
           path="/"
@@ -41,8 +61,14 @@ function App() {
             <>
               <Image />
 
-              <TextComponent text={"Welcome to Barcelona"} />
-              <GeneralBody areas={areas} lawyers={lawyers} police={police} />
+              <TextComponent text={t("titleImage")} />
+              <GeneralBody
+                areas={areas}
+                lawyers={lawyers}
+                police={police}
+                t={t}
+                i18n={i18n}
+              />
             </>
           }
         />
@@ -57,7 +83,7 @@ function App() {
         <Route path="/signInForm" Component={SignInForm} />
         <Route path="/signUpForm" Component={SignUpForm} />
       </Routes>
-      <Footer />
+      <Footer t={t} i18n={i18n} />
     </div>
   );
 }

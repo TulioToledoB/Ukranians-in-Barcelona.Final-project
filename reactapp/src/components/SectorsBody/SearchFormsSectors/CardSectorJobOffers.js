@@ -8,14 +8,17 @@ function CardSectorJobOffers(props) {
           <div className="cardSector">
             <div className="cardSector-body" key={index}>
               <img
-                src="https://offloadmedia.feverup.com/barcelonasecreta.com/wp-content/uploads/2018/11/09111333/Hospital_de_la_Santa_Creu_i_Sant_Pau_16-05-2009_13-33-12.jpg"
+                src={item.foto}
                 className="cardSector-image"
                 alt="#"
+                width="50%"
+                height="200rem"
               />
               <p>Name: {item.name}</p>
               <p>{item.city}</p>
-              <p>Area: {item.link}</p>
-              <button className="cardSector-btn"> Read</button>
+              <a href={item.link}>
+                <button className="cardSector-btn">Go to the web!</button>
+              </a>
             </div>
           </div>
         );

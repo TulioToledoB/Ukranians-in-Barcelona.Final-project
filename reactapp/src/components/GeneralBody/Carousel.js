@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Carousel.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-function Carousel({ data }) {
+function Carousel({ data, title }) {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
@@ -24,8 +24,7 @@ function Carousel({ data }) {
           >
             <img src={item.image} alt="" />
 
-            <h3 className="textContain">There is saving place!</h3>
-            <p className="textContain">You can to find what you need!</p>
+            <h3 className="textContain">{title}</h3>
           </div>
         );
       })}

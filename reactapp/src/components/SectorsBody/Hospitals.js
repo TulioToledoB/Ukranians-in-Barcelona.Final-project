@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useTransition } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormHospitals";
 import "./Sectors.css";
 import BigCard from "./SearchFormsSectors/BigCard";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18next";
 
 function Hospitals() {
   const [hospitals, setHospitals] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
+
+  const { t, i18n } = useTranslation();
 
   function fetchHospitals() {
     fetch("http://localhost:5000/hospitals")
@@ -30,7 +34,7 @@ function Hospitals() {
   return (
     <div className="hospitals_body">
       <div className="title_div">
-        <h2 className="title_sectors">Hospitals</h2>
+        <h2 className="title_sectors">{t("title_sector_hospitals")}</h2>
       </div>
       <div className="allBody">
         <div className="list-and-card">

@@ -36,11 +36,18 @@ function GeneralBody(props) {
       </table>
 
       <div className="carouselCard">
-        <Carousel data={slides} className="generalCarousel" />
+        <Carousel
+          data={slides}
+          className="generalCarousel"
+          title={props.t("homePageTitle")}
+        />
         {events && (
           <div className="generalCarouselCard">
             {events.slice(0, 2).map((event) => (
-              <Card element={event} />
+              <Card
+                element={event}
+                buttonName={props.t("littleCardsButtonEvent")}
+              />
             ))}
           </div>
         )}
@@ -48,7 +55,10 @@ function GeneralBody(props) {
       {events && (
         <div className="listOfCards">
           {events.slice(2, 5).map((event) => (
-            <Card element={event} />
+            <Card
+              element={event}
+              buttonName={props.t("littleCardsButtonEvent")}
+            />
           ))}
         </div>
       )}
