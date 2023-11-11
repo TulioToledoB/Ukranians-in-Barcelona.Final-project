@@ -19,12 +19,15 @@ function NavBar(props) {
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         <div className="logoTitle">
-        <Link to="/" className="navbar-brand" href="#">
-          <Logo />
-        </Link>
+          <Link to="/" className="navbar-brand" href="#">
+            <Logo />
+          </Link>
 
-        <Title title={t("nameOfSite")} />
-
+          <Title
+            title1={t("nameOfSite1")}
+            title2={t("nameOfSite2")}
+            title3={t("nameOfSite3")}
+          />
         </div>
 
         <button
@@ -88,39 +91,34 @@ function NavBar(props) {
             </li>
           </ul>
         </div>
-            <div className="signInUp"> 
-            <Link to="/signInForm" className="nav-link">
-              <button className="signInBtn">{t("signIn")}</button>
-            </Link>
-            <Link to="/signUpForm" className="nav-link">
-              <button className="signUpBtn">{t("signUp")}</button>
-            </Link>
-
-            <li className="nav-item dropdown">
-              <Dropdown>
-                <Dropdown.Toggle
-                  variant="secondary"
-                  id="language-dropdown"
-                ></Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item onClick={() => changeLanguage("eng")}>
-                    English
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => changeLanguage("es")}>
-                    Español
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => changeLanguage("ua")}>
-                    Українська
-                  </Dropdown.Item>
-                  {/* Add more language options as needed */}
-                </Dropdown.Menu>
-              </Dropdown>
-            </li>
-          </ul>
+        <div className="signInUp">
+          <li className="nav-item dropdown">
+            <Dropdown>
+              <Dropdown.Toggle
+                variant="secondary"
+                id="language-dropdown"
+              ></Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={() => changeLanguage("eng")}>
+                  English
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => changeLanguage("es")}>
+                  Español
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => changeLanguage("ua")}>
+                  Українська
+                </Dropdown.Item>
+                {/* Add more language options as needed */}
+              </Dropdown.Menu>
+            </Dropdown>
+          </li>
+          <Link to="/signInForm" className="nav-link">
+            <button className="signInBtn">{t("signIn")}</button>
+          </Link>
+          <Link to="/signUpForm" className="nav-link">
+            <button className="signUpBtn">{t("signUp")}</button>
+          </Link>
         </div>
-
-            </div>
-
       </div>
     </nav>
   );

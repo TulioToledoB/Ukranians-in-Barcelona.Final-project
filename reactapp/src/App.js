@@ -59,10 +59,8 @@ function App() {
           path="/"
           element={
             <>
-              <Image />
+              <Image t={t} i18n={i18n} />
 
-
-              <TextComponent text={t("titleImage")} />
               <GeneralBody
                 areas={areas}
                 lawyers={lawyers}
@@ -70,7 +68,6 @@ function App() {
                 t={t}
                 i18n={i18n}
               />
-
             </>
           }
         />

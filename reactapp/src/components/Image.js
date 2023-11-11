@@ -3,11 +3,11 @@ import image from "./imgs_interface/events&holidays.jpg";
 import "./Image.css";
 import TextComponent from "./Textcomponent";
 
-function Image() {
+function Image({ t, i18n }) {
   return (
     <div className="image">
       <img src={image} alt="header section" />
-      <TextComponent text={"Welcom To Barcelona"}/>
+      <TextComponent text={t("titleImage")} />
     </div>
   );
 }
