@@ -2,9 +2,20 @@
 .image {
   width: 100%;
   position: relative;
-  transition-duration: 3s;
+  animation: fading 2s;
 }
 
 .image img {
   width: 100%;  
+}
+
+
+@keyframes fading {
+  0% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 1
+  }
 }
