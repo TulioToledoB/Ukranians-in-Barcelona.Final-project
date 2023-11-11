@@ -1,0 +1,13 @@
+/* Events.css */
+
+.events_body {
+    background-image: url('../imgs_interface/events&holidays.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}

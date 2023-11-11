@@ -18,7 +18,6 @@ function Events() {
         setEvents(data);
         console.log(data);
       });
-    //.catch((error) => console.log(error));
   }
 
   useEffect(() => {
