@@ -1,7 +1,7 @@
 
 
 .events_body {
-    background-image:  url('../imgs_interface/events&holidays.jpg');
+    /* background-image:  url('../imgs_interface/events&holidays.jpg'); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,7 +14,7 @@
 }
 
 .hospitals_body {
-    background-image: url('../imgs_interface/hospitals.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    /* background-image: url('../imgs_interface/hospitals.jpg'); Asegúrate que esta es la ruta y nombre correctos de tu imagen */
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,7 +32,7 @@
 }
 
 .job_offers_body {
-    background-image: url('../imgs_interface/joboffers.jpg');
+    /* background-image: url('../imgs_interface/joboffers.jpg'); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -45,7 +45,7 @@
 }
 
 .police_lawyers_body {
-    background-image: url('../imgs_interface/police.jpg'); /* Asegúrate que esta es la ruta y nombre correctos de tu imagen */
+    /* background-image: url('../imgs_interface/police.jpg'); Asegúrate que esta es la ruta y nombre correctos de tu imagen */
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,7 +58,7 @@
 }
 
 .legalization_body {
-    background-image: url('../imgs_interface/legalizationinspain.jpg');
+    /* background-image: url('../imgs_interface/legalizationinspain.jpg'); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -71,7 +71,7 @@
 }
 
 .social_services_body {
-    background-image: url('../imgs_interface/socialservices.jpg');
+    /* background-image: url('../imgs_interface/socialservices.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
