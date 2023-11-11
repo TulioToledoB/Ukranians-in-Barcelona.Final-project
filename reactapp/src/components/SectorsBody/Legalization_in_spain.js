@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useTransition } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18next";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormLegalize";
 import "./Sectors.css";
-import BigCard from "./SearchFormsSectors/BigCard";
+import BigCardLegalize from "./SearchFormsSectors/BigCard";
 
 function Legalize() {
   const [legalization, setLegalization] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
+
+  const { t, i18n } = useTranslation();
 
   function fetchLegalization() {
     fetch("http://localhost:5000/legalization")
@@ -31,7 +35,7 @@ function Legalize() {
   return (
     <div className="legalization_body">
       <div className="title_div">
-        <h2 className="title_sectors">Legalization in Spain</h2>
+        <h2 className="title_sectors">{t("title_sector_legalization")}</h2>
       </div>
       <div className="allBody">
         <div className="list-and-card">
@@ -40,7 +44,8 @@ function Legalize() {
           </div>
           {selectedHospital && (
             <div className="big-card">
-              <BigCard
+              <BigCardLegalize
+                legalization={legalization}
                 hospital={selectedHospital}
                 onClose={handleCloseBigCard}
               />

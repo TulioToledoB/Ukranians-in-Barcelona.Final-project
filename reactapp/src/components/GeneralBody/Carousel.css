@@ -23,7 +23,9 @@
 }
 
 .textContain{
-    margin-left: 350px;
+ position:relative;
+ 
+ 
 }
 
 .carousel img{

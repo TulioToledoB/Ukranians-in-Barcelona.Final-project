@@ -3,10 +3,14 @@ import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormSocialSearvices";
 import "./Sectors.css";
 import BigCard_Socials from "./SearchFormsSectors/BigCard_Socials";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18next";
 
 function SocialServices() {
   const [socials, setSocials] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
+
+  const { t, i18n } = useTranslation();
 
   function fetchSocials() {
     fetch("http://localhost:5000/socials_services")
@@ -31,7 +35,7 @@ function SocialServices() {
   return (
     <div className="social_services_body">
       <div className="title_div">
-        <h2 className="title_sectors">Social services</h2>
+        <h2 className="title_sectors">{t("title_sector_socials")}</h2>
       </div>
       <div className="allBody">
         <div className="list-and-card">

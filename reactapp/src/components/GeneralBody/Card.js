@@ -11,7 +11,7 @@ function Card(props) {
         <h3 className="card-title">{props.element.name_event}</h3>
       </div>
       <Link to="/events">
-        <button className="card-btn"> Read</button>
+        <button className="card-btn"> {props.buttonName}</button>
       </Link>
     </div>
   );

@@ -5,7 +5,13 @@ function BigCard_Events(props) {
   return (
     <div className="bigCard">
       <div className="bigCard-body">
-        <img src={props.event.foto} className="bigCard-image" alt="#" />
+        <img
+          src={props.event.foto}
+          className="bigCard-image"
+          alt="#"
+          width="100%"
+          height="400rem"
+        />
         <p>{props.event.name}</p>
         <p>{props.event.data}</p>
         <p>{props.event.data}</p>

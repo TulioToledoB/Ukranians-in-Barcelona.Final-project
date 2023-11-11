@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18next";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormLawyersAndPolice";
 import "./Sectors.css";
@@ -9,6 +11,8 @@ function PoliceAndLawyers() {
   const [lawyers, setLawyers] = useState([]);
   const [police, setPolice] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
+
+  const { t, i18n } = useTranslation();
 
   function fetchLawyers() {
     fetch("http://localhost:5000/lawyers")
@@ -46,7 +50,9 @@ function PoliceAndLawyers() {
   return (
     <div className="police_lawyers_body">
       <div className="title_div">
-        <h2 className="title_sectors">Lawyers and Police</h2>
+        <h2 className="title_sectors">
+          {t("title_sector_lawyers_and_police")}
+        </h2>
       </div>
       <div className="allBody">
         <div className="list-and-card">
@@ -62,7 +68,6 @@ function PoliceAndLawyers() {
                 onClose={handleCloseBigCard}
                 sector={police}
                 sector1={lawyers}
-                foto={"../imgs_interface/police.jpg"}
               />
             </div>
           )}

@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18next";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormEvents";
 import "./Sectors.css";
-import BigCard from "./SearchFormsSectors/BigCard";
 import BigCard_Events from "./SearchFormsSectors/BigCard_Event";
-
 
 function Events() {
   const [events, setEvents] = useState([]);
   // const [error, setError] = useState(null);
   const [selectedHospital, setSelectedHospital] = useState(null);
+
+  const { t, i18n } = useTranslation();
 
   function fetchEvents() {
     fetch("http://localhost:5000/events")
@@ -34,7 +36,7 @@ function Events() {
   return (
     <div className="events_body">
       <div className="title_div">
-        <h2 className="title_sectors">Events</h2>
+        <h2 className="title_sectors">{t("title_sector_event")}</h2>
       </div>
       <div className="allBody">
         <div className="list-and-card">

@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 import Title from "./Title";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
+import i18n from "../i18next";
+
 function NavBar(props) {
+  const { t } = useTranslation();
+
+  const changeLanguage = (language) => {
+    console.log("Changing language to", language);
+    i18n.changeLanguage(language);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
@@ -11,8 +22,11 @@ function NavBar(props) {
         <Link to="/" className="navbar-brand" href="#">
           <Logo />
         </Link>
-        <Title />
+
+        <Title title={t("nameOfSite")} />
+
         </div>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -34,54 +48,79 @@ function NavBar(props) {
                 href="#"
                 onClick={props.onSocialClick}
               >
-                Socials
+                {t("socials")}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/legalize" className="nav-link" href="#">
-                Legalization in Spain
+                {t("legalization")}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/hospitals" className="nav-link" href="#">
-                Hospitals
+                {i18n.t("hospitals")}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/lawyers_police" className="nav-link" href="#">
-                Lawyers
+                {t("lawyers")}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/job_offers" className="nav-link" href="#">
-                Jobs
+                {t("jobs")}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/questions_famouses" className="nav-link" href="#">
-                Questions
+                {t("questions")}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/about_us" className="nav-link" href="#">
-                About Us
+                {t("aboutUs")}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/events" className="nav-link" href="#">
-                Event
+                {t("event")}
               </Link>
             </li>
           </ul>
         </div>
             <div className="signInUp"> 
             <Link to="/signInForm" className="nav-link">
-              <button className="signInBtn">Sign In</button>
+              <button className="signInBtn">{t("signIn")}</button>
             </Link>
             <Link to="/signUpForm" className="nav-link">
-              <button className="signUpBtn">Sign Up</button>
+              <button className="signUpBtn">{t("signUp")}</button>
             </Link>
+
+            <li className="nav-item dropdown">
+              <Dropdown>
+                <Dropdown.Toggle
+                  variant="secondary"
+                  id="language-dropdown"
+                ></Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={() => changeLanguage("eng")}>
+                    English
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => changeLanguage("es")}>
+                    Español
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => changeLanguage("ua")}>
+                    Українська
+                  </Dropdown.Item>
+                  {/* Add more language options as needed */}
+                </Dropdown.Menu>
+              </Dropdown>
+            </li>
+          </ul>
+        </div>
+
             </div>
+
       </div>
     </nav>
   );
