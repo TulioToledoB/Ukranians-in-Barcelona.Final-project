@@ -41,7 +41,7 @@ function App() {
             <>
               <Image />
 
-              <TextComponent text={"Welcome to Barcelona"} />
+              {/* <TextComponent text={"Welcome to Barcelona"} /> */}
               <GeneralBody areas={areas} lawyers={lawyers} police={police} />
             </>
           }

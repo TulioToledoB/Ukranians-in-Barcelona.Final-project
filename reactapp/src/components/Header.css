@@ -1,4 +1,6 @@
 /* Estilos para el encabezado */
+
+
 .header{
   position: sticky;
   top: 0;
@@ -7,12 +9,14 @@
 
 .navbar {
   background-color:#1d5a87 !important; 
+  /* background-image: url("./istockphoto-1318638218-640x640.png"); */
 }
 
 .navbar a{
 
   color: #fff !important;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  margin: 0rem 0.5rem;
 }
 
 .dropdown-menu{
