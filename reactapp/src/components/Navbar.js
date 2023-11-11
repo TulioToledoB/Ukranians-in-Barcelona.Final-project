@@ -18,10 +18,15 @@ function NavBar(props) {
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
+        <div className="logoTitle">
         <Link to="/" className="navbar-brand" href="#">
           <Logo />
         </Link>
+
         <Title title={t("nameOfSite")} />
+
+        </div>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -81,12 +86,16 @@ function NavBar(props) {
                 {t("event")}
               </Link>
             </li>
+          </ul>
+        </div>
+            <div className="signInUp"> 
             <Link to="/signInForm" className="nav-link">
               <button className="signInBtn">{t("signIn")}</button>
             </Link>
             <Link to="/signUpForm" className="nav-link">
               <button className="signUpBtn">{t("signUp")}</button>
             </Link>
+
             <li className="nav-item dropdown">
               <Dropdown>
                 <Dropdown.Toggle
@@ -109,6 +118,9 @@ function NavBar(props) {
             </li>
           </ul>
         </div>
+
+            </div>
+
       </div>
     </nav>
   );

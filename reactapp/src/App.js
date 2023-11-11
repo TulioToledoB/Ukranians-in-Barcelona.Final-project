@@ -61,6 +61,7 @@ function App() {
             <>
               <Image />
 
+
               <TextComponent text={t("titleImage")} />
               <GeneralBody
                 areas={areas}
@@ -69,6 +70,7 @@ function App() {
                 t={t}
                 i18n={i18n}
               />
+
             </>
           }
         />

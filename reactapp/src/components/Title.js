@@ -1,7 +1,19 @@
 import React from "react";
 import "./Title.css";
+
 function Title({ title }) {
-  return <h1 className="title">{title}</h1>;
+ 
+
+  return (<div className="title">
+
+    <h1 className="titleWord" id="ukr">{ title }</h1>
+    <h1 className="titleWord"> { title } </h1>
+    <h1 className="titleWord" id="bcn"> { title }</h1>
+
+  </div>
+
+  ) 
+
 }
 
 export default Title;

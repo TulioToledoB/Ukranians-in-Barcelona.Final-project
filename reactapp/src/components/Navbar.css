@@ -3,10 +3,24 @@
     background-color:#1d5a87 !important; 
   }
   
-  .navbar a{
-  
-    color: #fff !important;
-    font-size: 1.3rem;
+  .nav-item:hover{
+    border-bottom: 1px  #F8F617 solid;
+    transition-duration: 1s;
+  }
+
+  .navbar-collapse{
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+  }
+
+  .logoTitle{
+    display: flex;
+    align-items: center;
   }
   
   .dropdown-menu{
@@ -21,19 +35,34 @@
     color:#F8F617 !important;
   }
 
-  .signInBtn{
-    background-color: rgb(22, 60, 92);
-    color: white;
-    border-radius: 5px;   
-    padding: 10px 10px;
+  .signInUp{
+    display: flex;
   }
-  
-  .signUpBtn{
-    background-color:white;
+
+  .signInBtn{
+    background-color: white;
     color: black;
     border-radius: 5px;   
     padding: 10px 10px;
-    
+  }
+
+  .signInBtn:hover{
+    background-color: rgb(12, 48, 77);
+    color: #F8F617;
+    transition-duration: 0.2s;
+  }
+  
+  .signUpBtn{
+    background-color: white;
+    color: black;
+    border-radius: 5px;   
+    padding: 10px 10px;
+  }
+
+  .signUpBtn:hover{
+    background-color: rgb(10, 40, 65);
+    color: #F8F617;
+    transition-duration: 0.2s;
   }
   
   

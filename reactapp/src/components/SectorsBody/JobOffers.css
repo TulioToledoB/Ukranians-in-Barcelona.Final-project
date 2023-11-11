@@ -1,0 +1,12 @@
+/* JobOffers.css */
+
+.job_offers_body {
+    background-image: url('../imgs_interface/joboffers.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
