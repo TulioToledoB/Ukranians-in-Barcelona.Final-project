@@ -10,8 +10,10 @@ function FamousQuestions() {
   const { t, i18n } = useTranslation();
   return (
     <main className="faqs">
+      <div className="title_div">
+      <h3 className="title_sectors">{t("title_sector_questions")}</h3>
+      </div>
       <div className="quest-container">
-        <h3>{t("title_sector_questions")}</h3>
         <section>
           {questions.map((question) => {
             return <SingleQuestion key={question.id} {...question} />;
