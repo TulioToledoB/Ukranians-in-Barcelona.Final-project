@@ -41,7 +41,10 @@ alert("Error during signing in");
 
  return (
     <form onSubmit={handleSignIn} className="login-form">
-      <div className="container">
+      <div className="ccontainer">
+      <h1>Sign in here</h1>
+      <p className='create'>Please fill in this form to enter in your account</p>
+      <hr />
       <label htmlFor="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
 

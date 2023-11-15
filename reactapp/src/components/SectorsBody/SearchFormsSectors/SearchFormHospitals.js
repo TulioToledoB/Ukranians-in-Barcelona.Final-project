@@ -18,6 +18,7 @@ function SearchFile() {
     <div className="search_body">
       <div className="inputDiv">
         <input
+        id="inputSearch"
           type="text"
           placeholder="Search..."
           onChange={(e) => setQuery(e.target.value)}

@@ -46,7 +46,7 @@ const SignUpForm = () => {
  <form action="action_page.php" style={{ border: '1px solid #ccc' }} onSubmit={handleSignUp}>
       <div className="in-container">
         <h1>Sign up here</h1>
-        <p className='create'>Please fill in this form to create an account.</p>
+        <p className='create'>Please fill in this form to create an account</p>
         <hr />
 
         <label htmlFor="email"><b>Email</b></label>

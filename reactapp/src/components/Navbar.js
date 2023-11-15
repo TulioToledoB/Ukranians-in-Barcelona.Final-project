@@ -90,12 +90,9 @@ function NavBar(props) {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="signInUp">
-          <li className="nav-item dropdown">
+          <div className="nav-item dropdown">
             <Dropdown>
               <Dropdown.Toggle
-                variant="secondary"
                 id="language-dropdown"
               ></Dropdown.Toggle>
               <Dropdown.Menu>
@@ -111,7 +108,9 @@ function NavBar(props) {
                 {/* Add more language options as needed */}
               </Dropdown.Menu>
             </Dropdown>
-          </li>
+          </div>
+        </div>
+        <div className="signInUp">
           <Link to="/signInForm" className="nav-link">
             <button className="signInBtn">{t("signIn")}</button>
           </Link>
