@@ -17,12 +17,14 @@ import Events from "./components/SectorsBody/Events";
 import PoliceAndLawyers from "./components/SectorsBody/PoliceAndLawyers";
 import SignInForm from "./components/SignInForm";
 import SignUpForm from "./components/SignUpForm";
+import HospitalForm from "./components/componentsForms/HospitalForm";
 // import eng from "../public/locales/eng/eng.json";
 // import es from "../public/locales/es/es.json";
 // import ua from "../public/locales/ua/ua.json";
 
 function App() {
   const { t, i18n } = useTranslation();
+  const [isUserSignedIn, setIsUserSignedIn] = useState(false);
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -53,6 +55,7 @@ function App() {
             // ua: ua,
           }
         }
+        isUserSignedIn={isUserSignedIn}
       />
       <Routes>
         <Route
@@ -73,13 +76,22 @@ function App() {
         />
         <Route path="/social_services" Component={SocialServices} />
         <Route path="/legalize" Component={Legalize} />
-        <Route path="/hospitals" Component={Hospitals} />
+        <Route
+          path="/hospitals"
+          element={<Hospitals isUserSignedIn={isUserSignedIn} />}
+        />
         <Route path="/lawyers_police" Component={PoliceAndLawyers} />
         <Route path="/job_offers" Component={Jobs} />
         <Route path="/questions_famouses" Component={FamousQuestions} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/events" Component={Events} />
-        <Route path="/signInForm" Component={SignInForm} />
+
+        <Route path="/signUpForm" Component={SignUpForm} />
+        <Route
+          path="/signInForm"
+          element={<SignInForm setIsUserSignedIn={setIsUserSignedIn} />}
+        />
+        <Route path="/hospitalForm" Component={HospitalForm} />
         <Route path="/signUpForm" Component={SignUpForm} />
       </Routes>
       <Footer t={t} i18n={i18n} />

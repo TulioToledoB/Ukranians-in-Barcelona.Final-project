@@ -19,6 +19,7 @@ function FamousQuestions() {
               key={index}
               question={[
                 t(`questions.frequentlyAskedQuestions`),
+
                 t(`questions.frequentlyAskedQuestions2`),
                 t(`questions.frequentlyAskedQuestions3`),
                 t(`questions.frequentlyAskedQuestions4`),
