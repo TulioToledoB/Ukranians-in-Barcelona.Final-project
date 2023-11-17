@@ -19,6 +19,7 @@ function Hospitals() {
       .then((response) => response.json())
       .then((data) => {
         setHospitals(data);
+        console.log(data);
       });
   }
   useEffect(() => {
