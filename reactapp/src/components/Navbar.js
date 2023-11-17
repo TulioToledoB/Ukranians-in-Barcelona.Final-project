@@ -76,7 +76,7 @@ function NavBar(props) {
             </li>
             <li className="nav-item">
               <Link to="/questions_famouses" className="nav-link" href="#">
-                {t("questions")}
+                {t("questions1")}
               </Link>
             </li>
             <li className="nav-item">
@@ -112,12 +112,16 @@ function NavBar(props) {
               </Dropdown.Menu>
             </Dropdown>
           </li>
-          <Link to="/signInForm" className="nav-link">
-            <button className="signInBtn">{t("signIn")}</button>
-          </Link>
-          <Link to="/signUpForm" className="nav-link">
-            <button className="signUpBtn">{t("signUp")}</button>
-          </Link>
+          {!props.isUserSignedIn ? (
+            <>
+              <Link to="/signInForm" className="nav-link">
+                <button className="signInBtn">{t("signIn")}</button>
+              </Link>
+              <Link to="/signUpForm" className="nav-link">
+                <button className="signUpBtn">{t("signUp")}</button>
+              </Link>
+            </>
+          ) : null}
         </div>
       </div>
     </nav>

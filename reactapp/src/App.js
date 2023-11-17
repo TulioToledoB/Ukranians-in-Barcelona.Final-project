@@ -23,6 +23,7 @@ import SignUpForm from "./components/SignUpForm";
 
 function App() {
   const { t, i18n } = useTranslation();
+  const [isUserSignedIn, setIsUserSignedIn] = useState(false);
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -53,6 +54,7 @@ function App() {
             // ua: ua,
           }
         }
+        isUserSignedIn={isUserSignedIn}
       />
       <Routes>
         <Route
@@ -73,14 +75,21 @@ function App() {
         />
         <Route path="/social_services" Component={SocialServices} />
         <Route path="/legalize" Component={Legalize} />
-        <Route path="/hospitals" Component={Hospitals} />
+        <Route
+          path="/hospitals"
+          element={<Hospitals isUserSignedIn={isUserSignedIn} />}
+        />
         <Route path="/lawyers_police" Component={PoliceAndLawyers} />
         <Route path="/job_offers" Component={Jobs} />
         <Route path="/questions_famouses" Component={FamousQuestions} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/events" Component={Events} />
-        <Route path="/signInForm" Component={SignInForm} />
+
         <Route path="/signUpForm" Component={SignUpForm} />
+        <Route
+          path="/signInForm"
+          element={<SignInForm setIsUserSignedIn={setIsUserSignedIn} />}
+        />
       </Routes>
       <Footer t={t} i18n={i18n} />
     </div>

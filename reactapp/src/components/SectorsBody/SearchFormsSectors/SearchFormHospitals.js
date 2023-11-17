@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import CardSectorHospitals from "./CardSectorHospitals";
 import axios from "axios";
-function SearchFile() {
+import ButtonAddInfo from "./ButtonAddInfo";
+
+function SearchFile(props) {
   const [query, setQuery] = useState("");
   const [data, setData] = useState([]);
   const search = () => {
@@ -22,6 +24,7 @@ function SearchFile() {
           placeholder="Search..."
           onChange={(e) => setQuery(e.target.value)}
         />
+        {props.isUserSignedIn ? <ButtonAddInfo /> : null}
       </div>
       <CardSectorHospitals items={search(data)} />
     </div>
