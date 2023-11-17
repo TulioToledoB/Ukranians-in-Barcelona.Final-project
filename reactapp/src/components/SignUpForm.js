@@ -86,3 +86,8 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
+///{isUserSignedUp && <button onClick={handleButtonClick}>Your Button</button>}
+///const handleButtonClick = () => {
+
+/// alert("Button clicked!");
+///};
