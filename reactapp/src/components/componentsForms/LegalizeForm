@@ -8,6 +8,24 @@ const LegalizeForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+   
+    fetch('http://localhost:5000/legalization', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({name, todo, foto }),
+      credentials: 'include', // Include credentials for CORS
+    })
+    .then(response => response.json())
+    .then(result => {
+      console.log(result.success); // You can handle success or error messages here
+      // You might want to reset the form or perform other actions after a successful submission
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      // Handle error
+    });
   };
 
   return (
@@ -16,9 +34,9 @@ const LegalizeForm = () => {
         <h1>Legalization form</h1>
         
         <input
-          type="text"
+          type="number"
           id="name"
-          placeholder="Name"
+          placeholder="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -26,7 +44,7 @@ const LegalizeForm = () => {
         <input
           type="text"
           id="todo"
-          placeholder="Todo"
+          placeholder="todo"
           value={todo}
           onChange={(e) => setTodo(e.target.value)}
         />
@@ -34,7 +52,7 @@ const LegalizeForm = () => {
         <input
           type="text"
           id="foto"
-          placeholder="Foto"
+          placeholder="foto"
           value={foto}
           onChange={(e) => setFoto(e.target.value)}
         />

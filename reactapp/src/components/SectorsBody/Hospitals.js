@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
 
 
-function Hospitals() {
+function Hospitals(props) {
   const [hospitals, setHospitals] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
 
@@ -18,6 +18,7 @@ function Hospitals() {
       .then((response) => response.json())
       .then((data) => {
         setHospitals(data);
+        console.log(data);
       });
   }
   useEffect(() => {
@@ -35,10 +36,10 @@ function Hospitals() {
   return (
     <div className="hospitals_body">
       <div className="title_div">
-      
+
         <h2 className="title_sectors">{t("title_sector_hospitals")}</h2>
       </div>
-      <div className="allBody"> 
+      <div className="allBody">
         <div className="list-and-card">
           <div className="list">
             <ListBody items={hospitals} onItemClick={handleListItemClick} />
@@ -54,7 +55,7 @@ function Hospitals() {
         </div>
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
       </div>

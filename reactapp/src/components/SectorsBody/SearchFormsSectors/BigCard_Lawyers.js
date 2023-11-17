@@ -5,7 +5,13 @@ function BigCard_Lawyers(props) {
   return (
     <div className="bigCard">
       <div className="bigCard-body">
-        <img src={props.lawyer.foto} className="bigCard-image" alt="#" />
+        <img
+          src={props.lawyer.foto}
+          className="bigCard-image"
+          alt="#"
+          width="100%"
+          height="400rem"
+        />
         <p>{props.lawyer.name}</p>
         <p>{props.lawyer.contact_info}</p>
         <p>{props.lawyer.specification}</p>
