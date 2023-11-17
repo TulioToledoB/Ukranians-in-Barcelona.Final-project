@@ -51,3 +51,39 @@
     background-color:#0C304D ;
     color:#F8F617 ;
 }
+/* Media query para pantallas menores a 1100px */
+@media (max-width: 1400px) {
+    .allCards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; /* Distribuye el espacio alrededor de las tarjetas */
+    }
+  
+    .cardSector {
+      width: 45%; /* Ajusta el ancho para que dos tarjetas quepan en una fila */
+      min-height: 400px; /* Altura mínima para mantener la consistencia */
+      padding: 16px;
+      margin-bottom: 20px; /* Mantiene el margen inferior para separar las tarjetas verticalmente */
+      margin-left: 2.5%; /* Restablece el margen izquierdo y derecho para alinear las tarjetas de a dos */
+      margin-right: 2.5%;
+    }
+  
+    .cardSector-body p {
+      min-height: 3em; /* Espacio para dos líneas de texto */
+      margin: 0 0 0.5em; /* Ajusta el margen inferior según tus necesidades */
+    }
+  
+    .cardSector-image {
+      width: 100%; /* Usa el ancho completo de la tarjeta para la imagen */
+      height: 200px; /* Define una altura fija que sea 50% de la altura total de la tarjeta */
+      object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin perder su aspecto */
+      border-radius: 0.5rem 0.5rem 0 0; /* Redondea solo las esquinas superiores de la imagen */
+    }
+  
+    .cardSector-btn {
+      width: 100%; /* El botón ocupa el ancho completo de la tarjeta */
+      margin-top: auto; /* Asegura que el botón quede al final de la tarjeta */
+    }
+}
+
+  
