@@ -1,43 +1,40 @@
 const express = require("express");
-const bcrypt= require("bcryptjs");
-const jwt= require("jsonwebtoken");
-const cookieParser= require("cookie-parser");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-  origin: "http://localhost:3000", 
-  credentials: true, 
-})
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
 );
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
-
-
 
 const { Pool } = require("pg");
 
 const pool = new Pool({
   user: process.env.DB_USERNAME,
   host: "localhost",
-  database: "ukranians",
+  database: "ukranians_in_barcelona",
   password: process.env.DB_PASSWORD,
   port: 5432,
 });
 
-
-
 // Ruta de registro
 app.post("/register", async (req, res) => {
-  const {email, password} = req.body;
+  const { email, password } = req.body;
 
   // Validación básica de email, puedes mejorarla si es necesario
   if (!email.includes("@") || !email.includes(".")) {
-      return res.status(400).json({ error: "Invalid email address." });
+    return res.status(400).json({ error: "Invalid email address." });
   }
 
   // Generar sal y contraseña hash
@@ -45,21 +42,21 @@ app.post("/register", async (req, res) => {
   const hashedPassword = await bcrypt.hash(password, salt);
 
   try {
-      const client = await pool.connect();
-      const result = await client.query(
-          "INSERT INTO administrators (email, password) VALUES ($1, $2) RETURNING id",
-          [email, hashedPassword]
-      );
-      client.release();
+    const client = await pool.connect();
+    const result = await client.query(
+      "INSERT INTO administrators (email, password) VALUES ($1, $2) RETURNING id",
+      [email, hashedPassword]
+    );
+    client.release();
 
-      res.json({ success: true});
+    res.json({ success: true });
   } catch (err) {
-      if(err.code === "23505"){
-        return res.status(400).json({
-          error:"Email already exists"
-        });
-      }
-      res.status(500).json({ error: "Error during registration." });
+    if (err.code === "23505") {
+      return res.status(400).json({
+        error: "Email already exists",
+      });
+    }
+    res.status(500).json({ error: "Error during registration." });
   }
 });
 
@@ -69,7 +66,10 @@ app.post("/login", async (req, res) => {
 
   try {
     const client = await pool.connect();
-    const result = await client.query("SELECT * FROM administrators WHERE email = $1", [email]);
+    const result = await client.query(
+      "SELECT * FROM administrators WHERE email = $1",
+      [email]
+    );
     client.release();
 
     if (result.rows.length === 0) {
@@ -84,7 +84,9 @@ app.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Invalid password" });
     }
 
-    const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: "1h" });
+    const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {
+      expiresIn: "1h",
+    });
     res.cookie("token", token, {
       httpOnly: true,
       sameSite: "none",
@@ -95,8 +97,6 @@ app.post("/login", async (req, res) => {
     res.status(500).json({ message: "Error during login" });
   }
 });
-
-
 
 app.get("/hospitals", function (req, res) {
   pool.query("SELECT * FROM hospitals", (error, result) => {
@@ -174,10 +174,12 @@ app.post("/socials_services", async (req, res) => {
     res.json({ success: true });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Error during social services form submission." });
+    res
+      .status(500)
+      .json({ error: "Error during social services form submission." });
   }
 });
-  
+
 app.post("/lawyers", async (req, res) => {
   const { name, contact_info, area_id, specification, foto } = req.body;
 
@@ -210,10 +212,12 @@ app.post("/legalization", async (req, res) => {
     res.json({ success: true });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Error during legalizattion form submission." });
+    res
+      .status(500)
+      .json({ error: "Error during legalizattion form submission." });
   }
 });
- 
+
 app.post("/job_offers", async (req, res) => {
   const { city, link, name, foto } = req.body;
 
@@ -233,7 +237,7 @@ app.post("/job_offers", async (req, res) => {
 });
 
 app.post("/hospitals", async (req, res) => {
-  const { name, link,contacts,area_Id, foto } = req.body;
+  const { name, link, contacts, area_Id, foto } = req.body;
 
   try {
     const client = await pool.connect();
@@ -244,24 +248,26 @@ app.post("/hospitals", async (req, res) => {
     client.release();
 
     res.json({ success: true });
-  } catch (err) {    console.error(err);
+  } catch (err) {
+    console.error(err);
     res.status(500).json({ error: "Error during hospitals form submission." });
   }
 });
 
 app.post("/events", async (req, res) => {
-  const {foto, name, data, place, area_Id} = req.body;
+  const { foto, name, data, place, area_Id } = req.body;
 
   try {
     const client = await pool.connect();
     const result = await client.query(
       "INSERT INTO events (foto, name, data, place, area_Id) VALUES ($1, $2, $3, $4, $5)",
-      [foto, name, data, place, area_Id ]
+      [foto, name, data, place, area_Id]
     );
     client.release();
 
     res.json({ success: true });
-  } catch (err) {    console.error(err);
+  } catch (err) {
+    console.error(err);
     res.status(500).json({ error: "Error during events form submission." });
   }
 });
@@ -272,7 +278,9 @@ app.delete("/hospitals/:id", async (req, res) => {
 
   try {
     const client = await pool.connect();
-    const result = await client.query("DELETE FROM hospitals WHERE id = $1", [hospitalId]);
+    const result = await client.query("DELETE FROM hospitals WHERE id = $1", [
+      hospitalId,
+    ]);
     client.release();
 
     res.json({ success: true });
@@ -288,7 +296,9 @@ app.delete("/job_offers/:id", async (req, res) => {
 
   try {
     const client = await pool.connect();
-    const result = await client.query("DELETE FROM job_links WHERE id = $1", [jobId]);
+    const result = await client.query("DELETE FROM job_links WHERE id = $1", [
+      jobId,
+    ]);
     client.release();
 
     res.json({ success: true });
@@ -304,7 +314,9 @@ app.delete("/events/:id", async (req, res) => {
 
   try {
     const client = await pool.connect();
-    const result = await client.query("DELETE FROM events WHERE id = $1", [eventId]);
+    const result = await client.query("DELETE FROM events WHERE id = $1", [
+      eventId,
+    ]);
     client.release();
 
     res.json({ success: true });
@@ -319,7 +331,9 @@ app.delete("/lawyers/:id", async (req, res) => {
 
   try {
     const client = await pool.connect();
-    const result = await client.query("DELETE FROM lawyers WHERE id = $1", [lawyersId]);
+    const result = await client.query("DELETE FROM lawyers WHERE id = $1", [
+      lawyersId,
+    ]);
     client.release();
 
     res.json({ success: true });
@@ -331,10 +345,13 @@ app.delete("/lawyers/:id", async (req, res) => {
 //delete legalization
 app.delete("/legalization/:name", async (req, res) => {
   const legalizeName = parseInt(req.params.name, 10);
-  
+
   try {
     const client = await pool.connect();
-    const result = await client.query("DELETE FROM legalize_in_spain WHERE name = $1", [legalizeName]);
+    const result = await client.query(
+      "DELETE FROM legalize_in_spain WHERE name = $1",
+      [legalizeName]
+    );
     client.release();
 
     res.json({ success: true });
@@ -350,7 +367,10 @@ app.delete("/socials_services/:id", async (req, res) => {
 
   try {
     const client = await pool.connect();
-    const result = await client.query("DELETE FROM social_services WHERE id = $1", [socialId]);
+    const result = await client.query(
+      "DELETE FROM social_services WHERE id = $1",
+      [socialId]
+    );
     client.release();
 
     res.json({ success: true });
@@ -359,7 +379,6 @@ app.delete("/socials_services/:id", async (req, res) => {
     res.status(500).json({ error: "Error during social services deletion." });
   }
 });
-
 
 app.listen(5000, function () {
   console.log("Server is listening on port 5000. Ready to accept requests!");

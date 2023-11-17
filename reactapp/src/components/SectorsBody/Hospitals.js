@@ -5,8 +5,7 @@ import "./Sectors.css";
 import BigCard from "./SearchFormsSectors/BigCard";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
-import image from "/home/l0013/Desktop/MigraCode/FinalProject/Ukranians-in-Barcelona.Final-project/reactapp/src/components/SectorsBody/ddd .png"
-
+import image from "../SectorsBody/ddd .png"; ////reactapp/src/components/SectorsBody/ddd .png
 
 function Hospitals() {
   const [hospitals, setHospitals] = useState([]);
@@ -40,7 +39,7 @@ function Hospitals() {
         <img src={image}></img>
         <h2 className="title_sectors">{t("title_sector_hospitals")}</h2>
       </div>
-      <div className="allBody"> 
+      <div className="allBody">
         <div className="list-and-card">
           <div className="list">
             <ListBody items={hospitals} onItemClick={handleListItemClick} />
