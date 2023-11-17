@@ -9,7 +9,7 @@ function SearchFile() {
   };
   useEffect(() => {
     const fetchHospitals = async () => {
-      const res = await axios.get("http://localhost:5000/jobs_offerrs");
+      const res = await axios.get("http://localhost:5000/job_offers");
       setData(res.data);
     };
     fetchHospitals();

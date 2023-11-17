@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import SingleQuestion from "./SingleQuestion";
 import quest from "./quest";
 import "./SingleQuestion.css"
@@ -19,4 +19,4 @@ function FamousQuestions() {
     </main>
   )
 };
-export default FamousQuestions;
+export default FamousQuestions; */
