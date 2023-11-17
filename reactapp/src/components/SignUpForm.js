@@ -43,6 +43,8 @@ const SignUpForm = () => {
 
   return (
 
+    <div className='bodyIn'>
+
  <form action="action_page.php" style={{ border: '1px solid #ccc' }} onSubmit={handleSignUp}>
       <div className="in-container">
         <h1>Sign up here</h1>
@@ -61,6 +63,7 @@ const SignUpForm = () => {
         </div>
       </div>
     </form>
+    </div>
   );
 };
 

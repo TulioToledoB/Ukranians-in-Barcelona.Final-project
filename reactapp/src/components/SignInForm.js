@@ -40,6 +40,7 @@ alert("Error during signing in");
   };
 
  return (
+  <div className='bodyIn'>
     <form onSubmit={handleSignIn} className="login-form">
       <div className="ccontainer">
       <h1>Sign in here</h1>
@@ -58,6 +59,7 @@ alert("Error during signing in");
       
       </div>
     </form>
+  </div>
   );
   
  };

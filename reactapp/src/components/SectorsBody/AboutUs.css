@@ -14,7 +14,7 @@
 .text-section {
     display: inline-flex; 
     flex-direction: column;
-    background-color: #230cb4;
+    background-color: #DEF2FF;
     border-radius: 25px;
     border: 5px solid rgba(0, 0, 0, 0.5);
     padding: 30px; 
@@ -26,7 +26,7 @@
 }
 
 .text-section:hover {
-    background-color: #1D0E67;
+    background-color: #1d5a87  ;
     transform: scale(1.05);
 }
 
@@ -41,7 +41,7 @@
 
 .text-section p {
     font-size: 18px;
-    color: white;
+    color: black;
     line-height: 1.6;
     word-wrap: break-word; 
     max-width: 400px;
