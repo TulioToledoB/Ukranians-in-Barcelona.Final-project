@@ -5,7 +5,6 @@ import { useState } from "react";
 const SignInForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   // const  navigate = useNavigate();
   const handleSignIn = async (e) => {
     e.preventDefault();
@@ -44,9 +43,15 @@ const SignInForm = (props) => {
   return (
     <form onSubmit={handleSignIn} className="login-form">
       <div className="container">
+        <h1>Sign in here</h1>
+        <p className="create">
+          Please fill in this form to enter in your account
+        </p>
+        <hr />
         <label htmlFor="email">
           <b>Email</b>
         </label>
+
         <input
           type="text"
           placeholder="Enter Email"

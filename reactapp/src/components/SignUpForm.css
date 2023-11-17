@@ -5,7 +5,8 @@ form {
   width: 500px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: white;
+  height: 100%;
 }
 
 .in-container {
@@ -13,7 +14,11 @@ form {
 }
 
 h1 {
-  color: #333;
+  color: black;
+}
+
+.create{
+  color: black;
 }
 
 label {
@@ -28,15 +33,11 @@ input[type="password"] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid #1D5A87;
 }
 
 input[type="checkbox"] {
   margin-bottom: 15px;
-}
-
-.create {
-  color: #777;
 }
 
 a {
@@ -50,7 +51,7 @@ a {
   display: table;
 }
 
-.cancelbtn {
+/* .cancelbtn {
   width: 50%;
   background-color: #f44336;
   color: white;
@@ -59,15 +60,15 @@ a {
   border: none;
   cursor: pointer;
   float: left;
-}
+} */
 
-.cancelbtn:hover {
+/* .cancelbtn:hover {
   background-color: #45a049;
-}
+} */
 
 .signupbtn {
-  width: 50%;
-  background-color: dodgerblue;
+  width: 100%;
+  background-color: #1D5A87;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -76,9 +77,9 @@ a {
   float: right;
 }
 
-.signupbtn:hover {
+/* .signupbtn:hover {
   background-color: #45a049;
-}
+} */
 
 /* Styles for screens with a maximum width of 480px (small mobile devices) */
 @media screen and (max-width: 480px) {

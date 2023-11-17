@@ -6,7 +6,6 @@
 .cardSector{
     position: relative;
     border-radius: 0.5rem;
-    border: solid 2px #1D5A87 ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,7 +19,7 @@
 }
 
 .cardSector:hover{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .cardSector-body{
     display: flex;
@@ -39,15 +38,16 @@
     
 }
 .cardSector-btn{
+    background-color: #1D5A87;
     padding: 0.5rem;
     width: 100%;
     border-radius: 0.4rem;
 }
 .cardSector:hover{
     transform: scale(1.02);
-    border: solid 1px;
+    /* border: solid 1px; */
 }
-.cardSector:hover .cardSector-btn{
-    background-color:#1d5a87 ;
-    color: rgb(255, 255, 255);
+.cardSector-btn:hover{
+    background-color:#0C304D ;
+    color:#F8F617 ;
 }

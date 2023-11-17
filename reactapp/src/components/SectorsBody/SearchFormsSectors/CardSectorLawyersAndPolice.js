@@ -8,9 +8,11 @@ function CardSectorLawyersAndPolice(props) {
           <div className="cardSector">
             <div className="cardSector-body" key={index}>
               <img
-                src="https://offloadmedia.feverup.com/barcelonasecreta.com/wp-content/uploads/2018/11/09111333/Hospital_de_la_Santa_Creu_i_Sant_Pau_16-05-2009_13-33-12.jpg"
+                src={item.foto}
                 className="cardSector-image"
                 alt="#"
+                width="200rem"
+                height="100%"
               />
               <p>Name: {item.name}</p>
               <p>{item.place}</p>

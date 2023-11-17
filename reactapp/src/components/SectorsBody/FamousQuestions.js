@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SingleQuestion from "./SingleQuestion";
-import questions from "./quest";
+
 import "./SingleQuestion.css";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
@@ -14,11 +14,12 @@ function FamousQuestions() {
       <div className="quest-container">
         <h3>{t("title_sector_questions")}</h3>
         <section>
-          {questions.map((question) => (
+          {Array.from(Array(7).keys()).map((index) => (
             <SingleQuestion
-              key={question.id}
+              key={index}
               question={[
-                t(`questions.frequentlyAskedQuestions1`),
+                t(`questions.frequentlyAskedQuestions`),
+
                 t(`questions.frequentlyAskedQuestions2`),
                 t(`questions.frequentlyAskedQuestions3`),
                 t(`questions.frequentlyAskedQuestions4`),

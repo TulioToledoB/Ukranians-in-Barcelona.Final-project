@@ -101,6 +101,7 @@
     font-size: 70px;
   font-weight: 600;
   color: black;
+  margin: 10px;
 }
 .searchResult{
     width: 100%;
@@ -121,11 +122,12 @@
   justify-content: center;
   background-color: #1d5a87;
   border-radius: 1.7rem;
+  margin-bottom: 1rem;
 }
 
-input{
-    border-radius: 1rem;
+#inputSearch{
+    border-radius: 1.7rem;
     width: 100%;
-    margin: 15px;
+    margin: 2px;
     height: 2.5rem;
 }

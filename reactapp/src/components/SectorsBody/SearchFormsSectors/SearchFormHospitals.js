@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CardSectorHospitals from "./CardSectorHospitals";
 import axios from "axios";
 import ButtonAddInfo from "./ButtonAddInfo";
+import { Link } from "react-router-dom";
 
 function SearchFile(props) {
   const [query, setQuery] = useState("");
@@ -20,14 +21,19 @@ function SearchFile(props) {
     <div className="search_body">
       <div className="inputDiv">
         <input
+          id="inputSearch"
           type="text"
           placeholder="Search..."
           onChange={(e) => setQuery(e.target.value)}
         />
-        {props.isUserSignedIn ? <ButtonAddInfo /> : null}
       </div>
+      {props.isUserSignedIn ? <ButtonAddInfo /> : null}
       <CardSectorHospitals items={search(data)} />
     </div>
   );
 }
 export default SearchFile;
+
+///<Link to="/legalize" className="nav-link" href="#">
+///{t("legalization")}
+/// </Link>
