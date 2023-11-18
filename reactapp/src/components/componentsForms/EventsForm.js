@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./EventForm.css";
+import { useNavigate } from "react-router-dom";
 
 const EventsForm = () => {
   const [foto, setFoto] = useState("");
@@ -7,6 +8,7 @@ const EventsForm = () => {
   const [data, setData] = useState("");
   const [place, setPlace] = useState("");
   const [areaId, setAreaId] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +23,10 @@ const EventsForm = () => {
     })
       .then((response) => response.json())
       .then((result) => {
-        console.log(result.success); // You can handle success or error messages here
+        console.log(result.success);
+        alert("Succesful add info");
+
+        navigate("/events"); // You can handle success or error messages here
         // You might want to reset the form or perform other actions after a successful submission
       })
       .catch((error) => {

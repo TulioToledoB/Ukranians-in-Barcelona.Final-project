@@ -75,7 +75,12 @@
         "buttonAdminDeleteInfo":"Delete info!",
         "hospitalTitleAddInfo":"Hospitals add info!",
         "socialsTitleAddInfo":"Socials services add info!",
-        "nameBigCard":"Name"         
+        "nameBigCard":"Name",
+        "addressCards":"Address" , 
+        "callLink":"Call now",
+        "OpenWeb":"Open in the website!",
+        "cityCard":"City",
+        "dateCards":"Date"     
 
 
         

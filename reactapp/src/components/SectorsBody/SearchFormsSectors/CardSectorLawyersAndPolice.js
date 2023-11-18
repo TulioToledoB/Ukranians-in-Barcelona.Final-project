@@ -17,21 +17,34 @@ function CardSectorLawyersAndPolice(props) {
                 width="100rem"
                 height="300rem"
               />
-              <p>Name: {item.name}</p>
+              <p>
+                {t("nameBigCard")}: {item.name}
+              </p>
               <p>{item.place}</p>
-              {item.address ? <p>Area: {item.address}</p> : null}
+              {item.address ? (
+                <p>
+                  {t("addressCards")} {item.address}
+                </p>
+              ) : null}
 
-              <a href={item.tel}> Call</a>
+              <a href={`tel:${item.tel}`}>{t("callLink")}</a>
+
               <button className="cardSector-btn">
                 {t("littleCardsButtonEvent")}
               </button>
               {props.isUserSignedIn ? (
-                <button
-                  onClick={() => props.handleDelete(item.id)}
-                  className="cardSector-btn"
-                >
-                  Delete
-                </button>
+                <>
+                  <button
+                    onClick={() =>
+                      props.handleDelete(
+                        item.id,
+                        "lawyers" || "police_stations"
+                      )
+                    }
+                  >
+                    Delete
+                  </button>
+                </>
               ) : null}
             </div>
           </div>
@@ -41,3 +54,5 @@ function CardSectorLawyersAndPolice(props) {
   );
 }
 export default CardSectorLawyersAndPolice;
+
+// CardSectorLawyersAndPolice.js or wherever you are calling handleDelete

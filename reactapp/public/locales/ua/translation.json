@@ -75,7 +75,17 @@
             "buttonAdminDeleteInfo":"Видалити інфо!",
         "hospitalTitleAddInfo":"Лікарні додати інфо!",
         "socialsTitleAddInfo":"Соціальні служби додати інфо!",
-        "nameBigCard":"Name"         
+
+        "nameBigCard":"Ім'я",
+         "addressCards": "Адреса",
+       "callLink":"Зателефонуйте зараз",
+        "OpenWeb": "Відкрити на веб-сайті зараз!",
+        "cityCard":"Місто",
+        "dateCards": "Дата"    
+
+
+
+
 
 }
           

@@ -73,7 +73,17 @@
         "buttonAdminAddInfo":"Añadir información!",
         "buttonAdminDeleteInfo":"Eliminar info!" ,
         "hospitalTitleAddInfo":"Hospitales añadir info!",
-        "socialsTitleAddInfo":"Sociales servicios añadir info!" 
+        "socialsTitleAddInfo":"Sociales servicios añadir info!",
+        "nameBigCard":"Nombre",
+        "addressCards":"Direccion",
+        "callLink":"Llamar ahora",
+        "OpenWeb":"Abrir in sitio web!",
+        "cityCard":"Ciudad",
+        "dateCards":"Data"     
+
+
+
+
 
 
 
