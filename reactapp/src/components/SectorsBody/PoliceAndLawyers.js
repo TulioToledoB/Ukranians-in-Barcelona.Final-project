@@ -7,7 +7,7 @@ import "./Sectors.css";
 import "../imgs_interface/police.jpg";
 import BigCard_Lawyers from "./SearchFormsSectors/BigCard_Lawyers";
 
-function PoliceAndLawyers() {
+function PoliceAndLawyers(props) {
   const [lawyers, setLawyers] = useState([]);
   const [police, setPolice] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
@@ -74,7 +74,7 @@ function PoliceAndLawyers() {
         </div>
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
       </div>

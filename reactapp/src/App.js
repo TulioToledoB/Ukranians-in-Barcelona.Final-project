@@ -17,7 +17,12 @@ import Events from "./components/SectorsBody/Events";
 import PoliceAndLawyers from "./components/SectorsBody/PoliceAndLawyers";
 import SignInForm from "./components/SignInForm";
 import SignUpForm from "./components/SignUpForm";
+import SocialForm from "./components/componentsForms/SocialForm.js";
+import LegalizeForm from "./components/componentsForms/LegalizeForm";
 import HospitalForm from "./components/componentsForms/HospitalForm";
+import LawyersForm from "./components/componentsForms/LawyersForm";
+import JobForm from "./components/componentsForms/JobForm";
+import EventsForm from "./components/componentsForms/EventsForm";
 // import eng from "../public/locales/eng/eng.json";
 // import es from "../public/locales/es/es.json";
 // import ua from "../public/locales/ua/ua.json";
@@ -74,24 +79,48 @@ function App() {
             </>
           }
         />
-        <Route path="/social_services" Component={SocialServices} />
-        <Route path="/legalize" Component={Legalize} />
+        <Route
+          path="/social_services"
+          element={<SocialServices isUserSignedIn={isUserSignedIn} />}
+        />
+        <Route
+          path="/legalize"
+          element={<Legalize isUserSignedIn={isUserSignedIn} />}
+        />
         <Route
           path="/hospitals"
           element={<Hospitals isUserSignedIn={isUserSignedIn} />}
         />
-        <Route path="/lawyers_police" Component={PoliceAndLawyers} />
-        <Route path="/job_offers" Component={Jobs} />
-        <Route path="/questions_famouses" Component={FamousQuestions} />
+        <Route
+          path="/lawyers_police"
+          element={<PoliceAndLawyers isUserSignedIn={isUserSignedIn} />}
+        />
+        <Route
+          path="/job_offers"
+          element={<Jobs isUserSignedIn={isUserSignedIn} />}
+        />
+        <Route
+          path="/questions_famouses"
+          element={<FamousQuestions isUserSignedIn={isUserSignedIn} />}
+        />
         <Route path="/about_us" element={<AboutUs />} />
-        <Route path="/events" Component={Events} />
+        <Route
+          path="/events"
+          element={<Events isUserSignedIn={isUserSignedIn} />}
+        />
 
         <Route path="/signUpForm" Component={SignUpForm} />
         <Route
           path="/signInForm"
           element={<SignInForm setIsUserSignedIn={setIsUserSignedIn} />}
         />
-        <Route path="/hospitalForm" Component={HospitalForm} />
+        <Route path="/socialsForm" Component={SocialForm} />
+        <Route path="/LegalizeForm" Component={LegalizeForm} />
+        <Route path="/HospitalForm" Component={HospitalForm} />
+        <Route path="/LawyersForm" Component={LawyersForm} />
+        <Route path="/JobForm" Component={JobForm} />
+        <Route path="/EventsForm" Component={EventsForm} />
+
         <Route path="/signUpForm" Component={SignUpForm} />
       </Routes>
       <Footer t={t} i18n={i18n} />

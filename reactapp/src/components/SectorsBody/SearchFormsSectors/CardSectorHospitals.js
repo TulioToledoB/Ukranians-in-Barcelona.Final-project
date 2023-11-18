@@ -12,14 +12,22 @@ function CardSectorHospitals(props) {
                 src={item.foto}
                 className="cardSector-image"
                 alt="#"
-                width="50%"
-                height="200rem"
+                width="100rem%"
+                height="300rem"
               />
               <p>Name: {item.name}</p>
               <p>{item.contacts}</p>
 
               <a href={item.link}> Open the hospitals website</a>
               <button className="cardSector-btn"> Read</button>
+              {props.isUserSignedIn ? (
+                <button
+                  onClick={() => props.handleDelete(item.id)}
+                  className="cardSector-btn"
+                >
+                  Delete
+                </button>
+              ) : null}
             </div>
           </div>
         );

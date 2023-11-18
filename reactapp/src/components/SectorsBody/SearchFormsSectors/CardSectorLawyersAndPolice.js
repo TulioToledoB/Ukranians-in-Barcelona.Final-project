@@ -1,6 +1,9 @@
 import React from "react";
 import "./CardSector.css";
+import { useTranslation } from "react-i18next";
+
 function CardSectorLawyersAndPolice(props) {
+  const { t } = useTranslation();
   return (
     <div className="allCards">
       {props.items.map((item, index) => {
@@ -11,14 +14,25 @@ function CardSectorLawyersAndPolice(props) {
                 src={item.foto}
                 className="cardSector-image"
                 alt="#"
-                width="200rem"
-                height="100%"
+                width="100rem"
+                height="300rem"
               />
               <p>Name: {item.name}</p>
               <p>{item.place}</p>
-              <p>Area: {item.address}</p>
+              {item.address ? <p>Area: {item.address}</p> : null}
+
               <a href={item.tel}> Call</a>
-              <button className="cardSector-btn"> Read</button>
+              <button className="cardSector-btn">
+                {t("littleCardsButtonEvent")}
+              </button>
+              {props.isUserSignedIn ? (
+                <button
+                  onClick={() => props.handleDelete(item.id)}
+                  className="cardSector-btn"
+                >
+                  Delete
+                </button>
+              ) : null}
             </div>
           </div>
         );

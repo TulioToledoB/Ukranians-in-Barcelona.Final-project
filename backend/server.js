@@ -237,13 +237,13 @@ app.post("/job_offers", async (req, res) => {
 });
 
 app.post("/hospitals", async (req, res) => {
-  const { name, link, contacts, area_Id, foto } = req.body;
+  const { name, link, contacts, area_id, foto } = req.body;
 
   try {
     const client = await pool.connect();
     const result = await client.query(
       "INSERT INTO hospitals (name, link, contacts, area_Id, foto) VALUES ($1, $2, $3, $4, $5)",
-      [name, link, contacts, area_Id, foto]
+      [name, link, contacts, area_id, foto]
     );
     client.release();
 
