@@ -1,6 +1,10 @@
 import React from "react";
 import "./CardSector.css";
+import { useTranslation } from "react-i18next";
+
 function CardSectorJobOffers(props) {
+  const { t } = useTranslation();
+
   return (
     <div className="allCards">
       {props.items.map((item, index) => {
@@ -11,14 +15,24 @@ function CardSectorJobOffers(props) {
                 src={item.foto}
                 className="cardSector-image"
                 alt="#"
-                width="50%"
-                height="200rem"
+                width="100rem"
+                height="300rem"
               />
-              <p>Name: {item.name}</p>
+              <p>
+                {t("nameBigCard")}: {item.name}
+              </p>
               <p>{item.city}</p>
               <a href={item.link}>
-                <button className="cardSector-btn">Go to the web!</button>
+                <button className="cardSector-btn">{t("OpenWeb")}</button>
               </a>
+              {props.isUserSignedIn ? (
+                <button
+                  onClick={() => props.handleDelete(item.id)}
+                  className="cardSector-btn"
+                >
+                  Delete
+                </button>
+              ) : null}
             </div>
           </div>
         );

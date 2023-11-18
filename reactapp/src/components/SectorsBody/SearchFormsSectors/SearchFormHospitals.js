@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CardSectorHospitals from "./CardSectorHospitals";
 import axios from "axios";
-import ButtonAddInfo from "./ButtonAddInfo";
-import { Link } from "react-router-dom";
+import ButtonAddInfo from "./ButtonsAddInfoSectors/ButtonAddInfo";
 
 function SearchFile(props) {
   const [query, setQuery] = useState("");
@@ -10,11 +9,30 @@ function SearchFile(props) {
   const search = () => {
     return data.filter((item) => item.name.toLowerCase().includes(query));
   };
+
+  const fetchHospitals = async () => {
+    const res = await axios.get("http://localhost:5000/hospitals");
+    setData(res.data);
+  };
+
+  const handleDelete = (hospitalIdToDelete) => {
+    fetch(`http://localhost:5000/hospitals/${hospitalIdToDelete}`, {
+      method: "DELETE",
+      credentials: "include", // Include credentials for CORS
+    })
+      .then((response) => response.json())
+      .then(async (result) => {
+        console.log(result.success);
+        alert("success info deleted");
+        await fetchHospitals();
+        // You might want to perform other actions after a successful deletion
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        // Handle error
+      });
+  };
   useEffect(() => {
-    const fetchHospitals = async () => {
-      const res = await axios.get("http://localhost:5000/hospitals");
-      setData(res.data);
-    };
     fetchHospitals();
   }, []);
   return (
@@ -28,7 +46,11 @@ function SearchFile(props) {
         />
       </div>
       {props.isUserSignedIn ? <ButtonAddInfo /> : null}
-      <CardSectorHospitals items={search(data)} />
+      <CardSectorHospitals
+        items={search(data)}
+        isUserSignedIn={props.isUserSignedIn}
+        handleDelete={handleDelete}
+      />
     </div>
   );
 }

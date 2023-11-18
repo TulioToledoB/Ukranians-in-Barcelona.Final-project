@@ -6,7 +6,7 @@ import BigCard_Jobs from "./SearchFormsSectors/BigCard_Jobs";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
 
-function Jobs() {
+function Jobs(props) {
   const [jobs, setJobs] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
   const { t, i18n } = useTranslation();
@@ -51,7 +51,7 @@ function Jobs() {
         </div>
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
       </div>

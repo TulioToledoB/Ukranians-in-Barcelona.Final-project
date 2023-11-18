@@ -1,42 +1,51 @@
 import React, { useState } from "react";
 import "./SocialForm.css";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const SocialForm = () => {
-  const [name, setName] = useState('');
-  const [link, setLink] = useState('');
-  const [address, setAddress] = useState('');
-  const [contacts, setContact] =useState('')
-  const [areaId, setAreaId] = useState('');
-  const [foto, setFoto] = useState('');
+  const [name, setName] = useState("");
+  const [link, setLink] = useState("");
+  const [address, setAddress] = useState("");
+  const [contacts, setContact] = useState("");
+  const [areaId, setAreaId] = useState("");
+  const [foto, setFoto] = useState("");
+  const navigate = useNavigate();
+
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    fetch('http://localhost:5000/socials_services', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({name, link, address, contacts, areaId, foto}),
-      credentials: 'include', // Include credentials for CORS
-    })
-    .then(response => response.json())
-    .then(result => {
-      console.log(result.success); // You can handle success or error messages here
-      // You might want to reset the form or perform other actions after a successful submission
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      // Handle error
-    });
-  };
 
+    fetch("http://localhost:5000/socials_services", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, link, address, contacts, areaId, foto }),
+      credentials: "include", // Include credentials for CORS
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result.success);
+        alert("Succesful add info");
+
+        navigate("/social_services");
+
+        // You can handle success or error messages here
+        // You might want to reset the form or perform other actions after a successful submission
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        // Handle error
+      });
+  };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h1>Social Services Info</h1>
-        
+        <h1>{t("socialsTitleAddInfo")}</h1>
+
         <input
           type="text"
           id="name"
@@ -45,7 +54,6 @@ const SocialForm = () => {
           onChange={(e) => setName(e.target.value)}
         />
 
-        
         <input
           type="text"
           id="link"
@@ -54,7 +62,6 @@ const SocialForm = () => {
           onChange={(e) => setLink(e.target.value)}
         />
 
-       
         <input
           type="text"
           id="address"
@@ -69,7 +76,6 @@ const SocialForm = () => {
           value={contacts}
           onChange={(e) => setContact(e.target.value)}
         />
-
 
         <input
           type="text"
@@ -87,7 +93,7 @@ const SocialForm = () => {
           onChange={(e) => setFoto(e.target.value)}
         />
 
-        <button type="submit">Submit</button>
+        <button type="submit">{t("buttonAdminAddInfo")}</button>
       </form>
     </div>
   );

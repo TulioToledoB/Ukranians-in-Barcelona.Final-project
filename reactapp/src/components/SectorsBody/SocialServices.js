@@ -6,7 +6,7 @@ import BigCard_Socials from "./SearchFormsSectors/BigCard_Socials";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
 
-function SocialServices() {
+function SocialServices(props) {
   const [socials, setSocials] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
 
@@ -53,7 +53,7 @@ function SocialServices() {
         </div>
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
       </div>

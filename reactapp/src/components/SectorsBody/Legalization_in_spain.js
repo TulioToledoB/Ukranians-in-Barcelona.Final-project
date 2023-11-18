@@ -6,7 +6,7 @@ import SearchFile from "./SearchFormsSectors/SearchFormLegalize";
 import "./Sectors.css";
 import BigCardLegalize from "./SearchFormsSectors/BigCard";
 
-function Legalize() {
+function Legalize(props) {
   const [legalization, setLegalization] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
 
@@ -54,7 +54,7 @@ function Legalize() {
         </div>
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
       </div>
