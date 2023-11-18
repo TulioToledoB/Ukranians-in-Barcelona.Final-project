@@ -5,7 +5,7 @@ import "./Sectors.css";
 import BigCard from "./SearchFormsSectors/BigCard";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
-///import image from "../SectorsBody/ddd .png"; ///<img src={image}></img>////reactapp/src/components/SectorsBody/ddd .png
+
 
 function Hospitals(props) {
   const [hospitals, setHospitals] = useState([]);
@@ -36,6 +36,7 @@ function Hospitals(props) {
   return (
     <div className="hospitals_body">
       <div className="title_div">
+
         <h2 className="title_sectors">{t("title_sector_hospitals")}</h2>
       </div>
       <div className="allBody">
