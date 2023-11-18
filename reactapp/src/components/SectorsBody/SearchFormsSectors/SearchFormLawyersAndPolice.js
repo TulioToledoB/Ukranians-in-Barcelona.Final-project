@@ -1,20 +1,35 @@
 import React, { useEffect, useState } from "react";
-import CardSectorLawyersAndPolice from "./CardSectorLawyersAndPolice";
+import CardSectorPolice from "./CardSectorPolice";
+import CardSectorLawyers from "./CardSectroLawyers";
 import axios from "axios";
 function SearchFile() {
   const [query, setQuery] = useState("");
-  const [data, setData] = useState([]);
+  const [dataPolice, setDataPolice] = useState([]);
 
-  const search = () => {
-    return data.filter((item) => item.name.toLowerCase().includes(query));
+  // const [dataLaw, setDataLaw] = useState([]);
+
+  const searchPolice = () => {
+    return dataPolice.filter((item) => item.name.toLowerCase().includes(query));
   };
   useEffect(() => {
     const fetchHospitals = async () => {
       const res = await axios.get("http://localhost:5000/police_stations");
-      setData(res.data);
+      setDataPolice(res.data);
     };
     fetchHospitals();
   }, []);
+
+  // const searchLaw = () => {
+  //   return dataLaw.filter((item) => item.name.toLowerCase().includes(query));
+  // };
+  // useEffect(() => {
+  //   const fetchHospitals = async () => {
+  //     const res = await axios.get("http://localhost:5000//lawyers");
+  //     setDataLaw(res.data);
+  //   };
+  //   fetchHospitals();
+  // }, []);
+
   return (
     <div className="search_body">
       <div className="inputDiv">
@@ -25,7 +40,8 @@ function SearchFile() {
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>
-      <CardSectorLawyersAndPolice items={search(data)} />
+      <CardSectorPolice items={searchPolice(dataPolice)} />
+      {/* <CardSectorLawyers item={searchLaw(dataLaw)}/> */}
     </div>
   );
 }

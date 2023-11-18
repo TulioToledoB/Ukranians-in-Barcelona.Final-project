@@ -5,6 +5,8 @@ import "./Sectors.css";
 import BigCard_Socials from "./SearchFormsSectors/BigCard_Socials";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
 function SocialServices() {
   const [socials, setSocials] = useState([]);
@@ -35,10 +37,11 @@ function SocialServices() {
   return (
     <div className="social_services_body">
       <div className="title_div">
+        <img src={arrowLeft}></img>
         <h2 className="title_sectors">{t("title_sector_socials")}</h2>
+        <img src={arrowRight}></img>
       </div>
       <div className="allBody">
-        <div className="list-and-card">
           <div className="list">
             <ListBody items={socials} onItemClick={handleListItemClick} />
           </div>
@@ -50,14 +53,13 @@ function SocialServices() {
               />
             </div>
           )}
-        </div>
         {!selectedHospital && (
           <div className="searchResult">
             <SearchFile />
           </div>
         )}
+        </div>
       </div>
-    </div>
   );
 }
 

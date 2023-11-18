@@ -5,7 +5,7 @@ function BigCardLegalize(props) {
   return (
     <div className="bigCard">
       <div className="bigCard-body">
-        <img src={"../aboutus.jpg"} className="bigCard-image" alt="#" />
+        <img src={props.legalization.foto} className="bigCard-image" alt="#" />
         <p>{props.legalization.name}</p>
         <p>{props.legalization.todo}</p>
         <button onClick={props.onClose}>Close</button>

@@ -5,6 +5,8 @@ import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormEvents";
 import "./Sectors.css";
 import BigCard_Events from "./SearchFormsSectors/BigCard_Event";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -36,10 +38,11 @@ function Events() {
   return (
     <div className="events_body">
       <div className="title_div">
+        <img src={arrowLeft}></img>
         <h2 className="title_sectors">{t("title_sector_event")}</h2>
+        <img src={arrowRight}></img>
       </div>
       <div className="allBody">
-        <div className="list-and-card">
           <div className="list">
             <ListBody items={events} onItemClick={handleListItemClick} />
           </div>
@@ -51,14 +54,13 @@ function Events() {
               />
             </div>
           )}
-        </div>
         {!selectedHospital && (
           <div className="searchResult">
             <SearchFile />
           </div>
         )}
+        </div>
       </div>
-    </div>
   );
 }
 

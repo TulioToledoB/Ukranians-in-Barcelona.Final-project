@@ -1,4 +1,4 @@
-h3{
+/*h3{
     font-size: 2rem;
   }
   h4 {
@@ -26,7 +26,7 @@ h3{
   }
   .questions {
     padding: 1rem 2.5rem;
-    border: transparent; /* Remove the border */
+    border: transparent; 
     margin-bottom: 1rem;
     border-radius: 0.25rem;
     gap: 2rem 2rem;
@@ -55,7 +55,7 @@ h3{
    justify-content: space-around;
    border-radius: 50%;
   }
-  /* Media Query for smaller screens */
+  
   @media (max-width: 768px) {
     h3 {
       font-size: 1.5rem;
@@ -69,4 +69,4 @@ h3{
     .questions {
       padding: 1rem 1.5rem;
     }
-  }
+  } */

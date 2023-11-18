@@ -1,8 +1,8 @@
-h1{
+.hospitalForm h1{
   font-size: 2rem;
   text-align: left;
 }
-form {
+.hospitalForm form {
   max-width: 700px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -12,20 +12,20 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-input {
+.hospitalForm input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
 }
-button {
-  background-color: #4CAF50;
+.hospitalForm button {
+  background-color: #1D5A87;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-button:hover {
-  background-color: #45A049;
+.hospitalForm button:hover {
+  background-color:  #0C304D;
 }

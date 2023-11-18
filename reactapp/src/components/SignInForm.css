@@ -2,7 +2,7 @@
 
 form {
   max-width: 500px;
-  margin:auto;
+  margin: auto;
   text-align: center;
   padding: 20px;
   background-color: white;
@@ -17,7 +17,7 @@ input[type="text"], input[type="password"] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #1D5A87;
+  border: 1px solid white;
   box-sizing: border-box;
 }
 

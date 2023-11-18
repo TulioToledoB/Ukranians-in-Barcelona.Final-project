@@ -5,6 +5,8 @@ import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormLegalize";
 import "./Sectors.css";
 import BigCardLegalize from "./SearchFormsSectors/BigCard";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
 function Legalize() {
   const [legalization, setLegalization] = useState([]);
@@ -35,10 +37,11 @@ function Legalize() {
   return (
     <div className="legalization_body">
       <div className="title_div">
+        <img src={arrowLeft}></img>
         <h2 className="title_sectors">{t("title_sector_legalization")}</h2>
+        <img src={arrowRight}></img>
       </div>
       <div className="allBody">
-        <div className="list-and-card">
           <div className="list">
             <ListBody items={legalization} onItemClick={handleListItemClick} />
           </div>
@@ -51,14 +54,13 @@ function Legalize() {
               />
             </div>
           )}
-        </div>
         {!selectedHospital && (
           <div className="searchResult">
             <SearchFile />
           </div>
         )}
+        </div>
       </div>
-    </div>
   );
 }
 

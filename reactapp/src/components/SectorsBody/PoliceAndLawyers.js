@@ -6,6 +6,8 @@ import SearchFile from "./SearchFormsSectors/SearchFormLawyersAndPolice";
 import "./Sectors.css";
 import "../imgs_interface/police.jpg";
 import BigCard_Lawyers from "./SearchFormsSectors/BigCard_Lawyers";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
 function PoliceAndLawyers() {
   const [lawyers, setLawyers] = useState([]);
@@ -50,12 +52,13 @@ function PoliceAndLawyers() {
   return (
     <div className="police_lawyers_body">
       <div className="title_div">
+        <img src={arrowLeft}></img>
         <h2 className="title_sectors">
           {t("title_sector_lawyers_and_police")}
         </h2>
+        <img src={arrowRight}></img>
       </div>
       <div className="allBody">
-        <div className="list-and-card">
           <div className="list">
             <ListBody items={lawyers} onItemClick={handleListItemClick1} />
             <ListBody items={police} onItemClick={handleListItemClick} />
@@ -71,14 +74,13 @@ function PoliceAndLawyers() {
               />
             </div>
           )}
-        </div>
         {!selectedHospital && (
           <div className="searchResult">
             <SearchFile />
           </div>
         )}
+        </div>
       </div>
-    </div>
   );
 }
 

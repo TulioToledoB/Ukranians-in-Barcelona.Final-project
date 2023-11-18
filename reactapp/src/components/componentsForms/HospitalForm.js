@@ -10,10 +10,28 @@ const HospitalForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    fetch('http://localhost:5000/hospitals', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, link,contact, areaId, foto}),
+      credentials: 'include', // Include credentials for CORS
+    })
+    .then(response => response.json())
+    .then(result => {
+      console.log(result.success); // You can handle success or error messages here
+      // You might want to reset the form or perform other actions after a successful submission
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      // Handle error
+    });
   };
 
   return (
-    <div>
+    <div className="hospitalForm">
       <form onSubmit={handleSubmit}>
         <h1>HOSPITAL INFO</h1>
        
