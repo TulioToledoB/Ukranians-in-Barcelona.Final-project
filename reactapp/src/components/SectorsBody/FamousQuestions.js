@@ -35,8 +35,8 @@ function FamousQuestions() {
                 t(`answersFam.frequentlyAnswer5`),
                 t(`answersFam.frequentlyAnswer6`),
                 t(`answersFam.frequentlyAnswer7`),
-                <img></img>
-                
+                <img>olollooloolo</img>
+
               ]}
             />
           ))}
