@@ -15,16 +15,13 @@ function CardSectorHospitals(props) {
                 src={item.foto}
                 className="cardSector-image"
                 alt="#"
-                width="100rem%"
+                width="100rem"
                 height="300rem"
               />
               <p>
                 {t("nameBigCard")}: {item.name}
               </p>
-              <a href={`tel:${item.tel}`}>
-                {t("callLink")}
-                {item.contacts}
-              </a>
+              <a href={`tel:${item.contacts}`}>{t("callLink")}</a>
 
               <a href={item.link}>{t("OpenWeb")}</a>
               <button className="cardSector-btn"> Read</button>

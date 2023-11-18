@@ -10,7 +10,7 @@ function ListBody(props) {
       {props.items.map((item, index) => (
         <div key={index} className="list-item">
           <div className="list-text" onClick={() => props.onItemClick(item)}>
-            {t("nameBigCard")}:{item.name}
+            {t("stepCard")}:{item.name}
           </div>
         </div>
       ))}

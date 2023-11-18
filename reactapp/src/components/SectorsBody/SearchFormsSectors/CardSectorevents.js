@@ -19,14 +19,17 @@ function CardSectorEvents(props) {
                 alt="#"
               />
               <p>
-                {t("nameBigCard")}:{item.name}
+                <h5>{t("nameBigCard")}:</h5> {item.name}
               </p>
               <p>
-                {t("dateCards")}
+                <h5>{t("dateCards")}:</h5>
                 {item.data}
               </p>
-              <a href={item.place}> Open the hospitals website</a>
-              <button className="cardSector-btn"> Read</button>
+              <a href={item.place}> {t("OpenWeb")}</a>
+              <button className="cardSector-btn">
+                {" "}
+                {t("littleCardsButtonEvent")}
+              </button>
               {props.isUserSignedIn ? (
                 <button
                   onClick={() => props.handleDelete(item.id)}

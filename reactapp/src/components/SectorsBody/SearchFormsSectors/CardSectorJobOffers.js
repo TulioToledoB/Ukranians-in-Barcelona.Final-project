@@ -21,7 +21,10 @@ function CardSectorJobOffers(props) {
               <p>
                 {t("nameBigCard")}: {item.name}
               </p>
-              <p>{item.city}</p>
+              <p>
+                {t("cityCard")}
+                {item.city}
+              </p>
               <a href={item.link}>
                 <button className="cardSector-btn">{t("OpenWeb")}</button>
               </a>
