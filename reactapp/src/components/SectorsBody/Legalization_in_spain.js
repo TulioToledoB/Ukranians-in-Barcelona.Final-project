@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useTransition } from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
-import ListBody from "./ListBody";
+import ListBody from "./ListBodeLegalize";
 import SearchFile from "./SearchFormsSectors/SearchFormLegalize";
 import "./Sectors.css";
 import BigCardLegalize from "./SearchFormsSectors/BigCard";
