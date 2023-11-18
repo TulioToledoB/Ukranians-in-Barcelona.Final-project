@@ -8,7 +8,7 @@ import BigCard_Events from "./SearchFormsSectors/BigCard_Event";
 import arrowLeft from "./arrowLeftCut.png";
 import arrowRight from "./arrowRightCut.png";
 
-function Events() {
+function Events(props) {
   const [events, setEvents] = useState([]);
   // const [error, setError] = useState(null);
   const [selectedHospital, setSelectedHospital] = useState(null);
@@ -56,7 +56,7 @@ function Events() {
           )}
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
         </div>

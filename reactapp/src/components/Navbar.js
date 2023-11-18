@@ -6,6 +6,11 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import i18n from "../i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import CountryFlag from "react-country-flag";
+
+
 
 function NavBar(props) {
   const { t } = useTranslation();
@@ -94,16 +99,24 @@ function NavBar(props) {
             <Dropdown>
               <Dropdown.Toggle
                 variant="secondary"
-                id="language-dropdown"
-              ></Dropdown.Toggle>
+                id="language-dropdown">
+                  <FontAwesomeIcon
+                icon={faGlobe}
+                style={{ fontSize: "24px", border: "none" }}
+              />
+                
+              </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item onClick={() => changeLanguage("eng")}>
+                <CountryFlag countryCode="GB" svg /> 
                   English
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => changeLanguage("es")}>
+                <CountryFlag countryCode="ES" svg />
                   Español
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => changeLanguage("ua")}>
+                <CountryFlag countryCode="UA" svg />
                   Українська
                 </Dropdown.Item>
                 {/* Add more language options as needed */}

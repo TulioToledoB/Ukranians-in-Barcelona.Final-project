@@ -8,7 +8,7 @@ import i18n from "../../i18next";
 import arrowLeft from "./arrowLeftCut.png";
 import arrowRight from "./arrowRightCut.png";
 
-function Jobs() {
+function Jobs(props) {
   const [jobs, setJobs] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
   const { t, i18n } = useTranslation();
@@ -53,7 +53,7 @@ function Jobs() {
           )}
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
         </div>

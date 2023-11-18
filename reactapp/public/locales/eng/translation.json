@@ -71,7 +71,18 @@
         "Values":"At the heart of our work lies an intrinsic set of fundamental values. We are guided by the firm purpose of meeting the basic needs of refugees in unknown lands, facilitating their transition to a society full of challenges and opportunities. Compassion, solidarity and empathy constitute the unbreakable foundations of our philosophy, driving each action towards a lasting and significant social impact. In our tireless pursuit of providing maximum value to our beneficiaries, we are guided by precision and authenticity. Through clear and transparent communication, we strive to foster genuine interaction between users and the vital resources we provide. Likewise, we tirelessly support social and environmental initiatives that reflect our unwavering commitment to the community and the environment around us.",
         "Future_and_Objectives":"We look forward to a future where every refugee individual can find a foothold on our platform, accessing essential resources and a compassionate support network. Our focus is on building lasting partnerships with like-minded organizations and expanding our reach to serve a growing number of refugees across the region. We aspire to foster integration and empowerment, paving the way for a brighter and more hopeful future for those who have bravely faced adversity.",
         "Call_to_Action":"If you too want to be part of this network of solidarity and make a difference in the lives of refugees, join us today. Together, we can build a more inclusive and compassionate future for all. Join our cause and be the change you want to see in the world!",
-        "buttonAdminAddInfo":"Add info!" 
+        "buttonAdminAddInfo":"Add info!",
+        "buttonAdminDeleteInfo":"Delete info!",
+        "hospitalTitleAddInfo":"Hospitals add info!",
+        "socialsTitleAddInfo":"Socials services add info!",
+        "nameBigCard":"Name",
+        "addressCards":"Address" , 
+        "callLink":"Call now",
+        "OpenWeb":"Open in the website!",
+        "cityCard":"City",
+        "dateCards":"Date",
+        "stepCard": "Step"     
+
 
         
 

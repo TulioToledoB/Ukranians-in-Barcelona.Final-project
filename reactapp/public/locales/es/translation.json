@@ -70,7 +70,24 @@
         "Values": "En el corazón de nuestro trabajo se encuentra un conjunto intrínseco de valores fundamentales. Nos guía el firme propósito de satisfacer las necesidades básicas de los refugiados en tierras desconocidas, facilitando su transición a una sociedad llena de desafíos y oportunidades. La compasión, la solidaridad y la empatía constituyen los cimientos irrompibles de nuestra filosofía, impulsando cada acción hacia un impacto social duradero y significativo. En nuestra incansable búsqueda de proporcionar el máximo valor a nuestros beneficiarios, nos guiamos por la precisión y autenticidad. A través de una comunicación clara y transparente, nos esforzamos por fomentar una interacción genuina entre los usuarios y los recursos vitales que proporcionamos. Asimismo, apoyamos incansablemente iniciativas sociales y medioambientales que reflejan nuestro compromiso inquebrantable con la comunidad y el entorno que nos rodea.",
         "Future_and_Objectives": "Esperamos un futuro en el que cada individuo refugiado pueda encontrar un punto de apoyo en nuestra plataforma, accediendo a recursos esenciales y a una red de apoyo compasiva. Nos enfocamos en construir asociaciones duraderas con organizaciones afines y ampliar nuestro alcance para atender a un número creciente de refugiados en toda la región. Aspiramos a fomentar la integración y el empoderamiento, allanando el camino hacia un futuro más brillante y esperanzador para aquellos que han enfrentado valientemente la adversidad.",
         "Call_to_Action": "Si tú también quieres ser parte de esta red de solidaridad y marcar la diferencia en la vida de los refugiados, únete a nosotros hoy. Juntos, podemos construir un futuro más inclusivo y compasivo para todos. ¡Únete a nuestra causa y sé el cambio que quieres ver en el mundo!",
-        "buttonAdminAddInfo":"Añadir información!" 
+        "buttonAdminAddInfo":"Añadir información!",
+        "buttonAdminDeleteInfo":"Eliminar info!" ,
+        "hospitalTitleAddInfo":"Hospitales añadir info!",
+        "socialsTitleAddInfo":"Sociales servicios añadir info!",
+        "nameBigCard":"Nombre",
+        "addressCards":"Direccion",
+        "callLink":"Llamar ahora",
+        "OpenWeb":"Abrir in sitio web!",
+        "cityCard":"Ciudad",
+        "dateCards":"Data",
+        "stepCard":"Paso"     
+
+
+
+
+
+
+
 
       }
       

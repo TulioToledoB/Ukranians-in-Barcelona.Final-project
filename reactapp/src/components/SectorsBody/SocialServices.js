@@ -8,7 +8,7 @@ import i18n from "../../i18next";
 import arrowLeft from "./arrowLeftCut.png";
 import arrowRight from "./arrowRightCut.png";
 
-function SocialServices() {
+function SocialServices(props) {
   const [socials, setSocials] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
 
@@ -55,7 +55,7 @@ function SocialServices() {
           )}
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
         </div>

@@ -9,7 +9,7 @@ import BigCard_Lawyers from "./SearchFormsSectors/BigCard_Lawyers";
 import arrowLeft from "./arrowLeftCut.png";
 import arrowRight from "./arrowRightCut.png";
 
-function PoliceAndLawyers() {
+function PoliceAndLawyers(props) {
   const [lawyers, setLawyers] = useState([]);
   const [police, setPolice] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
@@ -76,7 +76,7 @@ function PoliceAndLawyers() {
           )}
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
         </div>

@@ -1,40 +1,48 @@
 import React, { useState } from "react";
 import "./HospitalForm.css";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const HospitalForm = () => {
-  const [name, setName] = useState('');
-  const [link, setLink] = useState('');
-  const [contact, setContact] = useState('');
-  const [areaId, setAreaId] = useState('');
-  const [foto, setFoto] = useState('');
+  const [name, setName] = useState("");
+  const [link, setLink] = useState("");
+  const [contact, setContact] = useState("");
+  const [areaId, setAreaId] = useState("");
+  const [foto, setFoto] = useState("");
+  const navigate = useNavigate();
+
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:5000/hospitals', {
-      method: 'POST',
+    fetch("http://localhost:5000/hospitals", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, link,contact, areaId, foto}),
-      credentials: 'include', // Include credentials for CORS
+      body: JSON.stringify({ name, link, contact, areaId, foto }),
+      credentials: "include", // Include credentials for CORS
     })
-    .then(response => response.json())
-    .then(result => {
-      console.log(result.success); // You can handle success or error messages here
-      // You might want to reset the form or perform other actions after a successful submission
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      // Handle error
-    });
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result.success);
+        alert("Succesful add info");
+
+        navigate("/hospitals"); // You can handle success or error messages here
+        // You might want to reset the form or perform other actions after a successful submission
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        // Handle error
+      });
   };
 
   return (
     <div className="hospitalForm">
       <form onSubmit={handleSubmit}>
-        <h1>HOSPITAL INFO</h1>
-       
+        <h1>{t("hospitalTitleAddInfo")}</h1>
+
         <input
           type="text"
           id="name"
@@ -43,7 +51,6 @@ const HospitalForm = () => {
           onChange={(e) => setName(e.target.value)}
         />
 
-       
         <input
           type="text"
           id="link"
@@ -52,7 +59,6 @@ const HospitalForm = () => {
           onChange={(e) => setLink(e.target.value)}
         />
 
-        
         <input
           type="tel"
           id="contact"
@@ -61,7 +67,6 @@ const HospitalForm = () => {
           onChange={(e) => setContact(e.target.value)}
         />
 
-        
         <input
           type="text"
           id="areaId"
@@ -70,7 +75,6 @@ const HospitalForm = () => {
           onChange={(e) => setAreaId(e.target.value)}
         />
 
-        
         <input
           type="text"
           id="foto"
@@ -79,7 +83,7 @@ const HospitalForm = () => {
           onChange={(e) => setFoto(e.target.value)}
         />
 
-        <button type="submit">Submit</button>
+        <button type="submit">{t("buttonAdminAddInfo")}</button>
       </form>
     </div>
   );

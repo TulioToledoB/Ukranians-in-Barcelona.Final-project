@@ -1,10 +1,13 @@
 import React from "react";
 import "./SignInForm.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 //cuando ya este lists la pagina a donde dirigir si el login es exitoso, se   importa navigate import {useNavigate} from 'react-router-dom';
 const SignInForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
   // const  navigate = useNavigate();
   const handleSignIn = async (e) => {
     e.preventDefault();
@@ -28,6 +31,7 @@ const SignInForm = (props) => {
       if (response.status === 200 && data.success) {
         alert("Succesful login");
         props.setIsUserSignedIn(true);
+        navigate("/");
 
         // navigate("/la ruta que correponda para ir a la nueva pagina que falta crear");
       } else {
