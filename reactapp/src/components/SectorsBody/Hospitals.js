@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useTransition } from "react";
 import ListBody from "./ListBody";
 import SearchFile from "./SearchFormsSectors/SearchFormHospitals";
@@ -62,3 +63,4 @@ function Hospitals(props) {
 }
 
 export default Hospitals;
+

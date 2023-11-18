@@ -41,6 +41,8 @@ const SignUpForm = () => {
   };
 
   return (
+
+    <div className='bodyIn'>
     <form
       action="action_page.php"
       style={{ border: "1px solid #ccc" }}
@@ -82,6 +84,7 @@ const SignUpForm = () => {
         </div>
       </div>
     </form>
+    </div>
   );
 };
 

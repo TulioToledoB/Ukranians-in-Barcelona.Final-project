@@ -5,6 +5,8 @@ import "./Sectors.css";
 import BigCard_Jobs from "./SearchFormsSectors/BigCard_Jobs";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
 function Jobs(props) {
   const [jobs, setJobs] = useState([]);
@@ -33,10 +35,11 @@ function Jobs(props) {
   return (
     <div className="job_offers_body">
       <div className="title_div">
+        <img src={arrowLeft}></img>
         <h2 className="title_sectors">{t("title_sector_jobs")}</h2>
+        <img src={arrowRight}></img>
       </div>
       <div className="allBody">
-        <div className="list-and-card">
           <div className="list">
             <ListBody items={jobs} onItemClick={handleListItemClick} />
           </div>
@@ -48,14 +51,13 @@ function Jobs(props) {
               />
             </div>
           )}
-        </div>
         {!selectedHospital && (
           <div className="searchResult">
             <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
+        </div>
       </div>
-    </div>
   );
 }
 

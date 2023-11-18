@@ -44,7 +44,8 @@ const SignInForm = (props) => {
     }
   };
 
-  return (
+ return (
+  <div className='bodyIn'>
     <form onSubmit={handleSignIn} className="login-form">
       <div className="container">
         <h1>Sign in here</h1>
@@ -82,6 +83,7 @@ const SignInForm = (props) => {
 
       <div className="container" style={{ backgroundColor: "#f1f1f1" }}></div>
     </form>
+  </div>
   );
 };
 

@@ -124,6 +124,9 @@ function NavBar(props) {
             </Dropdown>
           </div>
 
+          </div>
+          <div className="signInUp">
+
           {!props.isUserSignedIn ? (
             <>
               <Link to="/signInForm" className="nav-link">
