@@ -23,11 +23,11 @@
     align-items: center;
   }
   
-  #language-dropdown{
+  /*#language-dropdown{
     background-color: white;
-    border-color: white;
+    border-color: white; 
   }
-
+*/
   .dropdown-menu{
     color: #F8F617;
     background-color:#1d5a87 !important; 
