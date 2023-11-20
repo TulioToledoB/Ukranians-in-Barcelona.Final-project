@@ -39,7 +39,7 @@ const HospitalForm = () => {
   };
 
   return (
-    <div className="hospitalForm">
+    <div className="bodyIn">
       <form onSubmit={handleSubmit}>
         <h1>{t("hospitalTitleAddInfo")}</h1>
 

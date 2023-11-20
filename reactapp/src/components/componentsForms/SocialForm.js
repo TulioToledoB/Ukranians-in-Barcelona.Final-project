@@ -42,7 +42,7 @@ const SocialForm = () => {
   };
 
   return (
-    <div>
+    <div className="bodyIn">
       <form onSubmit={handleSubmit}>
         <h1>{t("socialsTitleAddInfo")}</h1>
 

@@ -42,25 +42,25 @@ function Legalize(props) {
         <img src={arrowRight}></img>
       </div>
       <div className="allBody">
-          <div className="list">
-            <ListBody items={legalization} onItemClick={handleListItemClick} />
+        <div className="list">
+          <ListBody items={legalization} onItemClick={handleListItemClick} />
+        </div>
+        {selectedHospital && (
+          <div className="big-card">
+            <BigCardLegalize
+              legalization={legalization}
+              hospital={selectedHospital}
+              onClose={handleCloseBigCard}
+            />
           </div>
-          {selectedHospital && (
-            <div className="big-card">
-              <BigCardLegalize
-                legalization={legalization}
-                hospital={selectedHospital}
-                onClose={handleCloseBigCard}
-              />
-            </div>
-          )}
+        )}
         {!selectedHospital && (
           <div className="searchResult">
             <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
-        </div>
       </div>
+    </div>
   );
 }
 
