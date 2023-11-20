@@ -70,6 +70,326 @@
         "Values": "En el corazón de nuestro trabajo se encuentra un conjunto intrínseco de valores fundamentales. Nos guía el firme propósito de satisfacer las necesidades básicas de los refugiados en tierras desconocidas, facilitando su transición a una sociedad llena de desafíos y oportunidades. La compasión, la solidaridad y la empatía constituyen los cimientos irrompibles de nuestra filosofía, impulsando cada acción hacia un impacto social duradero y significativo. En nuestra incansable búsqueda de proporcionar el máximo valor a nuestros beneficiarios, nos guiamos por la precisión y autenticidad. A través de una comunicación clara y transparente, nos esforzamos por fomentar una interacción genuina entre los usuarios y los recursos vitales que proporcionamos. Asimismo, apoyamos incansablemente iniciativas sociales y medioambientales que reflejan nuestro compromiso inquebrantable con la comunidad y el entorno que nos rodea.",
         "Future_and_Objectives": "Esperamos un futuro en el que cada individuo refugiado pueda encontrar un punto de apoyo en nuestra plataforma, accediendo a recursos esenciales y a una red de apoyo compasiva. Nos enfocamos en construir asociaciones duraderas con organizaciones afines y ampliar nuestro alcance para atender a un número creciente de refugiados en toda la región. Aspiramos a fomentar la integración y el empoderamiento, allanando el camino hacia un futuro más brillante y esperanzador para aquellos que han enfrentado valientemente la adversidad.",
         "Call_to_Action": "Si tú también quieres ser parte de esta red de solidaridad y marcar la diferencia en la vida de los refugiados, únete a nosotros hoy. Juntos, podemos construir un futuro más inclusivo y compasivo para todos. ¡Únete a nuestra causa y sé el cambio que quieres ver en el mundo!",
+
+
+
+
+
+
+
+
+        
+          "nameOfSocialService1": "CUESB Centro de Emergencia Social y Atención Urgente de Barcelona",
+          "telOfCard1": "900703030",
+          "addressOfCard1": "Carrer Llacuna, 25, 08005",
+          "link1": "abrir en el navegador",
+          "link2": "abrir el sitio web del hospital",
+          "button1": "leer",
+          "button2": "cerrar",
+        
+          "nameOfSocialService2": "Nova Ciutadania",
+          "telOfCard2": "931532800",
+          "addressOfCard2": "Carrer Tarragona, 141, 08014",
+          "link1_2": "abrir en el navegador",
+          "link2_2": "abrir el sitio web del hospital",
+          "button1_2": "leer",
+          "button2_2": "cerrar",
+        
+          "nameOfSocialService3": "Cruz Roja",
+          "telOfCard3": "934816088",
+          "addressOfCard3": "Avinguda Portal De L´angel, 24, 08002 Barcelona",
+          "link1_3": "abrir en el navegador",
+          "link2_3": "abrir el sitio web del hospital",
+          "button1_3": "leer",
+          "button2_3": "cerrar",
+
+          
+            "nameofHospital": "Hospital Universitari General de la Vall d’Hebron",
+            "Tel": "934 893 000",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Hospital Clínic",
+            "Tel": "932 275 400",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Hospital de la Santa Creu i Sant Pau",
+            "Tel": "932 919 000",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Gracia",
+            "Tel": "93 325 20 44",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Hospital del Mar",
+            "Tel": "932 483 000",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Sants",
+            "Tel": "934 915 257",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Roger de flor",
+            "Tel": "935 070 390",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Adrià",
+            "Tel": "932 413 820",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Sant Martí de Provençals",
+            "Tel": "933 070 812",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Turó",
+            "Tel": "934 074 055",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Sant Andreu",
+            "Tel": "932 745 490",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+          
+            "nameofHospital": "Cap Les Cort",
+            "Tel": "932 275 590",
+            "link": "abrir el sitio web del hospital",
+            "button": "Leer",
+            "link2": "¡Ir al sitio web!",
+            "button2": "Cerrar",
+
+            
+            "nameOfLawyer": "Abogado en el Extranjero",
+            "tel": "932 20 11 74",
+            "specification": "Derecho Penal, Derecho Laboral, Derecho Sucesorio, Derecho de Familia, Servicios de Inmigración",
+            "contactInfo": "Abogados, contadores, arquitectos y servicios financieros en todo el mundo. Protegiendo sus intereses en el extranjero",
+            "button": "cerrar",
+            
+            "nameOfLawyer": "Sammos Legal",
+            "tel": "932 411 520",
+            "specification": "Contratación Laboral Ordinaria, Alta Dirección y Relaciones Laborales Especiales",
+            "contactInfo": "Abogados laborales y de accidentes en Barcelona",
+            "button": "cerrar",
+            
+            "nameOfLawyer": "Klev & Vera International Law Firm",
+            "tel": "931760190",
+            "specification": "Especializados en atender las necesidades legales de clientes internacionales en España",
+            "contactInfo": "Bufete de abogados de habla inglesa en Barcelona, España, C. de Valencia, 281, 2do, 08009 2da, Barcelona",
+            "button": "cerrar",
+
+            
+              "nameOfJobLink": "Trabajos Barcelona",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Barcelona expatife",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "eu4ua",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Oliver Wyman",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Xpatjobs",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Infojobs",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Linkedin",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Jobs Today",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Jobs for Ukrainians",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "Jobs in Barcelona",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+            
+              "nameOfJobLink": "UA4UA",
+              "city": "Barcelona",
+              "button": "ir al sitio web",
+              "link": "abrir en el navegador",
+              "button2": "cerrar",
+
+              
+                "name_event": "FESTIVAL FOR UKRAINE",
+                "place": "Palau Sant Jordi, Passeig Olímpic, 5-7, Barcelona",
+                "date": "2024-01-23",
+                "button": "cerrar",
+              
+                "name_event": "Concierto Ayuda Ucrania",
+                "place": "Sala Parallel 62, Av. del Paralllel, 62, Barcelona, España",
+                "date": "2023-09-06",
+                "button": "cerrar",
+             
+                "name_event": "Concierto Antytila",
+                "place": "Bikini Barcelona",
+                "date": "2023-11-04",
+                "button": "cerrar",
+              
+                "name_event": "Festival Ucraniano",
+                "place": "Avinguda de l'Estadi, 65",
+                "date": "2023-09-23",
+                "button": "cerrar",
+              
+                "name_event": "Apoyemos a Ucrania",
+                "place": "calle Avenida Granada, 150",
+                "date": "2023-10-20",
+                "button": "cerrar",
+
+                
+                  "sector_legalizatio_todo": "La protección temporal es un procedimiento excepcional mediante el cual, en caso de una afluencia masiva de personas desplazadas de terceros países que no pueden regresar a su país de origen, se garantiza protección inmediata y personal.",
+                  "step": 1,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "¿QUIÉNES PUEDEN SOLICITAR PROTECCIÓN TEMPORAL?",
+                  "step": 2,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+               
+                  "sector_legalizatio_todo": "1. Ciudadanos ucranianos que residían en Ucrania antes del 24 de febrero de 2022. 2. Personas apátridas y nacionales de terceros países distintos de Ucrania que gozaban de protección internacional o protección nacional equivalente antes del 24 de febrero de 2022. 3. Miembros de las familias de las personas mencionadas en los apartados 1) y 2), entendidos como: a) cónyuge o pareja no casada, b) sus hijos menores no casados o los del compañero, ya sea nacidos dentro o fuera del matrimonio o adoptados. c) otros parientes cercanos que vivían juntos como parte de la unidad familiar al inicio del conflicto armado, dependiendo totalmente o principalmente de ellos. 4. Ciudadanos ucranianos que se encontraban en situación de estancia en España antes del 24 de febrero de 2002 y que, como resultado del conflicto armado, no pueden regresar a Ucrania. 5. Nacionales de terceros países o apátridas que residen legalmente en Ucrania con base en un permiso de residencia legal válido (ya sea permanente u otro, como el de estudiantes) emitido de acuerdo con la legislación ucraniana y que no pueden regresar de manera segura y permanente a su país o región. 6. Ciudadanos ucranianos que se encontraban en situación irregular en España antes del 24 de febrero y que, como resultado del conflicto armado, no pueden regresar a Ucrania. 7. Miembros de las familias de las personas mencionadas en los apartados 4) y 5) en los términos mencionados en el apartado 3.",
+                  "step": 3,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "¿DÓNDE Y CÓMO SOLICITAR PROTECCIÓN TEMPORAL?",
+                  "step": 4,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "CONCESIÓN Y RENOVACIÓN DE LA PROTECCIÓN TEMPORAL",
+                  "step": 7,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "¿Cómo? La solicitud se formalizará mediante una comparecencia personal ante funcionarios de la policía nacional en los lugares descritos anteriormente, donde se proporcionará la documentación personal o de viaje llevada por el interesado.",
+                  "step": 5,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+               
+                  "sector_legalizatio_todo": "DEBERES DEL SOLICITANTE O BENEFICIARIO DEL RÉGIMEN DE PROTECCIÓN TEMPORAL EN ESPAÑA.",
+                  "step": 14,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "DOCUMENTACIÓN Los solicitantes de protección temporal deben proporcionar documentación que demuestre que se encuentran en alguna de las situaciones previstas en la sección I de este documento, como: • Documentos de identidad y viaje • Documentos que respalden los lazos familiares (certificado de matrimonio, certificado de nacimiento, certificado de adopción). • Cualquier otra información esencial para demostrar que se cumplen los requisitos para la protección temporal.",
+                  "step": 6,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "CONTENIDOS DE LA PROTECCIÓN TEMPORAL Los beneficiarios de la protección temporal tendrán derecho a: • Libertad de movimiento y residencia en España. • Información sobre los contenidos de la protección temporal.",
+                  "step": 8,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "TÍTULO DE VIAJE: Se proporcionará un título de viaje a las personas que se beneficien de la protección temporal y que no tengan pasaporte o documento de viaje, o cuando estos ya no sean válidos, para justificar su necesidad de abandonar el territorio nacional.",
+                  "step": 9,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "Recepción en el territorio nacional: cuando la persona beneficiaria de la protección temporal en el territorio español permanezca o tenga la intención de ingresar al territorio de otro Estado miembro de la Unión Europea sin autorización durante el período cubierto por la protección temporal concedida, se autorizará nuevamente la entrada al territorio nacional.",
+                  "step": 10,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+               
+                  "sector_legalizatio_todo": "Autorización administrativa para trabajar. Esto tendrá la misma duración que el permiso de residencia temporal concedido.",
+                  "step": 11,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "Asistencia social: cuando los beneficiarios no tengan recursos suficientes, podrán beneficiarse de servicios sociales y de salud de acuerdo con las regulaciones de asilo.",
+                  "step": 12,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "Reagrupación familiar: los beneficios de la protección temporal se otorgarán, a solicitud de su beneficiario en España, a los miembros de su familia siempre que dicha familia ya estuviera constituida en el país de origen y que sus miembros tuvieran que separarse debido a las circunstancias que dieron lugar a la declaración de protección temporal.",
+                  "step": 13,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "PROTECCIÓN TEMPORAL E INTERNACIONAL: ¿La protección temporal es lo mismo que la protección internacional? No, no lo es. La protección temporal es un estatus que ofrece atención inmediata y temporal, pero no es incompatible con una solicitud de protección internacional.",
+                  "step": 15,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "INFORMACIÓN Y ACCESO AL SISTEMA DE RECEPCIÓN: En caso de falta de recursos financieros, los beneficiarios de la protección temporal y sus familiares pueden solicitar acceso al sistema de acogida.",
+                  "step": 16,
+                  "link": "ir al sitio web",
+                  "button": "cerrar",
+                
+                  "sector_legalizatio_todo": "NORMATIVA APLICABLE: Las normas que rigen este tipo de protección son la Directiva 200155/CC, de 20 de julio, sobre la concesión de protección temporal en caso de afluencia masiva de personas desplazadas y el Reglamento sobre el régimen de protección temporal en caso de afluencia masiva de personas desplazadas, aprobado por el Real Decreto 1325/2002 de 24 de octubre, que transpuso la mencionada Directiva al ordenamiento jurídico español.",
+                  "step": 17,
+                  "link": "ir al sitio web",
+                  "button": "cerrar"
+
+                }
+                
+              
+        
         "buttonAdminAddInfo":"Añadir información!",
         "buttonAdminDeleteInfo":"Eliminar info!" ,
         "hospitalTitleAddInfo":"Hospitales añadir info!",
@@ -80,16 +400,9 @@
         "OpenWeb":"Abrir in sitio web!",
         "cityCard":"Ciudad",
         "dateCards":"Data",
-        "stepCard":"Paso"     
-
-
-
-
-
-
-
+        "stepCard":"Paso"           
 
       }
-      
+
   
   
