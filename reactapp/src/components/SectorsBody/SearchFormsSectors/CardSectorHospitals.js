@@ -1,7 +1,10 @@
 import React from "react";
 import "./CardSector.css";
+import { useTranslation } from "react-i18next";
 
 function CardSectorHospitals(props) {
+  const { t } = useTranslation();
+
   return (
     <div className="allCards">
       {props.items.map((item, index) => {
@@ -12,14 +15,24 @@ function CardSectorHospitals(props) {
                 src={item.foto}
                 className="cardSector-image"
                 alt="#"
-                width="50%"
-                height="200rem"
+                width="100rem"
+                height="300rem"
               />
-              <p>Name: {item.name}</p>
-              <p>{item.contacts}</p>
+              <p>
+                {t("nameBigCard")}: {item.name}
+              </p>
+              <a href={`tel:${item.contacts}`}>{t("callLink")}</a>
 
-              <a href={item.link}> Open the hospitals website</a>
+              <a href={item.link}>{t("OpenWeb")}</a>
               <button className="cardSector-btn"> Read</button>
+              {props.isUserSignedIn ? (
+                <button
+                  onClick={() => props.handleDelete(item.id)}
+                  className="cardSector-btn"
+                >
+                  Delete
+                </button>
+              ) : null}
             </div>
           </div>
         );

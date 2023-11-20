@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useTransition } from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
-import ListBody from "./ListBody";
+import ListBody from "./ListBodeLegalize";
 import SearchFile from "./SearchFormsSectors/SearchFormLegalize";
 import "./Sectors.css";
 import BigCardLegalize from "./SearchFormsSectors/BigCard";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
-function Legalize() {
+function Legalize(props) {
   const [legalization, setLegalization] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
 
@@ -35,26 +37,26 @@ function Legalize() {
   return (
     <div className="legalization_body">
       <div className="title_div">
+        <img src={arrowLeft}></img>
         <h2 className="title_sectors">{t("title_sector_legalization")}</h2>
+        <img src={arrowRight}></img>
       </div>
       <div className="allBody">
-        <div className="list-and-card">
-          <div className="list">
-            <ListBody items={legalization} onItemClick={handleListItemClick} />
-          </div>
-          {selectedHospital && (
-            <div className="big-card">
-              <BigCardLegalize
-                legalization={legalization}
-                hospital={selectedHospital}
-                onClose={handleCloseBigCard}
-              />
-            </div>
-          )}
+        <div className="list">
+          <ListBody items={legalization} onItemClick={handleListItemClick} />
         </div>
+        {selectedHospital && (
+          <div className="big-card">
+            <BigCardLegalize
+              legalization={legalization}
+              hospital={selectedHospital}
+              onClose={handleCloseBigCard}
+            />
+          </div>
+        )}
         {!selectedHospital && (
           <div className="searchResult">
-            <SearchFile />
+            <SearchFile isUserSignedIn={props.isUserSignedIn} />
           </div>
         )}
       </div>

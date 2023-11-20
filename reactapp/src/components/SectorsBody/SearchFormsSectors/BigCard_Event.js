@@ -9,7 +9,7 @@ function BigCard_Events(props) {
           src={props.event.foto}
           className="bigCard-image"
           alt="#"
-          width="100%"
+          width="500rem"
           height="400rem"
         />
         <p>{props.event.name}</p>

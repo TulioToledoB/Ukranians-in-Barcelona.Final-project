@@ -6,7 +6,6 @@
 .cardSector{
     position: relative;
     border-radius: 0.5rem;
-    border: solid 2px #1D5A87 ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,16 +15,16 @@
     background-color:white;
     color: black;
     width: 30%;
-    background-color:white;
-    color: black;
     margin: 20px;
+}
+.cardSector:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .cardSector-body{
     display: flex;
     flex-direction: column;
     margin:0px;
     padding: 0px;
-    
 }
 .cardSector-body p {
     margin: 0;
@@ -34,18 +33,86 @@
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
-    
 }
 .cardSector-btn{
+    background-color: #1D5A87;
     padding: 0.5rem;
     width: 100%;
     border-radius: 0.4rem;
 }
 .cardSector:hover{
     transform: scale(1.02);
-    border: solid 1px;
+   
 }
-.cardSector:hover .cardSector-btn{
-    background-color:#1d5a87 ;
-    color: rgb(255, 255, 255);
+.cardSector-btn:hover{
+    background-color:#0C304D ;
+    color:#F8F617 ;
 }
+
+@media (max-width: 1100px) {
+    .allCards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; /* Distribuye el espacio alrededor de las tarjetas */
+    }
+    .cardSector {
+      width: 45%; /* Ajusta el ancho para que dos tarjetas quepan en una fila */
+      min-height: 400px; /* Altura mínima para mantener la consistencia */
+      padding: 16px;
+      margin-bottom: 20px; /* Mantiene el margen inferior para separar las tarjetas verticalmente */
+      margin-left: 2.5%; /* Restablece el margen izquierdo y derecho para alinear las tarjetas de a dos */
+      margin-right: 2.5%;
+    }
+    .cardSector-body p {
+      min-height: 3em; /* Espacio para dos líneas de texto */
+      margin: 0 0 0.5em; /* Ajusta el margen inferior según tus necesidades */
+    }
+    .cardSector-image {
+      width: 100%; /* Usa el ancho completo de la tarjeta para la imagen */
+      height: 200px; /* Define una altura fija que sea 50% de la altura total de la tarjeta */
+      object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin perder su aspecto */
+      border-radius: 0.5rem 0.5rem 0 0; /* Redondea solo las esquinas superiores de la imagen */
+    }
+    .cardSector-btn {
+      width: 100%; /* El botón ocupa el ancho completo de la tarjeta */
+      margin-top: auto; /* Asegura que el botón quede al final de la tarjeta */
+    }
+}
+=======
+
+@media (max-width: 990px) {
+    .allCards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; 
+    }
+  
+    .cardSector {
+      width: 45%; 
+      min-height: 400px; 
+      padding: 16px;
+      margin-bottom: 20px; 
+      margin-left: 2.5%; 
+      margin-right: 2.5%;
+    }
+  
+    .cardSector-body p {
+      min-height: 3em;
+      margin: 0 0 0.5em; 
+    }
+  
+    .cardSector-image {
+      width: 100%; 
+      height: 200px; 
+      object-fit: cover; 
+      border-radius: 0.5rem 0.5rem 0 0; 
+    }
+  
+    .cardSector-btn {
+      width: 100%; 
+      margin-top: auto; 
+    }
+}
+
+  
+

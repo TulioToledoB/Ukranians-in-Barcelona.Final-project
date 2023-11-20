@@ -6,6 +6,11 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import i18n from "../i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import CountryFlag from "react-country-flag";
+
+
 
 function NavBar(props) {
   const { t } = useTranslation();
@@ -76,7 +81,7 @@ function NavBar(props) {
             </li>
             <li className="nav-item">
               <Link to="/questions_famouses" className="nav-link" href="#">
-                {t("questions")}
+                {t("questions1")}
               </Link>
             </li>
             <li className="nav-item">
@@ -90,34 +95,48 @@ function NavBar(props) {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="signInUp">
-          <li className="nav-item dropdown">
+          <div className="nav-item dropdown">
             <Dropdown>
               <Dropdown.Toggle
                 variant="secondary"
-                id="language-dropdown"
-              ></Dropdown.Toggle>
+                id="language-dropdown">
+                  <FontAwesomeIcon
+                icon={faGlobe}
+                style={{ fontSize: "24px", border: "none" }}
+              />
+                
+              </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item onClick={() => changeLanguage("eng")}>
+                <CountryFlag countryCode="GB" svg /> 
                   English
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => changeLanguage("es")}>
+                <CountryFlag countryCode="ES" svg />
                   Español
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => changeLanguage("ua")}>
+                <CountryFlag countryCode="UA" svg />
                   Українська
                 </Dropdown.Item>
                 {/* Add more language options as needed */}
               </Dropdown.Menu>
             </Dropdown>
-          </li>
-          <Link to="/signInForm" className="nav-link">
-            <button className="signInBtn">{t("signIn")}</button>
-          </Link>
-          <Link to="/signUpForm" className="nav-link">
-            <button className="signUpBtn">{t("signUp")}</button>
-          </Link>
+          </div>
+
+          </div>
+          <div className="signInUp">
+
+          {!props.isUserSignedIn ? (
+            <>
+              <Link to="/signInForm" className="nav-link">
+                <button className="signInBtn">{t("signIn")}</button>
+              </Link>
+              <Link to="/signUpForm" className="nav-link">
+                <button className="signUpBtn">{t("signUp")}</button>
+              </Link>
+            </>
+          ) : null}
         </div>
       </div>
     </nav>
