@@ -6,6 +6,8 @@ import "./Sectors.css";
 import BigCard from "./SearchFormsSectors/BigCard";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
 function Hospitals(props) {
   const [hospitals, setHospitals] = useState([]);
