@@ -4,8 +4,9 @@
   }
   
   .nav-item:hover{
-    border-bottom: 1px  #F8F617 solid;
+    border-bottom: 1px  white solid;
     transition-duration: 1s;
+   border-top: solid 1px white;
   }
 
   .navbar-collapse{
@@ -29,18 +30,16 @@
   }
 */
   .dropdown-menu{
-    color: #F8F617;
     background-color:#1d5a87 !important; 
   }
   
   .dropdown-item:hover{
     background-color: rgb(12, 48, 77)!important;
-    color: #F8F617;
   }
 
-  .nav-link:hover{
+  /* .nav-link:hover{
     color:#F8F617 !important;
-  }
+  } */
 
   .signInUp{
     display: flex;
@@ -56,7 +55,6 @@
 
   .signInBtn:hover{
     background-color: rgb(12, 48, 77);
-    color: #F8F617;
     transition-duration: 0.2s;
   }
   
@@ -69,7 +67,6 @@
 
   .signUpBtn:hover{
     background-color: rgb(12, 48, 77);
-    color: #F8F617;
     transition-duration: 0.2s;
   }
   

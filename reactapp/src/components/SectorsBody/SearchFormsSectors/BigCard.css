@@ -1,5 +1,8 @@
     .bigCard{
-        margin: 1.5rem 14rem;
+        /* margin: 1.5rem 14rem; */
+
+        margin: 4rem auto;
+        width: 55%;
     }
     
     .bigCard-body{
@@ -15,6 +18,8 @@
 
    .bigCard img {
         border-radius: 0.5rem;
+        object-fit: cover;
+        width: 100%;
     }
 
     .bigCard-body button{

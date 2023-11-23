@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CardSectorJobOffers from "./CardSectorJobOffers";
 import axios from "axios";
 import ButtonAddInfo from "./ButtonsAddInfoSectors/ButtonAddInfoJobs";
+
 function SearchFile(props) {
   const [query, setQuery] = useState("");
   const [data, setData] = useState([]);
