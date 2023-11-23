@@ -30,6 +30,7 @@
     background-color: #e7eef5;
     color:#000000;
     border: 1px solid #1e2b53;
+    font-size: 1.4rem;
     border-radius: 10px; 
     margin: 5px;
     display: block;
@@ -38,6 +39,7 @@
     animation-delay: calc(var(--animation-order) * 100ms);
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
+    
   }
   
   .step.active {
@@ -46,6 +48,7 @@
     color:#fff;
     border: 2px solid #fff;
     border-radius: 10px;
+
     
   }
   
@@ -63,7 +66,10 @@
     cursor: pointer;
     margin-right: 5px;
     padding-left: 5px;
+    font-size: 1.4rem;
     margin: 5px;
+    margin-top: 10px;
+
     background-color:  rgb(30, 97, 173);
     border-radius: 185px;
     width: 60px;
