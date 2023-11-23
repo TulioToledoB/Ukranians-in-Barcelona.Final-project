@@ -71,7 +71,101 @@
         "Values":"At the heart of our work lies an intrinsic set of fundamental values. We are guided by the firm purpose of meeting the basic needs of refugees in unknown lands, facilitating their transition to a society full of challenges and opportunities. Compassion, solidarity and empathy constitute the unbreakable foundations of our philosophy, driving each action towards a lasting and significant social impact. In our tireless pursuit of providing maximum value to our beneficiaries, we are guided by precision and authenticity. Through clear and transparent communication, we strive to foster genuine interaction between users and the vital resources we provide. Likewise, we tirelessly support social and environmental initiatives that reflect our unwavering commitment to the community and the environment around us.",
         "Future_and_Objectives":"We look forward to a future where every refugee individual can find a foothold on our platform, accessing essential resources and a compassionate support network. Our focus is on building lasting partnerships with like-minded organizations and expanding our reach to serve a growing number of refugees across the region. We aspire to foster integration and empowerment, paving the way for a brighter and more hopeful future for those who have bravely faced adversity.",
         "Call_to_Action":"If you too want to be part of this network of solidarity and make a difference in the lives of refugees, join us today. Together, we can build a more inclusive and compassionate future for all. Join our cause and be the change you want to see in the world!",
-        "buttonAdminAddInfo":"Add info!",
+
+        
+        "nameOfSocialService1": "CUESB Barcelona Social Emergency and Urgent Care Centre",
+        "telOfCard1": "900703030",
+        "addressOfCard1":"Carrer Llacuna, 25 , 08005",
+        "highligh1": "open in the browser",
+        "highlight2":"open the hospital website",
+        "button1" : "read",
+        "button2" : "close",
+
+        "nameOfSocialService2": "Nova Ciutadania",
+        "telOfCard2": "931532800",
+        "addressOfCard2":"Carrer Tarragona, 141, 08014",
+        "highligh1_2": "open in the browser",
+        "highlight2_2":"open the hospital website",
+        "button1_2" : "read",
+        "button2_2" : "close",
+
+        "nameOfSocialService3": "Red Cross",
+        "telOfCard3": "934816088",
+        "addressOfCard3":"Avinguda Portal De L´angel, 24, 08002 Barcelona",
+        "highligh1_3": "open in the browser",
+        "highlight2_3":"open the hospital website",
+        "button1_3" : "read",
+        "button2_3": "close",
+        "linkHospitals": "open the hospital website",
+
+
+       
+
+          
+
+          "specificationLawyer1": "Criminal Law, Employment Law, Estate Law, Family Law, Immigration Services",
+
+          "specificationLawyer2": "Ordinary Employment Contract, Senior Management, and Special Employment Relationships",
+
+          "specificationLawyer3": "Specialize in attending to the legal needs of international clients in Spain",
+
+         
+
+            "sector_legalizatio_todo1": "Temporary protection is an exceptional procedure by which in the event of a massive influx of displaced persons from third countries who cannot return to their country of origin, they are guaranteed immediate and personal protection.",
+            "step1":1,
+
+            "sector_legalizatio_todo2": "WHO CAN APPLY FOR TEMPORARY PROTECTION?",
+            "step2":2,
+
+            "sector_legalizatio_todo3": "1· Ukrainian nationals residing in Ukraine before February 24, 2022.2· Stateless persons and nationals of third countries other than Ukraine who enjoyed international protection or equivalent national protection before February 24, 2022.3· Members of the families of the persons referred to in sections 1) and 2) understood as such: a· spouse or unmarried partner b· his unmarried minor children or those of the partner, whether born in or out of wedlock or adopted. c· other close relatives who lived together as part of the family unit at the beginning of the armed conflict, depending totally or mainly on them.4· Ukrainian nationals who were in a situation of stay in Spain before February 24, 2002 and that, as a result of the armed conflict, are unable to return to Ukraine.5· Third country nationals or stateless persons legally residing in Ukraine on the basis of a valid legal residence permit (whether permanent or otherwise, such as students) issued in accordance with Ukrainian law and cannot safely and permanently return to their country or region.6· Ukrainian nationals who were in an irregular situation in Spain before February 24 and that, as a result of the armed conflict, are unable to return to Ukraine.7· Members of the families of the persons referred to in sections 4) and 5) in the terms mentioned in section 3.",
+            "step3":3,
+
+            "sector_legalizatio_todo4": "WHERE AND HOW TO APPLY FOR TEMPORARY PROTECTION?",
+            "step4":4,
+            
+
+            "sector_legalizatio_todo7": "GRANTING AND RENEWAL OF TEMPORARY PROTECTION",
+            "step7":7,
+
+            "sector_legalizatio_todo5": "How? The application will be formalized by means of a personal appearance with national police officials at the places described above where the personal or travel documentation carried by the interested party will be provided.",
+            "step5":5,
+
+            "sector_legalizatio_todo14": "DUTIES OF THE APPLICANT OR BENEFICIARY OF THE TEMPORARY PROTECTION REGIME IN SPAIN.",
+            "step14":14,
+
+            "sector_legalizatio_todo6": "DOCUMENTATION Persons applying for temporary protection must provide documentation proving that they are in any of the situations provided for in section I of this document, such as: • Identity and travel documents • Supporting documents of family ties (marriage certificate, birth certificate, adoption certificate). • Any other essential information to prove that the requirements for temporary protection are met.",
+            "step6":6,
+          
+
+            "sector_legalizatio_todo8": "CONTENTS OF TEMPORARY PROTECTION Beneficiaries of temporary protection shall have the right to: • Freedom of movement and residence in Spain. • Information about the contents of temporary protection.",
+            "step8":8,
+
+            "sector_legalizatio_todo9": "TRAVEL TITLE: A travel title will be provided to those persons benefiting from temporary protection who do not have a passport or a travel document or when these are no longer valid, in order to justify their need to leave the national territory.",
+            "step9":9,
+
+            "sector_legalizatio_todo10": "Reception on national territory: when the person benefiting from temporary protection on Spanish territory remains or intends to enter the territory of another Member State of the European Union without authorization during the period covered by the granted temporary protection, the entry into national territory will be authorized again.",
+            "step10":10,
+
+            "sector_legalizatio_todo11": "Administrative authorization to work. This will have the same length of time as the temporary residence permit granted.",
+            "step11":11,
+
+            "sector_legalizatio_todo12": "Social assistance: when beneficiaries do not have sufficient resources, they may benefit from social and health services in accordance with the asylum regulations.",
+            "step12":12,
+
+            "sector_legalizatio_todo13": "Family reunification: the benefits of temporary protection will be granted, upon request of its beneficiary in Spain, to the members of his family as long as the said family was already constituted in the country of origin and that its members had to be separated due to the circumstances that gave rise to the declaration of temporary protection.",
+            "step13":13,
+
+            "sector_legalizatio_todo15": "TEMPORARY PROTECTION AND INTERNATIONAL PROTECTION: Is temporary protection the same as international protection? No, It is not. Temporary protection is a status that offers immediate and temporary care, but it is not incompatible with an application for international protection.",
+            "step15":15,
+
+            "sector_legalizatio_todo16": "INFORMATION AND ACCESS TO THE RECEPTION SYSTEM: In the case of lack of financial resources, beneficiaries of temporary protection and their family members may apply for access to the foster care system.",
+            "step16":16,
+
+            "sector_legalizatio_todo17": "APPLICABLE REGULATIONS: The rules governing this type of protection are Directive 200155/CC of 20 July on the granting of temporary protection in the event of a mass influx of displaced persons and the Regulation on the temporary protection regime in the event of a mass influx of displaced persons, approved by Royal Decree 1325/2002 of 24 October, which transposed the above-mentioned Directive into Spanish legal order.",
+            "step17":17,
+            "buttonClose" : "Close",
+
+             "buttonAdminAddInfo":"Add info!",
         "buttonAdminDeleteInfo":"Delete info!",
         "hospitalTitleAddInfo":"Hospitals add info!",
         "socialsTitleAddInfo":"Socials services add info!",
@@ -81,13 +175,25 @@
         "OpenWeb":"Open in the website!",
         "cityCard":"City",
         "dateCards":"Date",
-        "stepCard": "Step"     
+        "stepCard": "Step"  
+          
+
+            }
+            
+
+            
+          
+     
+
+
+          
+
 
 
         
 
 
 
-      }
+      
   
   

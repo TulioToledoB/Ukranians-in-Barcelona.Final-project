@@ -36,7 +36,7 @@ const LawyersForm = () => {
   };
 
   return (
-    <div>
+    <div className="bodyIn">
       <form onSubmit={handleSubmit}>
         <h1>LAWYERS INFO</h1>
 

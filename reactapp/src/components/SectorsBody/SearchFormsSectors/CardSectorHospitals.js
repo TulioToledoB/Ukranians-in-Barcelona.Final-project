@@ -23,8 +23,10 @@ function CardSectorHospitals(props) {
               </p>
               <a href={`tel:${item.contacts}`}>{t("callLink")}</a>
 
-              <a href={item.link}>{t("OpenWeb")}</a>
-              <button className="cardSector-btn"> Read</button>
+              <a href={item.link}>
+
+              <button className="cardSector-btn"> {t("OpenWeb")}</button>
+              </a>
               {props.isUserSignedIn ? (
                 <button
                   onClick={() => props.handleDelete(item.id)}

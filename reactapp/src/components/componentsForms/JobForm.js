@@ -35,7 +35,7 @@ const JobForm = () => {
   };
 
   return (
-    <div>
+    <div className="bodyIn">
       <form onSubmit={handleSubmit}>
         <h1>JOB_LINKS</h1>
 

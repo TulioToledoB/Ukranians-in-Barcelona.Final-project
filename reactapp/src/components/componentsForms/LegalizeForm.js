@@ -37,7 +37,7 @@ const LegalizeForm = () => {
   };
 
   return (
-    <div>
+    <div className="bodyIn">
       <form onSubmit={handleSubmit}>
         <h1>Legalization form</h1>
 

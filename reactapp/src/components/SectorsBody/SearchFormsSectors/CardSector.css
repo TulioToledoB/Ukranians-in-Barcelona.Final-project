@@ -45,8 +45,7 @@
    
 }
 .cardSector-btn:hover{
-    background-color:#0C304D ;
-    color:#F8F617 ;
+    background-color:#0C304D;
 }
 
 @media (max-width: 1100px) {
@@ -78,7 +77,6 @@
       margin-top: auto; /* Asegura que el botón quede al final de la tarjeta */
     }
 }
-=======
 
 @media (max-width: 990px) {
     .allCards {
