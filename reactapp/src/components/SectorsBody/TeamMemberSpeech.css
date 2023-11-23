@@ -1,0 +1,79 @@
+/* Estilos para el contenedor principal de cada miembro del equipo */
+.team-member-speech {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 800px;
+    transition: transform 0.3s ease; /* Transición para el efecto de agrandamiento */
+}
+.team-member-speech:hover {
+    transform: scale(1.07); /* Agrandar todo el contenedor */
+}
+  
+  /* Estilos para la foto del miembro del equipo */
+  .team-member-photo {
+    border-radius: 50%; /* Hace que la foto sea redonda */
+    margin-right: 20px; /* Espacio entre la foto y la burbuja de diálogo */
+    width: 440px; /* Tamaño de la foto */
+    height: 380px; /* Tamaño de la foto */
+    transition: transform 0.3s ease; /* Añade transición para el efecto de agrandamiento */
+    object-fit: cover;
+}
+  
+  /* Estilos para la burbuja de diálogo */
+  .speech-bubble {
+    position: relative; /* Añade posición relativa para que la punta se posicione correctamente */
+    background-color: #DEF2FF;
+    border-radius: 25px;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px !important;
+    /* Inicialmente, la punta no es visible */
+    overflow: hidden; /* Esto asegura que no se vea nada fuera de los bordes de la burbuja */
+  }
+  
+  /* Estilos para el título dentro de la burbuja de diálogo */
+  .speech-bubble h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+  /* Estilos para el párrafo dentro de la burbuja de diálogo */
+  .speech-bubble p {
+    font-size: 18px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    max-width: 400px; /* Ancho máximo para mantener la legibilidad del texto */
+    margin: 10px 0;
+  }
+  
+  .speech-bubble:hover {
+    background-color: white;
+    transform: scale(1.05);
+    color: black;
+    /* Se muestra la punta cuando se hace hover */
+    overflow: visible; /* Esto permite que la punta se muestre durante el hover */
+  }
+  
+/* Estilo para la punta de la burbuja de diálogo */
+.speech-bubble:hover:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: -20px; /* Puede que necesites ajustar este valor */
+    transform: translateY(-50%);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid rgba(0, 0, 0, 0.5); /* Color debe coincidir con el de la burbuja de diálogo */
+  }
+  

@@ -1,36 +1,55 @@
-import React from "react";
-import "./AboutUs.css";
-import { useTransition } from "react";
-import i18n from "../../i18next";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import './AboutUs.css';
+import TeamMemberSpeech from './TeamMemberSpeech';
+import { useTranslation } from 'react-i18next';
+import carmelaImage from '../PhotoAboutUs/carmela.jpg';
+import elenaImage from '../PhotoAboutUs/elena.jpg';
+import rachelImage from '../PhotoAboutUs/rachel.jpg';
+import vladImage from '../PhotoAboutUs/vlad.jpg';
+import tulioImage from '../PhotoAboutUs/tulio.jpg';
 
 function AboutUs() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
+
+  const teamMembers = [
+    {
+      titleKey: "History_or_Mission_title",
+      textKey: "History_or_Mission",
+      imageSrc: tulioImage,
+    },
+    {
+      titleKey: "equipment_title",
+      textKey: "equipment",
+      imageSrc: elenaImage,
+    },
+    {
+      titleKey: "Values_title",
+      textKey: "Values",
+      imageSrc: rachelImage,
+    },
+    {
+      titleKey: "Future_and_Objectives_title",
+      textKey: "Future_and_Objectives",
+      imageSrc: carmelaImage,
+    },
+    {
+      titleKey: "Call_to_Action_title",
+      textKey: "Call_to_Action",
+      imageSrc: vladImage,
+    }
+  ];
 
   return (
     <div className="aboutUs-container">
-      <div className="text-section">
-        <h2>{t("History_or_Mission_title")}:</h2>
-        <p>{t("History_or_Mission")}</p>
-      </div>
-      <div className="text-section">
-        <h2>{t("equipment_title")}:</h2>
-        <p>{t("equipment")}</p>
-      </div>
-      <div className="text-section">
-        <h2>{t("Values_title")}</h2>
-        <p>{t("Values")}</p>
-      </div>
-      <div className="text-section">
-        <h2>{t("Future_and_Objectives_title")}:</h2>
-        <p>{t("Future_and_Objectives")}</p>
-      </div>
-      <div className="text-section">
-        <h2>{t("Call_to_Action_title")}:</h2>
-        <p>
-          <span>{t("Call_to_Action")}</span>
-        </p>
-      </div>
+      {teamMembers.map(member => (
+        <TeamMemberSpeech
+          key={member.titleKey}
+          titleKey={member.titleKey} 
+          textKey={member.textKey} 
+          imageSrc={member.imageSrc}
+        />
+      ))}
     </div>
   );
 }
