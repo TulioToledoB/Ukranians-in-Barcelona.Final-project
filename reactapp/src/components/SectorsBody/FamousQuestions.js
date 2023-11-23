@@ -4,6 +4,8 @@ import SingleQuestion from "./SingleQuestion";
 import "./SingleQuestion.css";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18next";
+import arrowLeft from "./arrowLeftCut.png";
+import arrowRight from "./arrowRightCut.png";
 
 function FamousQuestions() {
   /// const [questions] = useState(quest);
@@ -11,8 +13,12 @@ function FamousQuestions() {
 
   return (
     <main className="faqs">
+      <div className="title_div">
+        <img src={arrowLeft}></img>
+        <h2 className="title_sectors">{t("title_sector_questions")}</h2>
+        <img src={arrowRight}></img>
+      </div>
       <div className="quest-container">
-        <h2>{t("title_sector_questions")}</h2>
         <section>
           <SingleQuestion
             question={t(`questions.frequentlyAskedQuestions1`)}

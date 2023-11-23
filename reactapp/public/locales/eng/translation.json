@@ -112,57 +112,57 @@
          
 
             "sector_legalizatio_todo1": "Temporary protection is an exceptional procedure by which in the event of a massive influx of displaced persons from third countries who cannot return to their country of origin, they are guaranteed immediate and personal protection.",
-            "step1":1,
+            "step1":"Step 1. Temporary protection",
 
             "sector_legalizatio_todo2": "WHO CAN APPLY FOR TEMPORARY PROTECTION?",
-            "step2":2,
+            "step2":"Step 2. Who can apply",
 
             "sector_legalizatio_todo3": "1· Ukrainian nationals residing in Ukraine before February 24, 2022.2· Stateless persons and nationals of third countries other than Ukraine who enjoyed international protection or equivalent national protection before February 24, 2022.3· Members of the families of the persons referred to in sections 1) and 2) understood as such: a· spouse or unmarried partner b· his unmarried minor children or those of the partner, whether born in or out of wedlock or adopted. c· other close relatives who lived together as part of the family unit at the beginning of the armed conflict, depending totally or mainly on them.4· Ukrainian nationals who were in a situation of stay in Spain before February 24, 2002 and that, as a result of the armed conflict, are unable to return to Ukraine.5· Third country nationals or stateless persons legally residing in Ukraine on the basis of a valid legal residence permit (whether permanent or otherwise, such as students) issued in accordance with Ukrainian law and cannot safely and permanently return to their country or region.6· Ukrainian nationals who were in an irregular situation in Spain before February 24 and that, as a result of the armed conflict, are unable to return to Ukraine.7· Members of the families of the persons referred to in sections 4) and 5) in the terms mentioned in section 3.",
-            "step3":3,
+            "step3":"Paso 3. List of people who can apply",
 
             "sector_legalizatio_todo4": "WHERE AND HOW TO APPLY FOR TEMPORARY PROTECTION?",
-            "step4":4,
+            "step4":"Step 4. Apply",
             
 
             "sector_legalizatio_todo7": "GRANTING AND RENEWAL OF TEMPORARY PROTECTION",
-            "step7":7,
+            "step7": "Step 7. Granting and reneval",
 
             "sector_legalizatio_todo5": "How? The application will be formalized by means of a personal appearance with national police officials at the places described above where the personal or travel documentation carried by the interested party will be provided.",
-            "step5":5,
+            "step5":"Step 5. How apply",
 
             "sector_legalizatio_todo14": "DUTIES OF THE APPLICANT OR BENEFICIARY OF THE TEMPORARY PROTECTION REGIME IN SPAIN.",
-            "step14":14,
+            "step14": "Step 14. Dutties of the applicant",
 
             "sector_legalizatio_todo6": "DOCUMENTATION Persons applying for temporary protection must provide documentation proving that they are in any of the situations provided for in section I of this document, such as: • Identity and travel documents • Supporting documents of family ties (marriage certificate, birth certificate, adoption certificate). • Any other essential information to prove that the requirements for temporary protection are met.",
-            "step6":6,
+            "step6": "Step 6. Documents of applicant ",
           
 
             "sector_legalizatio_todo8": "CONTENTS OF TEMPORARY PROTECTION Beneficiaries of temporary protection shall have the right to: • Freedom of movement and residence in Spain. • Information about the contents of temporary protection.",
-            "step8":8,
+            "step8": "Step 8. Contents of temporary protection",
 
             "sector_legalizatio_todo9": "TRAVEL TITLE: A travel title will be provided to those persons benefiting from temporary protection who do not have a passport or a travel document or when these are no longer valid, in order to justify their need to leave the national territory.",
-            "step9":9,
+            "step9": "Step 9. Travel title ",
 
             "sector_legalizatio_todo10": "Reception on national territory: when the person benefiting from temporary protection on Spanish territory remains or intends to enter the territory of another Member State of the European Union without authorization during the period covered by the granted temporary protection, the entry into national territory will be authorized again.",
-            "step10":10,
+            "step10":"Step 10. Recepción en el territorio nacional",
 
             "sector_legalizatio_todo11": "Administrative authorization to work. This will have the same length of time as the temporary residence permit granted.",
-            "step11":11,
+            "step11":"Step 11. Administrative authorization to work",
 
             "sector_legalizatio_todo12": "Social assistance: when beneficiaries do not have sufficient resources, they may benefit from social and health services in accordance with the asylum regulations.",
-            "step12":12,
+            "step12":"Step 12. Social assistance",
 
             "sector_legalizatio_todo13": "Family reunification: the benefits of temporary protection will be granted, upon request of its beneficiary in Spain, to the members of his family as long as the said family was already constituted in the country of origin and that its members had to be separated due to the circumstances that gave rise to the declaration of temporary protection.",
-            "step13":13,
+            "step13":"Step 13. Family reunification",
 
             "sector_legalizatio_todo15": "TEMPORARY PROTECTION AND INTERNATIONAL PROTECTION: Is temporary protection the same as international protection? No, It is not. Temporary protection is a status that offers immediate and temporary care, but it is not incompatible with an application for international protection.",
-            "step15":15,
+            "step15":"Step 15. Temporary protection",
 
             "sector_legalizatio_todo16": "INFORMATION AND ACCESS TO THE RECEPTION SYSTEM: In the case of lack of financial resources, beneficiaries of temporary protection and their family members may apply for access to the foster care system.",
-            "step16":16,
+            "step16":"Step 16. Information and access to the reception system",
 
             "sector_legalizatio_todo17": "APPLICABLE REGULATIONS: The rules governing this type of protection are Directive 200155/CC of 20 July on the granting of temporary protection in the event of a mass influx of displaced persons and the Regulation on the temporary protection regime in the event of a mass influx of displaced persons, approved by Royal Decree 1325/2002 of 24 October, which transposed the above-mentioned Directive into Spanish legal order.",
-            "step17":17,
+            "step17":"Step 17. Aplicable regulations",
             "buttonClose" : "Close",
 
              "buttonAdminAddInfo":"Add info!",
