@@ -17,7 +17,7 @@ function PoliceAndLawyers(props) {
   const { t, i18n } = useTranslation();
 
   function fetchLawyers() {
-    fetch("http://localhost:5000/lawyers")
+    fetch("https://backend-amber-three-41.vercel.app/lawyers")
       .then((response) => response.json())
       .then((data) => {
         setLawyers(data);
@@ -25,7 +25,7 @@ function PoliceAndLawyers(props) {
       });
   }
   function fetchPolice() {
-    fetch("http://localhost:5000/police_stations")
+    fetch("https://backend-amber-three-41.vercel.app/police_stations")
       .then((response) => response.json())
       .then((data) => {
         setPolice(data);

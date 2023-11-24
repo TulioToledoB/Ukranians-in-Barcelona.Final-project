@@ -39,7 +39,7 @@ function App() {
   const [police, setPolice] = useState([]);
 
   function fetchAreas() {
-    fetch("http://localhost:5000/areas")
+    fetch("https://backend-amber-three-41.vercel.app/areas")
       .then((response) => response.json())
       .then((data) => {
         setAreas(data);

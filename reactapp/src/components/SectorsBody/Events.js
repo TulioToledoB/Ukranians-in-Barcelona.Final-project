@@ -16,7 +16,7 @@ function Events(props) {
   const { t, i18n } = useTranslation();
 
   function fetchEvents() {
-    fetch("http://localhost:5000/events")
+    fetch("https://backend-amber-three-41.vercel.app/events")
       .then((response) => response.json())
       .then((data) => {
         setEvents(data);

@@ -17,7 +17,7 @@ const SocialForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5000/socials_services", {
+    fetch("https://backend-amber-three-41.vercel.app/socials_services", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const LawyersForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5000/lawyers", {
+    fetch("https://backend-amber-three-41.vercel.app/lawyers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

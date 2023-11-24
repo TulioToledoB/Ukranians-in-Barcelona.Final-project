@@ -15,7 +15,7 @@ function SocialServices(props) {
   const { t, i18n } = useTranslation();
 
   function fetchSocials() {
-    fetch("http://localhost:5000/socials_services")
+    fetch("https://backend-amber-three-41.vercel.app/socials_services")
       .then((response) => response.json())
       .then((data) => {
         setSocials(data);

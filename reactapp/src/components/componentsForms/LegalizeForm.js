@@ -13,7 +13,7 @@ const LegalizeForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5000/legalization", {
+    fetch("https://backend-amber-three-41.vercel.app/legalization", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

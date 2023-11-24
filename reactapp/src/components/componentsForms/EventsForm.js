@@ -13,7 +13,7 @@ const EventsForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5000/events", {
+    fetch("https://backend-amber-three-41.vercel.app/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

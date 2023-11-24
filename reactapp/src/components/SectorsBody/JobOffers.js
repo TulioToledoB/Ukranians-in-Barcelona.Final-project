@@ -14,7 +14,7 @@ function Jobs(props) {
   const { t, i18n } = useTranslation();
 
   function fetchJobs() {
-    fetch("http://localhost:5000/job_offers")
+    fetch("https://backend-amber-three-41.vercel.app/job_offers")
       .then((response) => response.json())
       .then((data) => {
         setJobs(data);

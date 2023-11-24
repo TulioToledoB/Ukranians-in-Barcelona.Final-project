@@ -15,7 +15,7 @@ function Hospitals(props) {
   const { t, i18n } = useTranslation();
 
   function fetchHospitals() {
-    fetch("http://localhost:5000/hospitals")
+    fetch("https://backend-amber-three-41.vercel.app/hospitals")
       .then((response) => response.json())
       .then((data) => {
         setHospitals(data);
