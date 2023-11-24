@@ -39,3 +39,45 @@ Review the pull request carefully and make sure it is consistent with the projec
 can make comments and request changes if necessary.
 Once the pull request is ready and all team members agree, you can merge each
 member's branch into the main branch of the project (for example, "main").
+
+<aside>
+2️⃣ *Ukranians in Barcelona*
+
+ **(Team Supervisor) Andrea
+
+PROJECT TEAM:
+
+Tulio ToledoBigon, Elena Petrash(Team Leader) , Carmela Oropesa, Racheal Ehiwe, Vladyslav)
+
+---
+
+*Link(s) to GitHub repos*
+
+https://github.com/ElenaPetrash/Ukranians-in-Barcelona.Final-project
+
+*********Description:*********
+
+The project is a multilingual website designed to aid the social adaptation of Ukrainian refugees. It provides vital information on legal matters, language courses, job search resources, and obtaining medical documentation. With content available in Ukrainian, Spanish, and English, it aims to empower refugees by offering comprehensive guidance and resources to facilitate their integration into their new communities.
+
+*****Users:*****
+
+- Ukrainian Refugees
+- Government Agencies
+
+- Refugee Support Organizations
+
+*********Main functionalities*********
+
+- The website offers information and resources in three languages: Ukrainian, Spanish, and English, ensuring accessibility to a wide range of users.
+- Users can easily search for specific information or navigate through different sections of the website to find relevant resources.
+- Provides contact details for government agencies, legal aid organizations, healthcare providers, and other relevant entities for quick assistance.
+
+*******Main Frameworks*******
+
+- HTML/CSS
+- Java Script
+- React
+- Node JS
+- Databases
+
+</aside>
