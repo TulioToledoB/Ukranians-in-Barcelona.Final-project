@@ -11,12 +11,12 @@ function SearchFile(props) {
   };
 
   const fetchHospitals = async () => {
-    const res = await axios.get("http://localhost:5000/hospitals");
+    const res = await axios.get("https://backend-amber-three-41.vercel.app/hospitals");
     setData(res.data);
   };
 
   const handleDelete = (hospitalIdToDelete) => {
-    fetch(`http://localhost:5000/hospitals/${hospitalIdToDelete}`, {
+    fetch(`https://backend-amber-three-41.vercel.app/hospitals/${hospitalIdToDelete}`, {
       method: "DELETE",
       credentials: "include", // Include credentials for CORS
     })

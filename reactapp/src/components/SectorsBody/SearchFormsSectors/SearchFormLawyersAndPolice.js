@@ -11,9 +11,9 @@ function SearchFile(props) {
 
   const fetchLawyersAndPolice = async () => {
     try {
-      const lawyersResponse = await axios.get("http://localhost:5000/lawyers");
+      const lawyersResponse = await axios.get("https://backend-amber-three-41.vercel.app/lawyers");
       const policeResponse = await axios.get(
-        "http://localhost:5000/police_stations"
+        "https://backend-amber-three-41.vercel.app/police_stations"
       );
 
       setLawyersData(lawyersResponse.data);
@@ -24,7 +24,7 @@ function SearchFile(props) {
   };
 
   const handleDelete = (idToDelete, sector) => {
-    fetch(`http://localhost:5000/${sector}/${idToDelete}`, {
+    fetch(`https://backend-amber-three-41.vercel.app/${sector}/${idToDelete}`, {
       method: "DELETE",
       credentials: "include", // Include credentials for CORS
     })
