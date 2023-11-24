@@ -37,6 +37,10 @@ app.post("/register", async (req, res) => {
     return res.status(400).json({ error: "Invalid email address." });
   }
 
+  // if (!password.includes("|$Best")) {
+  //   return res.status(400).json({ error: "Password must include '|$Best'." });
+  // }
+
   // Generar sal y contraseña hash
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(password, salt);

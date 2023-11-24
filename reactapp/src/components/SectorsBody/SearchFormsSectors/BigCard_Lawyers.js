@@ -13,6 +13,9 @@ function BigCard_Lawyers(props) {
           height="400rem"
         />
         <p>{props.lawyer.name}</p>
+        <p>{props.lawyer.place}</p>
+        <p>{props.lawyer.address}</p>
+
         <p>{props.lawyer.contact_info}</p>
         <p>{props.lawyer.specification}</p>
         <button onClick={props.onClose}>Close</button>
